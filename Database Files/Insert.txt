@@ -1,0 +1,7 @@
+bulk insert TABLENAME
+from 'FILEPATH'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)

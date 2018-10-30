@@ -1,0 +1,572 @@
+CardID,name,cmc,colorIdentity,text,printings,power,toughness,rarity,subtypes,types
+1,"Ajani, Caller of the Pride",3,W,"+1: Put a +1/+1 counter on up to one target creature.\n−3: Target creature gains flying and double strike until end of turn.\n−8: Put X 2/2 white Cat creature tokens onto the battlefield, where X is your life total.",3,,,Mythic Rare,Ajani,Planeswalker
+2,Ajani's Sunstriker,2,W,Lifelink (Damage dealt by this creature also causes you to gain that much life.),3,2,2,Common,"Cat,Cleric",Creature
+3,Angel's Mercy,4,W,You gain 7 life.,"2,3",,,Common,,Instant
+4,Angelic Benediction,4,W,"Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nWhenever a creature you control attacks alone, you may tap target creature.",3,,,Uncommon,,Enchantment
+5,Attended Knight,3,W,"First strike (This creature deals combat damage before creatures without first strike.)\nWhen Attended Knight enters the battlefield, put a 1/1 white Soldier creature token onto the battlefield.",3,2,2,Common,"Human,Knight",Creature
+6,Aven Squire,2,W,"Flying\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,1,1,Common,"Bird,Soldier",Creature
+7,Battleflight Eagle,5,W,"Flying\nWhen Battleflight Eagle enters the battlefield, target creature gets +2/+2 and gains flying until end of turn.",3,2,2,Common,Bird,Creature
+8,Captain of the Watch,6,W,"Vigilance (Attacking doesn't cause this creature to tap.)\nOther Soldier creatures you control get +1/+1 and have vigilance.\nWhen Captain of the Watch enters the battlefield, put three 1/1 white Soldier creature tokens onto the battlefield.",3,3,3,Rare,"Human,Soldier",Creature
+9,Captain's Call,4,W,Put three 1/1 white Soldier creature tokens onto the battlefield.,3,,,Common,,Sorcery
+10,Crusader of Odric,3,W,Crusader of Odric's power and toughness are each equal to the number of creatures you control.,3,*,*,Uncommon,"Human,Soldier",Creature
+11,Divine Favor,2,W,"Enchant creature\nWhen Divine Favor enters the battlefield, you gain 3 life.\nEnchanted creature gets +1/+3.","2,3",,,Common,Aura,Enchantment
+12,Divine Verdict,4,W,Destroy target attacking or blocking creature.,3,,,Common,,Instant
+13,Erase,1,W,Exile target enchantment.,3,,,Common,,Instant
+14,Faith's Reward,4,W,Return to the battlefield all permanent cards in your graveyard that were put there from the battlefield this turn.,3,,,Rare,,Instant
+15,Glorious Charge,2,W,Creatures you control get +1/+1 until end of turn.,3,,,Common,,Instant
+16,Griffin Protector,4,W,"Flying\nWhenever another creature enters the battlefield under your control, Griffin Protector gets +1/+1 until end of turn.",3,2,3,Common,Griffin,Creature
+17,Guardian Lions,5,W,Vigilance (Attacking doesn't cause this creature to tap.),3,1,6,Common,Cat,Creature
+18,Guardians of Akrasa,3,W,"Defender (This creature can't attack.)\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,0,4,Common,"Human,Soldier",Creature
+19,Healer of the Pride,4,W,"Whenever another creature enters the battlefield under your control, you gain 2 life.",3,2,3,Uncommon,"Cat,Cleric",Creature
+20,Intrepid Hero,3,W,{T}: Destroy target creature with power 4 or greater.,3,1,1,Rare,"Human,Soldier",Creature
+21,Knight of Glory,2,W,"Protection from black (This creature can't be blocked, targeted, dealt damage, or enchanted by anything black.)\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,2,1,Uncommon,"Human,Knight",Creature
+22,Oblivion Ring,3,W,"When Oblivion Ring enters the battlefield, exile another target nonland permanent.\nWhen Oblivion Ring leaves the battlefield, return the exiled card to the battlefield under its owner's control.","2,3",,,Uncommon,,Enchantment
+23,"Odric, Master Tactician",4,W,"First strike (This creature deals combat damage before creatures without first strike.)\nWhenever Odric, Master Tactician and at least three other creatures attack, you choose which creatures block this combat and how those creatures block.",3,3,4,Rare,"Human,Soldier",Creature
+24,Pacifism,2,W,Enchant creature\nEnchanted creature can't attack or block.,"2,3",,,Common,Aura,Enchantment
+25,Pillarfield Ox,4,W,,3,2,4,Common,Ox,Creature
+26,Planar Cleansing,6,W,Destroy all nonland permanents.,3,,,Rare,,Sorcery
+27,Prized Elephant,4,"W,G","Prized Elephant gets +1/+1 as long as you control a Forest.\n{G}: Prized Elephant gains trample until end of turn. (If this creature would assign enough damage to its blockers to destroy them, you may have it assign the rest of its damage to defending player or planeswalker.)",3,3,3,Uncommon,Elephant,Creature
+28,Rain of Blades,1,W,Rain of Blades deals 1 damage to each attacking creature.,3,,,Uncommon,,Instant
+29,Rhox Faithmender,4,W,"Lifelink (Damage dealt by this creature also causes you to gain that much life.)\nIf you would gain life, you gain twice that much life instead.",3,1,5,Rare,"Rhino,Monk",Creature
+30,Safe Passage,3,W,Prevent all damage that would be dealt to you and creatures you control this turn.,3,,,Common,,Instant
+31,Serra Angel,5,W,Flying (This creature can't be blocked except by creatures with flying or reach.)\nVigilance (Attacking doesn't cause this creature to tap.),"2,3",4,4,Uncommon,Angel,Creature
+32,Serra Avatar,7,W,"Serra Avatar's power and toughness are each equal to your life total.\nWhen Serra Avatar is put into a graveyard from anywhere, shuffle it into its owner's library.",3,*,*,Mythic Rare,Avatar,Creature
+33,Serra Avenger,2,W,"You can't cast Serra Avenger during your first, second, or third turns of the game.\nFlying\nVigilance (Attacking doesn't cause this creature to tap.)",3,3,3,Rare,Angel,Creature
+34,Show of Valor,2,W,Target creature gets +2/+4 until end of turn.,3,,,Common,,Instant
+35,Silvercoat Lion,2,W,,3,2,2,Common,Cat,Creature
+36,Sublime Archangel,4,W,"Flying\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nOther creatures you control have exalted. (If a creature has multiple instances of exalted, each triggers separately.)",3,4,3,Mythic Rare,Angel,Creature
+37,Touch of the Eternal,7,W,"At the beginning of your upkeep, count the number of permanents you control. Your life total becomes that number.",3,,,Rare,,Enchantment
+38,War Falcon,1,W,Flying\nWar Falcon can't attack unless you control a Knight or a Soldier.,3,2,1,Common,Bird,Creature
+39,War Priest of Thune,2,W,"When War Priest of Thune enters the battlefield, you may destroy target enchantment.",3,2,2,Uncommon,"Human,Cleric",Creature
+40,Warclamp Mastiff,1,W,First strike (This creature deals combat damage before creatures without first strike.),3,1,1,Common,Hound,Creature
+41,Archaeomancer,4,U,"When Archaeomancer enters the battlefield, return target instant or sorcery card from your graveyard to your hand.",3,1,2,Common,"Human,Wizard",Creature
+42,Arctic Aven,3,"U,W",Flying\nArctic Aven gets +1/+1 as long as you control a Plains.\n{W}: Arctic Aven gains lifelink until end of turn. (Damage dealt by this creature also causes you to gain that much life.),3,2,1,Uncommon,"Bird,Wizard",Creature
+43,Augur of Bolas,2,U,"When Augur of Bolas enters the battlefield, look at the top three cards of your library. You may reveal an instant or sorcery card from among them and put it into your hand. Put the rest on the bottom of your library in any order.",3,1,3,Uncommon,"Merfolk,Wizard",Creature
+44,Battle of Wits,5,U,"At the beginning of your upkeep, if you have 200 or more cards in your library, you win the game.",3,,,Rare,,Enchantment
+45,Clone,4,U,You may have Clone enter the battlefield as a copy of any creature on the battlefield.,3,0,0,Rare,Shapeshifter,Creature
+46,Courtly Provocateur,3,U,{T}: Target creature attacks this turn if able.\n{T}: Target creature blocks this turn if able.,3,1,1,Uncommon,"Human,Wizard",Creature
+47,Divination,3,U,Draw two cards.,"2,3",,,Common,,Sorcery
+48,Downpour,2,U,Tap up to three target creatures.,3,,,Common,,Instant
+49,Encrust,3,U,Enchant artifact or creature\nEnchanted permanent doesn't untap during its controller's untap step and its activated abilities can't be activated.,3,,,Common,Aura,Enchantment
+50,Essence Scatter,2,U,Counter target creature spell.,3,,,Common,,Instant
+51,Faerie Invaders,5,U,Flash (You may cast this spell any time you could cast an instant.)\nFlying,3,3,3,Common,"Faerie,Rogue",Creature
+52,Fog Bank,2,U,"Defender, flying\nPrevent all combat damage that would be dealt to and dealt by Fog Bank.",3,0,2,Uncommon,Wall,Creature
+53,Harbor Serpent,6,U,Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nHarbor Serpent can't attack unless there are five or more Islands on the battlefield.,"2,3",5,5,Common,Serpent,Creature
+54,Hydrosurge,1,U,Target creature gets -5/-0 until end of turn.,3,,,Common,,Instant
+55,Index,1,U,"Look at the top five cards of your library, then put them back in any order.",3,,,Common,,Sorcery
+56,"Jace, Memory Adept",5,U,+1: Draw a card. Target player puts the top card of his or her library into his or her graveyard.\n0: Target player puts the top ten cards of his or her library into his or her graveyard.\n−7: Any number of target players each draw twenty cards.,"2,3",,,Mythic Rare,Jace,Planeswalker
+57,Jace's Phantasm,1,U,Flying\nJace's Phantasm gets +4/+4 as long as an opponent has ten or more cards in his or her graveyard.,3,1,1,Uncommon,Illusion,Creature
+58,Kraken Hatchling,1,U,,3,0,4,Common,Kraken,Creature
+59,Master of the Pearl Trident,2,U,Other Merfolk creatures you control get +1/+1 and have islandwalk. (They can't be blocked as long as defending player controls an Island.),3,2,2,Rare,Merfolk,Creature
+60,Merfolk of the Pearl Trident,1,U,,3,1,1,Common,Merfolk,Creature
+61,Mind Sculpt,2,U,Target opponent puts the top seven cards of his or her library into his or her graveyard.,3,,,Common,,Sorcery
+62,Negate,2,U,Counter target noncreature spell.,"2,3",,,Common,,Instant
+63,Omniscience,10,U,You may cast nonland cards from your hand without paying their mana costs.,3,,,Mythic Rare,,Enchantment
+64,Redirect,2,U,You may choose new targets for target spell.,"2,3",,,Rare,,Instant
+65,Rewind,4,U,Counter target spell. Untap up to four lands.,3,,,Uncommon,,Instant
+66,Scroll Thief,3,U,"Whenever Scroll Thief deals combat damage to a player, draw a card.",3,1,3,Common,"Merfolk,Rogue",Creature
+67,Sleep,4,U,Tap all creatures target player controls. Those creatures don't untap during that player's next untap step.,3,,,Uncommon,,Sorcery
+68,Spelltwine,6,U,Exile target instant or sorcery card from your graveyard and target instant or sorcery card from an opponent's graveyard. Copy those cards. Cast the copies if able without paying their mana costs. Exile Spelltwine.,3,,,Rare,,Sorcery
+69,Sphinx of Uthuun,7,U,"Flying\nWhen Sphinx of Uthuun enters the battlefield, reveal the top five cards of your library. An opponent separates those cards into two piles. Put one pile into your hand and the other into your graveyard.","2,3",5,6,Rare,Sphinx,Creature
+70,Stormtide Leviathan,8,U,Islandwalk (This creature can't be blocked as long as defending player controls an Island.)\nAll lands are Islands in addition to their other types.\nCreatures without flying or islandwalk can't attack.,3,8,8,Rare,Leviathan,Creature
+71,Switcheroo,5,U,Exchange control of two target creatures.,3,,,Uncommon,,Sorcery
+72,"Talrand, Sky Summoner",4,U,"Whenever you cast an instant or sorcery spell, put a 2/2 blue Drake creature token with flying onto the battlefield.",3,2,2,Rare,"Merfolk,Wizard",Creature
+73,Talrand's Invocation,4,U,Put two 2/2 blue Drake creature tokens with flying onto the battlefield.,3,,,Uncommon,,Sorcery
+74,Tricks of the Trade,4,U,Enchant creature\nEnchanted creature gets +2/+0 and can't be blocked.,3,,,Common,Aura,Enchantment
+75,Unsummon,1,U,Return target creature to its owner's hand.,"2,3",,,Common,,Instant
+76,Vedalken Entrancer,4,U,"{U}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.",3,1,4,Common,"Vedalken,Wizard",Creature
+77,Void Stalker,2,U,"{2}{U}, {T}: Put Void Stalker and target creature on top of their owners' libraries, then those players shuffle their libraries.",3,2,1,Rare,Elemental,Creature
+78,Watercourser,3,U,{U}: Watercourser gets +1/-1 until end of turn.,3,2,3,Common,Elemental,Creature
+79,Welkin Tern,2,U,Flying (This creature can't be blocked except by creatures with flying or reach.)\nWelkin Tern can block only creatures with flying.,3,2,1,Common,Bird,Creature
+80,Wind Drake,3,U,Flying,3,2,2,Common,Drake,Creature
+81,Blood Reckoning,4,B,"Whenever a creature attacks you or a planeswalker you control, that creature's controller loses 1 life.",3,,,Uncommon,,Enchantment
+82,Bloodhunter Bat,4,B,"Flying\nWhen Bloodhunter Bat enters the battlefield, target player loses 2 life and you gain 2 life.",3,2,2,Common,Bat,Creature
+83,Bloodthrone Vampire,2,B,Sacrifice a creature: Bloodthrone Vampire gets +2/+2 until end of turn.,3,1,1,Common,Vampire,Creature
+84,Cower in Fear,3,B,Creatures your opponents control get -1/-1 until end of turn.,3,,,Uncommon,,Instant
+85,Crippling Blight,1,B,Enchant creature\nEnchanted creature gets -1/-1 and can't block.,3,,,Common,Aura,Enchantment
+86,Dark Favor,2,B,"Enchant creature\nWhen Dark Favor enters the battlefield, you lose 1 life.\nEnchanted creature gets +3/+1.","2,3",,,Common,Aura,Enchantment
+87,Diabolic Revelation,5,B,Search your library for up to X cards and put those cards into your hand. Then shuffle your library.,3,,,Rare,,Sorcery
+88,Disciple of Bolas,4,B,"When Disciple of Bolas enters the battlefield, sacrifice another creature. You gain X life and draw X cards, where X is that creature's power.",3,2,1,Rare,"Human,Wizard",Creature
+89,Disentomb,1,B,Return target creature card from your graveyard to your hand.,"2,3",,,Common,,Sorcery
+90,Duress,1,B,"Target opponent reveals his or her hand. You choose a noncreature, nonland card from it. That player discards that card.",3,,,Common,,Sorcery
+91,Duskmantle Prowler,4,B,"Haste (This creature can attack and {T} as soon as it comes under your control.)\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,2,2,Uncommon,"Vampire,Rogue",Creature
+92,Duty-Bound Dead,1,B,"Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\n{3}{B}: Regenerate Duty-Bound Dead. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)",3,0,2,Common,Skeleton,Creature
+93,Essence Drain,5,B,Essence Drain deals 3 damage to target creature or player and you gain 3 life.,3,,,Common,,Sorcery
+94,Giant Scorpion,3,B,Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.),3,1,3,Common,Scorpion,Creature
+95,Harbor Bandit,3,"B,U",Harbor Bandit gets +1/+1 as long as you control an Island.\n{1}{U}: Harbor Bandit can't be blocked this turn.,3,2,2,Uncommon,"Human,Rogue",Creature
+96,Knight of Infamy,2,B,"Protection from white (This creature can't be blocked, targeted, dealt damage, or enchanted by anything white.)\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,2,1,Uncommon,"Human,Knight",Creature
+97,Liliana of the Dark Realms,4,B,"+1: Search your library for a Swamp card, reveal it, and put it into your hand. Then shuffle your library.\n−3: Target creature gets +X/+X or -X/-X until end of turn, where X is the number of Swamps you control.\n−6: You get an emblem with ""Swamps you control have ‘{T}: Add {B}{B}{B}{B} to your mana pool.'""",3,,,Mythic Rare,Liliana,Planeswalker
+98,Liliana's Shade,4,B,"When Liliana's Shade enters the battlefield, you may search your library for a Swamp card, reveal it, put it into your hand, then shuffle your library.\n{B}: Liliana's Shade gets +1/+1 until end of turn.",3,1,1,Common,Shade,Creature
+99,Mark of the Vampire,4,B,Enchant creature\nEnchanted creature gets +2/+2 and has lifelink. (Damage dealt by the creature also causes its controller to gain that much life.),3,,,Common,Aura,Enchantment
+100,Mind Rot,3,B,Target player discards two cards.,"2,3",,,Common,,Sorcery
+101,Murder,3,B,Destroy target creature.,3,,,Common,,Instant
+102,Mutilate,4,B,All creatures get -1/-1 until end of turn for each Swamp you control.,3,,,Rare,,Sorcery
+103,"Nefarox, Overlord of Grixis",6,B,"Flying\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\nWhenever Nefarox, Overlord of Grixis attacks alone, defending player sacrifices a creature.",3,5,5,Rare,Demon,Creature
+104,Phylactery Lich,3,B,"Indestructible\nAs Phylactery Lich enters the battlefield, put a phylactery counter on an artifact you control.\nWhen you control no permanents with phylactery counters on them, sacrifice Phylactery Lich.",3,5,5,Rare,Zombie,Creature
+105,Public Execution,6,B,Destroy target creature an opponent controls. Each other creature that player controls gets -2/-0 until end of turn.,3,,,Uncommon,,Instant
+106,Ravenous Rats,2,B,"When Ravenous Rats enters the battlefield, target opponent discards a card.",3,1,1,Common,Rat,Creature
+107,Rise from the Grave,5,B,Put target creature card from a graveyard onto the battlefield under your control. That creature is a black Zombie in addition to its other colors and types.,3,,,Uncommon,,Sorcery
+108,Servant of Nefarox,3,B,"Exalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)",3,3,1,Common,"Human,Cleric",Creature
+109,Shimian Specter,4,B,"Flying\nWhenever Shimian Specter deals combat damage to a player, that player reveals his or her hand. You choose a nonland card from it. Search that player's graveyard, hand, and library for all cards with the same name as that card and exile them. Then that player shuffles his or her library.",3,2,2,Rare,Specter,Creature
+110,Sign in Blood,2,B,Target player draws two cards and loses 2 life.,3,,,Common,,Sorcery
+111,Tormented Soul,1,B,Tormented Soul can't block and can't be blocked.,"2,3",1,1,Common,Spirit,Creature
+112,Vampire Nighthawk,3,B,Flying\nDeathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nLifelink (Damage dealt by this creature also causes you to gain that much life.),3,2,3,Uncommon,"Vampire,Shaman",Creature
+113,Vampire Nocturnus,4,B,"Play with the top card of your library revealed.\nAs long as the top card of your library is black, Vampire Nocturnus and other Vampire creatures you control get +2/+1 and have flying.",3,3,3,Mythic Rare,Vampire,Creature
+114,Veilborn Ghoul,5,B,"Veilborn Ghoul can't block.\nWhenever a Swamp enters the battlefield under your control, you may return Veilborn Ghoul from your graveyard to your hand.",3,4,1,Uncommon,Zombie,Creature
+115,Vile Rebirth,1,B,Exile target creature card from a graveyard. Put a 2/2 black Zombie creature token onto the battlefield.,3,,,Common,,Instant
+116,Walking Corpse,2,B,,3,2,2,Common,Zombie,Creature
+117,Wit's End,7,B,Target player discards his or her hand.,3,,,Rare,,Sorcery
+118,Xathrid Gorgon,6,B,"Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\n{2}{B}, {T}: Put a petrification counter on target creature. It gains defender and becomes a colorless artifact in addition to its other types. Its activated abilities can't be activated. (A creature with defender can't attack.)",3,3,6,Rare,Gorgon,Creature
+119,Zombie Goliath,5,B,,"2,3",4,3,Common,"Zombie,Giant",Creature
+120,Arms Dealer,3,R,"{1}{R}, Sacrifice a Goblin: Arms Dealer deals 4 damage to target creature.",3,1,1,Uncommon,"Goblin,Rogue",Creature
+121,Bladetusk Boar,4,R,Intimidate (This creature can't be blocked except by artifact creatures and/or creatures that share a color with it.),3,3,2,Common,Boar,Creature
+122,Canyon Minotaur,4,R,,3,3,3,Common,"Minotaur,Warrior",Creature
+123,"Chandra, the Firebrand",4,R,"+1: Chandra, the Firebrand deals 1 damage to target creature or player.\n−2: When you cast your next instant or sorcery spell this turn, copy that spell. You may choose new targets for the copy.\n−6: Chandra, the Firebrand deals 6 damage to each of up to six target creatures and/or players.","2,3",,,Mythic Rare,Chandra,Planeswalker
+124,Chandra's Fury,5,R,Chandra's Fury deals 4 damage to target player and 1 damage to each creature that player controls.,3,,,Common,,Instant
+125,Cleaver Riot,5,R,Creatures you control gain double strike until end of turn. (They deal both first-strike and regular combat damage.),3,,,Uncommon,,Sorcery
+126,Craterize,4,R,Destroy target land.,3,,,Common,,Sorcery
+127,Crimson Muckwader,2,"R,B","Crimson Muckwader gets +1/+1 as long as you control a Swamp.\n{2}{B}: Regenerate Crimson Muckwader. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)",3,2,1,Uncommon,Lizard,Creature
+128,Dragon Hatchling,2,R,Flying\n{R}: Dragon Hatchling gets +1/+0 until end of turn.,3,0,1,Common,Dragon,Creature
+129,Fervor,3,R,Creatures you control have haste. (They can attack and {T} as soon as they come under your control.),3,,,Rare,,Enchantment
+130,Fire Elemental,5,R,,3,5,4,Common,Elemental,Creature
+131,Firewing Phoenix,4,R,Flying\n{1}{R}{R}{R}: Return Firewing Phoenix from your graveyard to your hand.,3,4,2,Rare,Phoenix,Creature
+132,Flames of the Firebrand,3,R,"Flames of the Firebrand deals 3 damage divided as you choose among one, two, or three target creatures and/or players.",3,,,Uncommon,,Sorcery
+133,Furnace Whelp,4,R,Flying (This creature can't be blocked except by creatures with flying or reach.)\n{R}: Furnace Whelp gets +1/+0 until end of turn.,3,2,2,Uncommon,Dragon,Creature
+134,Goblin Arsonist,1,R,"When Goblin Arsonist dies, you may have it deal 1 damage to target creature or player.","2,3",1,1,Common,"Goblin,Shaman",Creature
+135,Goblin Battle Jester,4,R,"Whenever you cast a red spell, target creature can't block this turn.",3,2,2,Common,Goblin,Creature
+136,Hamletback Goliath,7,R,"Whenever another creature enters the battlefield, you may put X +1/+1 counters on Hamletback Goliath, where X is that creature's power.",3,6,6,Rare,"Giant,Warrior",Creature
+137,Kindled Fury,1,R,Target creature gets +1/+0 and gains first strike until end of turn.,3,,,Common,,Instant
+138,"Krenko, Mob Boss",4,R,"{T}: Put X 1/1 red Goblin creature tokens onto the battlefield, where X is the number of Goblins you control.",3,3,3,Rare,"Goblin,Warrior",Creature
+139,Krenko's Command,2,R,Put two 1/1 red Goblin creature tokens onto the battlefield.,3,,,Common,,Sorcery
+140,Magmaquake,2,R,Magmaquake deals X damage to each creature without flying and each planeswalker.,3,,,Rare,,Instant
+141,Mark of Mutiny,3,R,Gain control of target creature until end of turn. Put a +1/+1 counter on it and untap it. That creature gains haste until end of turn. (It can attack and {T} this turn.),3,,,Uncommon,,Sorcery
+142,Mindclaw Shaman,5,R,"When Mindclaw Shaman enters the battlefield, target opponent reveals his or her hand. You may cast an instant or sorcery card from it without paying its mana cost.",3,2,2,Uncommon,"Viashino,Shaman",Creature
+143,Mogg Flunkies,2,R,Mogg Flunkies can't attack or block alone.,3,3,3,Common,Goblin,Creature
+144,Reckless Brute,3,R,Haste (This creature can attack and {T} as soon as it comes under your control.)\nReckless Brute attacks each turn if able.,3,3,1,Common,"Ogre,Warrior",Creature
+145,Reverberate,2,R,Copy target instant or sorcery spell. You may choose new targets for the copy.,"2,3",,,Rare,,Instant
+146,Rummaging Goblin,3,R,"{T}, Discard a card: Draw a card.",3,1,1,Common,"Goblin,Rogue",Creature
+147,Searing Spear,2,R,Searing Spear deals 3 damage to target creature or player.,3,,,Common,,Instant
+148,Slumbering Dragon,1,R,"Flying\nSlumbering Dragon can't attack or block unless it has five or more +1/+1 counters on it.\nWhenever a creature attacks you or a planeswalker you control, put a +1/+1 counter on Slumbering Dragon.",3,3,3,Rare,Dragon,Creature
+149,Smelt,1,R,Destroy target artifact.,3,,,Common,,Instant
+150,Thundermaw Hellkite,5,R,"Flying\nHaste (This creature can attack and {T} as soon as it comes under your control.)\nWhen Thundermaw Hellkite enters the battlefield, it deals 1 damage to each creature with flying your opponents control. Tap those creatures.",3,5,5,Mythic Rare,Dragon,Creature
+151,Torch Fiend,2,R,"{R}, Sacrifice Torch Fiend: Destroy target artifact.",3,2,1,Uncommon,Devil,Creature
+152,Trumpet Blast,3,R,Attacking creatures get +2/+0 until end of turn.,3,,,Common,,Instant
+153,Turn to Slag,5,R,Turn to Slag deals 5 damage to target creature. Destroy all Equipment attached to that creature.,3,,,Common,,Sorcery
+154,Volcanic Geyser,2,R,Volcanic Geyser deals X damage to target creature or player.,3,,,Uncommon,,Instant
+155,Volcanic Strength,2,R,Enchant creature\nEnchanted creature gets +2/+2 and has mountainwalk. (It can't be blocked as long as defending player controls a Mountain.),3,,,Common,Aura,Enchantment
+156,Wall of Fire,3,R,Defender (This creature can't attack.)\n{R}: Wall of Fire gets +1/+0 until end of turn.,3,0,5,Common,Wall,Creature
+157,Wild Guess,2,R,"As an additional cost to cast Wild Guess, discard a card.\nDraw two cards.",3,,,Common,,Sorcery
+158,Worldfire,9,R,Exile all permanents. Exile all cards from all hands and graveyards. Each player's life total becomes 1.,3,,,Mythic Rare,,Sorcery
+159,Acidic Slime,5,G,"Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nWhen Acidic Slime enters the battlefield, destroy target artifact, enchantment, or land.","2,3",2,2,Uncommon,Ooze,Creature
+160,Arbor Elf,1,G,{T}: Untap target Forest.,3,1,1,Common,"Elf,Druid",Creature
+161,Bond Beetle,1,G,"When Bond Beetle enters the battlefield, put a +1/+1 counter on target creature.",3,0,1,Common,Insect,Creature
+162,Boundless Realms,7,G,"Search your library for up to X basic land cards, where X is the number of lands you control, and put them onto the battlefield tapped. Then shuffle your library.",3,,,Rare,,Sorcery
+163,Bountiful Harvest,5,G,You gain 1 life for each land you control.,"2,3",,,Common,,Sorcery
+164,Centaur Courser,3,G,,3,3,3,Common,"Centaur,Warrior",Creature
+165,Deadly Recluse,2,G,Reach (This creature can block creatures with flying.)\nDeathtouch (Any amount of damage this deals to a creature is enough to destroy it.),3,1,2,Common,Spider,Creature
+166,Duskdale Wurm,7,G,Trample (This creature can deal excess combat damage to defending player or planeswalker while attacking.),3,7,7,Uncommon,Wurm,Creature
+167,Elderscale Wurm,7,G,"Trample\nWhen Elderscale Wurm enters the battlefield, if your life total is less than 7, your life total becomes 7.\nAs long as you have 7 or more life, damage that would reduce your life total to less than 7 reduces it to 7 instead.",3,7,7,Mythic Rare,Wurm,Creature
+168,Elvish Archdruid,3,G,Other Elf creatures you control get +1/+1.\n{T}: Add {G} to your mana pool for each Elf you control.,"2,3",2,2,Rare,"Elf,Druid",Creature
+169,Elvish Visionary,2,G,"When Elvish Visionary enters the battlefield, draw a card.",3,1,1,Common,"Elf,Shaman",Creature
+170,Farseek,2,G,"Search your library for a Plains, Island, Swamp, or Mountain card and put it onto the battlefield tapped. Then shuffle your library.",3,,,Common,,Sorcery
+171,Flinthoof Boar,2,"G,R",Flinthoof Boar gets +1/+1 as long as you control a Mountain.\n{R}: Flinthoof Boar gains haste until end of turn. (It can attack and {T} this turn.),3,2,2,Uncommon,Boar,Creature
+172,Fog,1,G,Prevent all combat damage that would be dealt this turn.,"2,3",,,Common,,Instant
+173,Fungal Sprouting,4,G,"Put X 1/1 green Saproling creature tokens onto the battlefield, where X is the greatest power among creatures you control.",3,,,Uncommon,,Sorcery
+174,"Garruk, Primal Hunter",5,G,+1: Put a 3/3 green Beast creature token onto the battlefield.\n−3: Draw cards equal to the greatest power among creatures you control.\n−6: Put a 6/6 green Wurm creature token onto the battlefield for each land you control.,"2,3",,,Mythic Rare,Garruk,Planeswalker
+175,Garruk's Packleader,5,G,"Whenever another creature with power 3 or greater enters the battlefield under your control, you may draw a card.",3,4,4,Uncommon,Beast,Creature
+176,Ground Seal,2,G,"When Ground Seal enters the battlefield, draw a card.\nCards in graveyards can't be the targets of spells or abilities.",3,,,Rare,,Enchantment
+177,Mwonvuli Beast Tracker,3,G,"When Mwonvuli Beast Tracker enters the battlefield, search your library for a creature card with deathtouch, hexproof, reach, or trample and reveal it. Shuffle your library and put that card on top of it.",3,2,1,Uncommon,"Human,Scout",Creature
+178,Naturalize,2,G,Destroy target artifact or enchantment.,"2,3",,,Common,,Instant
+179,Plummet,2,G,Destroy target creature with flying.,"2,3",,,Common,,Instant
+180,Predatory Rampage,5,G,Creatures you control get +3/+3 until end of turn. Each creature your opponents control blocks this turn if able.,3,,,Rare,,Sorcery
+181,Prey Upon,1,G,Target creature you control fights target creature you don't control. (Each deals damage equal to its power to the other.),3,,,Common,,Sorcery
+182,Primal Huntbeast,4,G,Hexproof (This creature can't be the target of spells or abilities your opponents control.),3,3,3,Common,Beast,Creature
+183,Primordial Hydra,2,G,"Primordial Hydra enters the battlefield with X +1/+1 counters on it.\nAt the beginning of your upkeep, double the number of +1/+1 counters on Primordial Hydra.\nPrimordial Hydra has trample as long as it has ten or more +1/+1 counters on it.","2,3",0,0,Mythic Rare,Hydra,Creature
+184,Quirion Dryad,2,G,"Whenever you cast a white, blue, black, or red spell, put a +1/+1 counter on Quirion Dryad.",3,1,1,Rare,Dryad,Creature
+185,Rancor,1,G,"Enchant creature\nEnchanted creature gets +2/+0 and has trample.\nWhen Rancor is put into a graveyard from the battlefield, return Rancor to its owner's hand.",3,,,Uncommon,Aura,Enchantment
+186,Ranger's Path,4,G,Search your library for up to two Forest cards and put them onto the battlefield tapped. Then shuffle your library.,3,,,Common,,Sorcery
+187,Revive,2,G,Return target green card from your graveyard to your hand.,3,,,Uncommon,,Sorcery
+188,Roaring Primadox,4,G,"At the beginning of your upkeep, return a creature you control to its owner's hand.",3,4,4,Uncommon,Beast,Creature
+189,Sentinel Spider,5,G,Vigilance (Attacking doesn't cause this creature to tap.)\nReach (This creature can block creatures with flying.),3,4,4,Common,Spider,Creature
+190,Serpent's Gift,3,G,Target creature gains deathtouch until end of turn. (Any amount of damage it deals to a creature is enough to destroy it.),3,,,Common,,Instant
+191,Silklash Spider,5,G,Reach\n{X}{G}{G}: Silklash Spider deals X damage to each creature with flying.,3,2,7,Rare,Spider,Creature
+192,Spiked Baloth,4,G,Trample (This creature can deal excess combat damage to defending player or planeswalker while attacking.),3,4,2,Common,Beast,Creature
+193,Thragtusk,5,G,"When Thragtusk enters the battlefield, you gain 5 life.\nWhen Thragtusk leaves the battlefield, put a 3/3 green Beast creature token onto the battlefield.",3,5,3,Rare,Beast,Creature
+194,Timberpack Wolf,2,G,Timberpack Wolf gets +1/+1 for each other creature you control named Timberpack Wolf.,3,2,2,Common,Wolf,Creature
+195,Titanic Growth,2,G,Target creature gets +4/+4 until end of turn.,"2,3",,,Common,,Instant
+196,Vastwood Gorger,6,G,,"2,3",5,6,Common,Wurm,Creature
+197,"Yeva, Nature's Herald",4,G,Flash (You may cast this spell any time you could cast an instant.)\nYou may cast green creature cards as though they had flash.,3,4,4,Rare,"Elf,Shaman",Creature
+198,Yeva's Forcemage,3,G,"When Yeva's Forcemage enters the battlefield, target creature gets +2/+2 until end of turn.",3,2,2,Common,"Elf,Shaman",Creature
+199,"Nicol Bolas, Planeswalker",8,"U,B,R","+3: Destroy target noncreature permanent.\n−2: Gain control of target creature.\n−9: Nicol Bolas, Planeswalker deals 7 damage to target player. That player discards seven cards, then sacrifices seven permanents.",3,,,Mythic Rare,Bolas,Planeswalker
+200,Akroma's Memorial,7,,"Creatures you control have flying, first strike, vigilance, trample, haste, and protection from black and from red.",3,,,Mythic Rare,,Artifact
+201,Chronomaton,1,,"{1}, {T}: Put a +1/+1 counter on Chronomaton.",3,1,1,Uncommon,Golem,"Artifact,Creature"
+202,Clock of Omens,4,,Tap two untapped artifacts you control: Untap target artifact.,3,,,Uncommon,,Artifact
+203,Door to Nothingness,5,"W,U,B,R,G","Door to Nothingness enters the battlefield tapped.\n{W}{W}{U}{U}{B}{B}{R}{R}{G}{G}, {T}, Sacrifice Door to Nothingness: Target player loses the game.",3,,,Rare,,Artifact
+204,Elixir of Immortality,1,,"{2}, {T}: You gain 5 life. Shuffle Elixir of Immortality and your graveyard into their owner's library.","2,3",,,Uncommon,,Artifact
+205,Gem of Becoming,3,,"{3}, {T}, Sacrifice Gem of Becoming: Search your library for an Island card, a Swamp card, and a Mountain card. Reveal those cards and put them into your hand. Then shuffle your library.",3,,,Uncommon,,Artifact
+206,Gilded Lotus,5,,{T}: Add three mana of any one color to your mana pool.,3,,,Rare,,Artifact
+207,Jayemdae Tome,4,,"{4}, {T}: Draw a card.",3,,,Uncommon,,Artifact
+208,Kitesail,2,,Equipped creature gets +1/+0 and has flying.\nEquip {2} ({2}: Attach to target creature you control. Equip only as a sorcery.),3,,,Uncommon,Equipment,Artifact
+209,Phyrexian Hulk,6,,,3,5,4,Uncommon,Golem,"Artifact,Creature"
+210,Primal Clay,4,,"As Primal Clay enters the battlefield, it becomes your choice of a 3/3 artifact creature, a 2/2 artifact creature with flying, or a 1/6 Wall artifact creature with defender in addition to its other types. (A creature with defender can't attack.)",3,*,*,Uncommon,Shapeshifter,"Artifact,Creature"
+211,Ring of Evos Isle,2,,"{2}: Equipped creature gains hexproof until end of turn. (It can't be the target of spells or abilities your opponents control.)\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's blue.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",3,,,Uncommon,Equipment,Artifact
+212,Ring of Kalonia,2,,"Equipped creature has trample. (If it would assign enough damage to its blockers to destroy them, you may have it assign the rest of its damage to defending player or planeswalker.)\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's green.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",3,,,Uncommon,Equipment,Artifact
+213,Ring of Thune,2,,"Equipped creature has vigilance. (Attacking doesn't cause it to tap.)\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's white.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",3,,,Uncommon,Equipment,Artifact
+214,Ring of Valkas,2,,"Equipped creature has haste. (It can attack and {T} no matter when it came under your control.)\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's red.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",3,,,Uncommon,Equipment,Artifact
+215,Ring of Xathrid,2,,"{2}: Regenerate equipped creature. (The next time that creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)\nAt the beginning of your upkeep, put a +1/+1 counter on equipped creature if it's black.\nEquip {1} ({1}: Attach to target creature you control. Equip only as a sorcery.)",3,,,Uncommon,Equipment,Artifact
+216,Sands of Delirium,3,,"{X}, {T}: Target player puts the top X cards of his or her library into his or her graveyard.",3,,,Rare,,Artifact
+217,Staff of Nin,6,,"At the beginning of your upkeep, draw a card.\n{T}: Staff of Nin deals 1 damage to target creature or player.",3,,,Rare,,Artifact
+218,Stuffy Doll,5,,"Indestructible\nAs Stuffy Doll enters the battlefield, choose a player.\nWhenever Stuffy Doll is dealt damage, it deals that much damage to the chosen player.\n{T}: Stuffy Doll deals 1 damage to itself.",3,0,1,Rare,Construct,"Artifact,Creature"
+219,Tormod's Crypt,,,"{T}, Sacrifice Tormod's Crypt: Exile all cards from target player's graveyard.",3,,,Uncommon,,Artifact
+220,Trading Post,4,,"{1}, {T}, Discard a card: You gain 4 life.\n{1}, {T}, Pay 1 life: Put a 0/1 white Goat creature token onto the battlefield.\n{1}, {T}, Sacrifice a creature: Return target artifact card from your graveyard to your hand.\n{1}, {T}, Sacrifice an artifact: Draw a card.",3,,,Rare,,Artifact
+221,Cathedral of War,,,"Cathedral of War enters the battlefield tapped.\nExalted (Whenever a creature you control attacks alone, that creature gets +1/+1 until end of turn.)\n{T}: Add {C} to your mana pool.",3,,,Rare,,Land
+222,Dragonskull Summit,,"B,R",Dragonskull Summit enters the battlefield tapped unless you control a Swamp or a Mountain.\n{T}: Add {B} or {R} to your mana pool.,"2,3",,,Rare,,Land
+223,Drowned Catacomb,,"U,B",Drowned Catacomb enters the battlefield tapped unless you control an Island or a Swamp.\n{T}: Add {U} or {B} to your mana pool.,"2,3",,,Rare,,Land
+224,Evolving Wilds,,,"{T}, Sacrifice Evolving Wilds: Search your library for a basic land card and put it onto the battlefield tapped. Then shuffle your library.",3,,,Common,,Land
+225,Glacial Fortress,,"W,U",Glacial Fortress enters the battlefield tapped unless you control a Plains or an Island.\n{T}: Add {W} or {U} to your mana pool.,"2,3",,,Rare,,Land
+226,Hellion Crucible,,R,"{T}: Add {C} to your mana pool.\n{1}{R}, {T}: Put a pressure counter on Hellion Crucible.\n{1}{R}, {T}, Remove two pressure counters from Hellion Crucible and sacrifice it: Put a 4/4 red Hellion creature token with haste onto the battlefield. (It can attack and {T} as soon as it comes under your control.)",3,,,Rare,,Land
+227,Reliquary Tower,,,You have no maximum hand size.\n{T}: Add {C} to your mana pool.,3,,,Uncommon,,Land
+228,Rootbound Crag,,"R,G",Rootbound Crag enters the battlefield tapped unless you control a Mountain or a Forest.\n{T}: Add {R} or {G} to your mana pool.,"2,3",,,Rare,,Land
+229,Sunpetal Grove,,"G,W",Sunpetal Grove enters the battlefield tapped unless you control a Forest or a Plains.\n{T}: Add {G} or {W} to your mana pool.,"2,3",,,Rare,,Land
+230,Plains,,W,,"2,3",,,Basic Land,Plains,Land
+231,Island,,U,,"2,3",,,Basic Land,Island,Land
+232,Swamp,,B,,"2,3",,,Basic Land,Swamp,Land
+233,Mountain,,R,,"2,3",,,Basic Land,Mountain,Land
+234,Forest,,G,,"2,3",,,Basic Land,Forest,Land
+235,Aesthir Glider,3,,Flying\nAesthir Glider can't block.,1,2,1,Common,Bird,"Artifact,Creature"
+236,Agent of Stromgald,1,"R,B",{R}: Add {B} to your mana pool.,1,1,1,Common,"Human,Knight",Creature
+237,Arcane Denial,2,U,Counter target spell. Its controller may draw up to two cards at the beginning of the next turn's upkeep.\nYou draw a card at the beginning of the next turn's upkeep.,1,,,Common,,Instant
+238,Ashnod's Cylix,2,,"{3}, {T}: Target player looks at the top three cards of his or her library, puts one of them back on top of his or her library, then exiles the rest.",1,,,Rare,,Artifact
+239,Astrolabe,3,,"{1}, {T}, Sacrifice Astrolabe: Add two mana of any one color to your mana pool. Draw a card at the beginning of the next turn's upkeep.",1,,,Common,,Artifact
+240,Awesome Presence,1,U,Enchant creature\nEnchanted creature can't be blocked unless defending player pays {3} for each creature he or she controls that's blocking it.,1,,,Common,Aura,Enchantment
+241,Balduvian Dead,4,"B,R","{2}{R}, Exile a creature card from your graveyard: Put a 3/1 black and red Graveborn creature token with haste onto the battlefield. Sacrifice it at the beginning of the next end step.",1,2,3,Uncommon,Zombie,Creature
+242,Balduvian Horde,4,R,"When Balduvian Horde enters the battlefield, sacrifice it unless you discard a card at random.",1,5,5,Rare,"Human,Barbarian",Creature
+243,Balduvian Trading Post,,R,"If Balduvian Trading Post would enter the battlefield, sacrifice an untapped Mountain instead. If you do, put Balduvian Trading Post onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{R} to your mana pool.\n{1}, {T}: Balduvian Trading Post deals 1 damage to target attacking creature.",1,,,Rare,,Land
+244,Balduvian War-Makers,5,R,"Haste\nRampage 1 (Whenever this creature becomes blocked, it gets +1/+1 until end of turn for each creature blocking it beyond the first.)",1,3,3,Common,"Human,Barbarian",Creature
+245,Benthic Explorers,4,U,"{T}, Untap a tapped land an opponent controls: Add one mana of any type that land could produce to your mana pool.",1,2,4,Common,"Merfolk,Scout",Creature
+246,Bestial Fury,3,R,"Enchant creature\nWhen Bestial Fury enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nWhenever enchanted creature becomes blocked, it gets +4/+0 and gains trample until end of turn.",1,,,Common,Aura,Enchantment
+247,Bounty of the Hunt,5,G,"You may exile a green card from your hand rather than pay Bounty of the Hunt's mana cost.\nDistribute three +1/+1 counters among one, two, or three target creatures. For each +1/+1 counter you put on a creature this way, remove a +1/+1 counter from that creature at the beginning of the next cleanup step.",1,,,Uncommon,,Instant
+248,Browse,4,U,"{2}{U}{U}: Look at the top five cards of your library, put one of them into your hand, and exile the rest.",1,,,Uncommon,,Enchantment
+249,Burnout,2,R,Counter target instant spell if it's blue.\nDraw a card at the beginning of the next turn's upkeep.,1,,,Uncommon,,Instant
+250,Carrier Pigeons,4,W,"Flying\nWhen Carrier Pigeons enters the battlefield, draw a card at the beginning of the next turn's upkeep.",1,1,1,Common,Bird,Creature
+251,Casting of Bones,3,B,"Enchant creature\nWhen enchanted creature dies, draw three cards, then discard one of them.",1,,,Common,Aura,Enchantment
+252,Chaos Harlequin,4,R,"{R}: Exile the top card of your library. If that card is a land card, Chaos Harlequin gets -4/-0 until end of turn. Otherwise, Chaos Harlequin gets +2/+0 until end of turn.",1,2,4,Rare,Human,Creature
+253,Contagion,5,B,You may pay 1 life and exile a black card from your hand rather than pay Contagion's mana cost.\nDistribute two -2/-1 counters among one or two target creatures.,1,,,Uncommon,,Instant
+254,Deadly Insect,5,G,Shroud (This creature can't be the target of spells or abilities.),1,6,1,Common,Insect,Creature
+255,Death Spark,1,R,"Death Spark deals 1 damage to target creature or player.\nAt the beginning of your upkeep, if Death Spark is in your graveyard with a creature card directly above it, you may pay {1}. If you do, return Death Spark to your hand.",1,,,Uncommon,,Instant
+256,Diminishing Returns,4,U,Each player shuffles his or her hand and graveyard into his or her library. You exile the top ten cards of your library. Then each player draws up to seven cards.,1,,,Rare,,Sorcery
+257,Diseased Vermin,3,B,"Whenever Diseased Vermin deals combat damage to a player, put an infection counter on it.\nAt the beginning of your upkeep, Diseased Vermin deals X damage to target opponent previously dealt damage by it, where X is the number of infection counters on it.",1,1,1,Uncommon,Rat,Creature
+258,Dystopia,3,B,"Cumulative upkeep—Pay 1 life. (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nAt the beginning of each player's upkeep, that player sacrifices a green or white permanent.",1,,,Rare,,Enchantment
+259,Elvish Bard,5,G,All creatures able to block Elvish Bard do so.,1,2,4,Uncommon,"Elf,Shaman",Creature
+260,Elvish Ranger,3,G,,1,4,1,Common,Elf,Creature
+261,Elvish Spirit Guide,3,G,Exile Elvish Spirit Guide from your hand: Add {G} to your mana pool.,1,2,2,Uncommon,"Elf,Spirit",Creature
+262,Energy Arc,2,"W,U",Untap any number of target creatures. Prevent all combat damage that would be dealt to and dealt by those creatures this turn.,1,,,Uncommon,,Instant
+263,Enslaved Scout,3,R,{2}: Enslaved Scout gains mountainwalk until end of turn. (It can't be blocked as long as defending player controls a Mountain.),1,2,2,Common,"Goblin,Scout",Creature
+264,Errand of Duty,2,W,"Put a 1/1 white Knight creature token with banding onto the battlefield. (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",1,,,Common,,Instant
+265,Exile,3,W,Exile target nonwhite attacking creature. You gain life equal to its toughness.,1,,,Rare,,Instant
+266,False Demise,3,U,"Enchant creature\nWhen enchanted creature dies, return that card to the battlefield under your control.",1,,,Common,Aura,Enchantment
+267,Fatal Lore,4,B,An opponent chooses one —\n• You draw three cards.\n• You destroy up to two target creatures that player controls. They can't be regenerated. That player draws up to three cards.,1,,,Rare,,Sorcery
+268,Feast or Famine,4,B,"Choose one —\n• Put a 2/2 black Zombie creature token onto the battlefield.\n• Destroy target nonartifact, nonblack creature. It can't be regenerated.",1,,,Common,,Instant
+269,Fevered Strength,3,B,Target creature gets +2/+0 until end of turn.\nDraw a card at the beginning of the next turn's upkeep.,1,,,Common,,Instant
+270,Floodwater Dam,3,,"{X}{X}{1}, {T}: Tap X target lands.",1,,,Rare,,Artifact
+271,Force of Will,5,U,You may pay 1 life and exile a blue card from your hand rather than pay Force of Will's mana cost.\nCounter target spell.,1,,,Uncommon,,Instant
+272,Foresight,2,U,"Search your library for three cards, exile them, then shuffle your library.\nDraw a card at the beginning of the next turn's upkeep.",1,,,Common,,Sorcery
+273,Fyndhorn Druid,3,G,"When Fyndhorn Druid dies, if it was blocked this turn, you gain 4 life.",1,2,2,Common,"Elf,Druid",Creature
+274,Gargantuan Gorilla,7,G,"At the beginning of your upkeep, you may sacrifice a Forest. If you sacrifice a snow Forest this way, Gargantuan Gorilla gains trample until end of turn. If you don't sacrifice a Forest, sacrifice Gargantuan Gorilla and it deals 7 damage to you.\n{T}: Gargantuan Gorilla deals damage equal to its power to another target creature. That creature deals damage equal to its power to Gargantuan Gorilla.",1,7,7,Rare,Ape,Creature
+275,Gift of the Woods,1,G,"Enchant creature\nWhenever enchanted creature blocks or becomes blocked, it gets +0/+3 until end of turn and you gain 1 life.",1,,,Common,Aura,Enchantment
+276,Gorilla Berserkers,5,G,"Trample; rampage 2 (Whenever this creature becomes blocked, it gets +2/+2 until end of turn for each creature blocking it beyond the first.)\nGorilla Berserkers can't be blocked except by three or more creatures.",1,2,3,Common,"Ape,Berserker",Creature
+277,Gorilla Chieftain,4,G,{1}{G}: Regenerate Gorilla Chieftain.,1,3,3,Common,Ape,Creature
+278,Gorilla Shaman,1,R,{X}{X}{1}: Destroy target noncreature artifact with converted mana cost X.,1,1,1,Common,"Ape,Shaman",Creature
+279,Gorilla War Cry,2,R,Cast Gorilla War Cry only during combat before blockers are declared.\nAll creatures gain menace until end of turn. (They can't be blocked except by two or more creatures.)\nDraw a card at the beginning of the next turn's upkeep.,1,,,Common,,Instant
+280,Guerrilla Tactics,2,R,"Guerrilla Tactics deals 2 damage to target creature or player.\nWhen a spell or ability an opponent controls causes you to discard Guerrilla Tactics, Guerrilla Tactics deals 4 damage to target creature or player.",1,,,Common,,Instant
+281,Gustha's Scepter,,,"{T}: Exile a card from your hand face down. You may look at it for as long as it remains exiled.\n{T}: Return a card you own exiled with Gustha's Scepter to your hand.\nWhen you lose control of Gustha's Scepter, put all cards exiled with Gustha's Scepter into their owner's graveyard.",1,,,Rare,,Artifact
+282,Hail Storm,3,G,Hail Storm deals 2 damage to each attacking creature and 1 damage to you and each creature you control.,1,,,Uncommon,,Instant
+283,Heart of Yavimaya,,G,"If Heart of Yavimaya would enter the battlefield, sacrifice a Forest instead. If you do, put Heart of Yavimaya onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {G} to your mana pool.\n{T}: Target creature gets +1/+1 until end of turn.",1,,,Rare,,Land
+284,Helm of Obedience,4,,"{X}, {T}: Target opponent puts cards from the top of his or her library into his or her graveyard until a creature card or X cards are put into that graveyard this way, whichever comes first. If a creature card is put into that graveyard this way, sacrifice Helm of Obedience and put that card onto the battlefield under your control. X can't be 0.",1,,,Rare,,Artifact
+285,Inheritance,1,W,"Whenever a creature dies, you may pay {3}. If you do, draw a card.",1,,,Uncommon,,Enchantment
+286,Insidious Bookworms,1,B,"When Insidious Bookworms dies, you may pay {1}{B}. If you do, target player discards a card at random.",1,1,1,Common,Worm,Creature
+287,Ivory Gargoyle,5,W,"Flying\nWhen Ivory Gargoyle dies, return it to the battlefield under its owner's control at the beginning of the next end step and you skip your next draw step.\n{4}{W}: Exile Ivory Gargoyle.",1,2,2,Rare,Gargoyle,Creature
+288,Juniper Order Advocate,3,W,"As long as Juniper Order Advocate is untapped, green creatures you control get +1/+1.",1,1,2,Uncommon,"Human,Knight",Creature
+289,Kaysa,5,G,Green creatures you control get +1/+1.,1,2,3,Rare,"Elf,Druid",Creature
+290,Keeper of Tresserhorn,6,B,"Whenever Keeper of Tresserhorn attacks and isn't blocked, it assigns no combat damage this turn and defending player loses 2 life.",1,6,6,Rare,Avatar,Creature
+291,Kjeldoran Escort,4,W,"Banding (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",1,2,3,Common,"Human,Soldier",Creature
+292,Kjeldoran Home Guard,4,W,"At end of combat, if Kjeldoran Home Guard attacked or blocked this combat, put a -0/-1 counter on Kjeldoran Home Guard and put a 0/1 white Deserter creature token onto the battlefield.",1,1,6,Uncommon,"Human,Soldier",Creature
+293,Kjeldoran Outpost,,W,"If Kjeldoran Outpost would enter the battlefield, sacrifice a Plains instead. If you do, put Kjeldoran Outpost onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {W} to your mana pool.\n{1}{W}, {T}: Put a 1/1 white Soldier creature token onto the battlefield.",1,,,Rare,,Land
+294,Kjeldoran Pride,2,"W,U",Enchant creature\nEnchanted creature gets +1/+2.\n{2}{U}: Attach Kjeldoran Pride to target creature other than enchanted creature.,1,,,Common,Aura,Enchantment
+295,Krovikan Horror,4,B,"At the beginning of the end step, if Krovikan Horror is in your graveyard with a creature card directly above it, you may return Krovikan Horror to your hand.\n{1}, Sacrifice a creature: Krovikan Horror deals 1 damage to target creature or player.",1,2,2,Rare,"Horror,Spirit",Creature
+296,Krovikan Plague,3,B,"Enchant non-Wall creature you control\nWhen Krovikan Plague enters the battlefield, draw a card at the beginning of the next turn's upkeep.\nTap enchanted creature: Krovikan Plague deals 1 damage to target creature or player. Put a -0/-1 counter on enchanted creature. Activate this ability only if enchanted creature is untapped.",1,,,Uncommon,Aura,Enchantment
+297,Lake of the Dead,,B,"If Lake of the Dead would enter the battlefield, sacrifice a Swamp instead. If you do, put Lake of the Dead onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {B} to your mana pool.\n{T}, Sacrifice a Swamp: Add {B}{B}{B}{B} to your mana pool.",1,,,Rare,,Land
+298,Lat-Nam's Legacy,2,U,"Shuffle a card from your hand into your library. If you do, draw two cards at the beginning of the next turn's upkeep.",1,,,Common,,Instant
+299,Library of Lat-Nam,5,U,"An opponent chooses one —\n• You draw three cards at the beginning of the next turn's upkeep.\n• You search your library for a card, put that card into your hand, then shuffle your library.",1,,,Rare,,Sorcery
+300,Lim-Dûl's High Guard,3,B,First strike\n{1}{B}: Regenerate Lim-Dûl's High Guard.,1,2,1,Common,Skeleton,Creature
+301,Lim-Dûl's Paladin,4,"B,R","Trample\nAt the beginning of your upkeep, you may discard a card. If you don't, sacrifice Lim-Dûl's Paladin and draw a card.\nWhenever Lim-Dûl's Paladin becomes blocked, it gets +6/+3 until end of turn.\nWhenever Lim-Dûl's Paladin attacks and isn't blocked, it assigns no combat damage to defending player this turn and that player loses 4 life.",1,0,3,Uncommon,"Human,Knight",Creature
+302,Lim-Dûl's Vault,2,"U,B","Look at the top five cards of your library. As many times as you choose, you may pay 1 life, put those cards on the bottom of your library in any order, then look at the top five cards of your library. Then shuffle your library and put the last cards you looked at this way on top of it in any order.",1,,,Uncommon,,Instant
+303,Lodestone Bauble,,,"{1}, {T}, Sacrifice Lodestone Bauble: Put up to four target basic land cards from a player's graveyard on top of his or her library in any order. That player draws a card at the beginning of the next turn's upkeep.",1,,,Rare,,Artifact
+304,Lord of Tresserhorn,4,"U,B,R","When Lord of Tresserhorn enters the battlefield, you lose 2 life, you sacrifice two creatures, and target opponent draws two cards.\n{B}: Regenerate Lord of Tresserhorn.",1,10,4,Rare,Zombie,Creature
+305,Martyrdom,3,W,"Until end of turn, target creature you control gains ""{0}: The next 1 damage that would be dealt to target creature or player this turn is dealt to this creature instead."" Only you may activate this ability.",1,,,Common,,Instant
+306,Misfortune,4,"B,R,G",An opponent chooses one —\n• You put a +1/+1 counter on each creature you control and gain 4 life.\n• You put a -1/-1 counter on each creature that player controls and Misfortune deals 4 damage to him or her.,1,,,Rare,,Sorcery
+307,Mishra's Groundbreaker,4,,"{T}, Sacrifice Mishra's Groundbreaker: Target land becomes a 3/3 artifact creature that's still a land. (This effect lasts indefinitely.)",1,,,Uncommon,,Artifact
+308,Misinformation,1,B,Put up to three target cards from an opponent's graveyard on top of his or her library in any order.,1,,,Uncommon,,Instant
+309,Mystic Compass,2,,"{1}, {T}: Target land becomes the basic land type of your choice until end of turn.",1,,,Uncommon,,Artifact
+310,Nature's Blessing,4,"W,G","{G}{W}, Discard a card: Put a +1/+1 counter on target creature or that creature gains banding, first strike, or trample. (This effect lasts indefinitely. Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding a player controls are blocking or being blocked by a creature, that player divides that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)",1,,,Uncommon,,Enchantment
+311,Nature's Chosen,1,G,"Enchant creature you control\n{0}: Untap enchanted creature. Activate this ability only during your turn and only once each turn.\nTap enchanted creature: Untap target artifact, creature, or land. Activate this ability only if enchanted creature is white and is untapped and only once each turn.",1,,,Uncommon,Aura,Enchantment
+312,Nature's Wrath,6,G,"At the beginning of your upkeep, sacrifice Nature's Wrath unless you pay {G}.\nWhenever a player puts an Island or blue permanent onto the battlefield, he or she sacrifices an Island or blue permanent.\nWhenever a player puts a Swamp or black permanent onto the battlefield, he or she sacrifices a Swamp or black permanent.",1,,,Rare,,Enchantment
+313,Noble Steeds,3,W,{1}{W}: Target creature gains first strike until end of turn.,1,,,Common,,Enchantment
+314,Omen of Fire,5,R,Return all Islands to their owners' hands.\nEach player sacrifices a Plains or a white permanent for each white permanent he or she controls.,1,,,Rare,,Instant
+315,Phantasmal Fiend,4,"B,U",{B}: Phantasmal Fiend gets +1/-1 until end of turn.\n{1}{U}: Switch Phantasmal Fiend's power and toughness until end of turn.,1,1,5,Common,Illusion,Creature
+316,Phantasmal Sphere,2,U,"Flying\nAt the beginning of your upkeep, put a +1/+1 counter on Phantasmal Sphere, then sacrifice Phantasmal Sphere unless you pay {1} for each +1/+1 counter on it.\nWhen Phantasmal Sphere leaves the battlefield, target opponent puts an X/X blue Orb creature token with flying onto the battlefield, where X is the number of +1/+1 counters on Phantasmal Sphere.",1,0,1,Rare,Illusion,Creature
+317,Phelddagrif,4,"W,U,G",{G}: Phelddagrif gains trample until end of turn. Target opponent puts a 1/1 green Hippo creature token onto the battlefield.\n{W}: Phelddagrif gains flying until end of turn. Target opponent gains 2 life.\n{U}: Return Phelddagrif to its owner's hand. Target opponent may draw a card.,1,4,4,Rare,Phelddagrif,Creature
+318,Phyrexian Boon,3,B,"Enchant creature\nEnchanted creature gets +2/+1 as long as it's black. Otherwise, it gets -1/-2.",1,,,Common,Aura,Enchantment
+319,Phyrexian Devourer,6,,"When Phyrexian Devourer's power is 7 or greater, sacrifice it.\nExile the top card of your library: Put X +1/+1 counters on Phyrexian Devourer, where X is the exiled card's converted mana cost.",1,1,1,Rare,Construct,"Artifact,Creature"
+320,Phyrexian Portal,3,,"{3}: If your library has ten or more cards in it, target opponent looks at the top ten cards of your library and separates them into two face-down piles. Exile one of those piles. Search the other pile for a card, put it into your hand, then shuffle the rest of that pile into your library.",1,,,Rare,,Artifact
+321,Phyrexian War Beast,3,,"When Phyrexian War Beast leaves the battlefield, sacrifice a land and Phyrexian War Beast deals 1 damage to you.",1,3,4,Common,Beast,"Artifact,Creature"
+322,Pillage,3,R,Destroy target artifact or land. It can't be regenerated.,1,,,Uncommon,,Sorcery
+323,Primitive Justice,2,"R,G","As an additional cost to cast Primitive Justice, you may pay {1}{R} and/or {1}{G} any number of times.\nDestroy target artifact. For each additional {1}{R} you paid, destroy another target artifact. For each additional {1}{G} you paid, destroy another target artifact, and you gain 1 life.",1,,,Uncommon,,Sorcery
+324,Pyrokinesis,6,R,You may exile a red card from your hand rather than pay Pyrokinesis's mana cost.\nPyrokinesis deals 4 damage divided as you choose among any number of target creatures.,1,,,Uncommon,,Instant
+325,Reinforcements,1,W,Put up to three target creature cards from your graveyard on top of your library.,1,,,Common,,Instant
+326,Reprisal,2,W,Destroy target creature with power 4 or greater. It can't be regenerated.,1,,,Common,,Instant
+327,Ritual of the Machine,4,B,"As an additional cost to cast Ritual of the Machine, sacrifice a creature.\nGain control of target nonartifact, nonblack creature.",1,,,Rare,,Sorcery
+328,Rogue Skycaptain,3,R,"Flying\nAt the beginning of your upkeep, put a wage counter on Rogue Skycaptain. You may pay {2} for each wage counter on it. If you don't, remove all wage counters from Rogue Skycaptain and an opponent gains control of it.",1,3,4,Rare,"Human,Rogue,Mercenary",Creature
+329,Royal Decree,4,W,"Cumulative upkeep {W} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhenever a Swamp, Mountain, black permanent, or red permanent becomes tapped, Royal Decree deals 1 damage to that permanent's controller.",1,,,Rare,,Enchantment
+330,Royal Herbalist,1,W,"{2}, Exile the top card of your library: You gain 1 life.",1,1,1,Common,"Human,Cleric",Creature
+331,Scarab of the Unseen,2,,"{T}, Sacrifice Scarab of the Unseen: Return all Auras attached to target permanent you own to their owners' hands. Draw a card at the beginning of the next turn's upkeep.",1,,,Uncommon,,Artifact
+332,Scars of the Veteran,5,W,"You may exile a white card from your hand rather than pay Scars of the Veteran's mana cost.\nPrevent the next 7 damage that would be dealt to target creature or player this turn. At the beginning of the next end step, put a +0/+1 counter on that creature for each 1 damage prevented this way.",1,,,Uncommon,,Instant
+333,School of the Unseen,,,"{T}: Add {C} to your mana pool.\n{2}, {T}: Add one mana of any color to your mana pool.",1,,,Uncommon,,Land
+334,Seasoned Tactician,3,W,"{3}, Exile the top four cards of your library: The next time a source of your choice would deal damage to you this turn, prevent that damage.",1,1,3,Uncommon,"Human,Advisor",Creature
+335,Sheltered Valley,,,"If Sheltered Valley would enter the battlefield, instead sacrifice each other permanent named Sheltered Valley you control, then put Sheltered Valley onto the battlefield.\nAt the beginning of your upkeep, if you control three or fewer lands, you gain 1 life.\n{T}: Add {C} to your mana pool.",1,,,Rare,,Land
+336,Shield Sphere,,,"Defender\nWhenever Shield Sphere blocks, put a -0/-1 counter on it.",1,0,6,Uncommon,Wall,"Artifact,Creature"
+337,Sol Grail,3,,"As Sol Grail enters the battlefield, choose a color.\n{T}: Add one mana of the chosen color to your mana pool.",1,,,Uncommon,,Artifact
+338,Soldevi Adnate,2,B,"{T}, Sacrifice a black or artifact creature: Add to your mana pool an amount of {B} equal to the sacrificed creature's converted mana cost.",1,1,2,Common,"Human,Cleric",Creature
+339,Soldevi Digger,2,,{2}: Put the top card of your graveyard on the bottom of your library.,1,,,Rare,,Artifact
+340,Soldevi Excavations,,U,"If Soldevi Excavations would enter the battlefield, sacrifice an untapped Island instead. If you do, put Soldevi Excavations onto the battlefield. If you don't, put it into its owner's graveyard.\n{T}: Add {C}{U} to your mana pool.\n{1}, {T}: Scry 1. (Look at the top card of your library. You may put that card on the bottom of your library.)",1,,,Rare,,Land
+341,Soldevi Heretic,3,"U,W","{W}, {T}: Prevent the next 2 damage that would be dealt to target creature this turn. Target opponent may draw a card.",1,2,2,Common,"Human,Cleric",Creature
+342,Soldevi Sage,2,U,"{T}, Sacrifice two lands: Draw three cards, then discard one of them.",1,1,1,Common,"Human,Wizard",Creature
+343,Soldevi Sentry,1,,"{1}: Choose target opponent. Regenerate Soldevi Sentry. When it regenerates this way, that player may draw a card.",1,1,1,Common,Soldier,"Artifact,Creature"
+344,Soldevi Steam Beast,5,,"Whenever Soldevi Steam Beast becomes tapped, target opponent gains 2 life.\n{2}: Regenerate Soldevi Steam Beast.",1,4,2,Common,Beast,"Artifact,Creature"
+345,Soldier of Fortune,1,R,"{R}, {T}: Target player shuffles his or her library.",1,1,1,Uncommon,"Human,Mercenary",Creature
+346,Spiny Starfish,3,U,"{U}: Regenerate Spiny Starfish.\nAt the beginning of each end step, if Spiny Starfish regenerated this turn, put a 0/1 blue Starfish creature token onto the battlefield for each time it regenerated this turn.",1,0,1,Uncommon,Starfish,Creature
+347,Splintering Wind,4,G,"{2}{G}: Splintering Wind deals 1 damage to target creature. Put a 1/1 green Splinter creature token onto the battlefield. It has flying and ""Cumulative upkeep {G}."" When it leaves the battlefield, it deals 1 damage to you and each creature you control. (At the beginning of its controller's upkeep, that player puts an age counter on it, then sacrifices it unless he or she pays its upkeep cost for each age counter on it.)",1,,,Rare,,Enchantment
+348,Stench of Decay,3,B,Nonartifact creatures get -1/-1 until end of turn.,1,,,Common,,Instant
+349,Storm Cauldron,5,,"Each player may play an additional land during each of his or her turns.\nWhenever a land is tapped for mana, return it to its owner's hand.",1,,,Rare,,Artifact
+350,Storm Crow,2,U,Flying (This creature can't be blocked except by creatures with flying or reach.),1,1,2,Common,Bird,Creature
+351,Storm Elemental,6,U,"Flying\n{U}, Exile the top card of your library: Tap target creature with flying.\n{U}, Exile the top card of your library: If the exiled card is a snow land, Storm Elemental gets +1/+1 until end of turn.",1,3,4,Uncommon,Elemental,Creature
+352,Storm Shaman,3,R,{R}: Storm Shaman gets +1/+0 until end of turn.,1,0,4,Common,"Human,Cleric,Shaman",Creature
+353,Stromgald Spy,4,B,"Whenever Stromgald Spy attacks and isn't blocked, you may have defending player play with his or her hand revealed for as long as Stromgald Spy remains on the battlefield. If you do, Stromgald Spy assigns no combat damage this turn.",1,2,4,Uncommon,"Human,Rogue",Creature
+354,Suffocation,2,U,Cast Suffocation only if you were dealt damage this turn by a red instant or sorcery spell.\nSuffocation deals 4 damage to the controller of the last red instant or sorcery spell that dealt damage to you this turn.\nDraw a card at the beginning of the next turn's upkeep.,1,,,Uncommon,,Instant
+355,Surge of Strength,2,"R,G","As an additional cost to cast Surge of Strength, discard a red or green card.\nTarget creature gains trample and gets +X/+0 until end of turn, where X is that creature's converted mana cost.",1,,,Uncommon,,Instant
+356,Sustaining Spirit,2,W,"Cumulative upkeep {1}{W} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nDamage that would reduce your life total to less than 1 reduces it to 1 instead.",1,0,3,Rare,"Angel,Spirit",Creature
+357,Swamp Mosquito,2,B,"Flying\nWhenever Swamp Mosquito attacks and isn't blocked, defending player gets a poison counter. (A player with ten or more poison counters loses the game.)",1,0,1,Common,Insect,Creature
+358,Sworn Defender,4,W,"{1}: Sworn Defender's power becomes the toughness of target creature blocking or being blocked by Sworn Defender minus 1 until end of turn, and Sworn Defender's toughness becomes 1 plus the power of that creature until end of turn.",1,1,3,Rare,"Human,Knight",Creature
+359,Taste of Paradise,4,G,"As an additional cost to cast Taste of Paradise, you may pay {1}{G} any number of times.\nYou gain 3 life plus an additional 3 life for each additional {1}{G} you paid.",1,,,Common,,Sorcery
+360,Thawing Glaciers,,,"Thawing Glaciers enters the battlefield tapped.\n{1}, {T}: Search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library. Return Thawing Glaciers to its owner's hand at the beginning of the next cleanup step.",1,,,Rare,,Land
+361,Thought Lash,4,U,"Cumulative upkeep—Exile the top card of your library. (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nWhen a player doesn't pay Thought Lash's cumulative upkeep, that player exiles all cards from his or her library.\nExile the top card of your library: Prevent the next 1 damage that would be dealt to you this turn.",1,,,Rare,,Enchantment
+362,Tidal Control,3,U,"Cumulative upkeep {2} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nPay 2 life or {2}: Counter target red or green spell. Any player may activate this ability.",1,,,Rare,,Enchantment
+363,Tornado,5,G,"Cumulative upkeep {G} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\n{2}{G}, Pay 3 life for each velocity counter on Tornado: Destroy target permanent and put a velocity counter on Tornado. Activate this ability only once each turn.",1,,,Rare,,Enchantment
+364,Undergrowth,1,"G,R","As an additional cost to cast Undergrowth, you may pay {2}{R}.\nPrevent all combat damage that would be dealt this turn. If its additional cost was paid, Undergrowth doesn't affect combat damage that would be dealt by red creatures.",1,,,Common,,Instant
+365,Unlikely Alliance,2,W,"{1}{W}: Target nonattacking, nonblocking creature gets +0/+2 until end of turn.",1,,,Uncommon,,Enchantment
+366,Urza's Engine,5,,"Trample\n{3}: Urza's Engine gains banding until end of turn. (Any creatures with banding, and up to one without, can attack in a band. Bands are blocked as a group. If any creatures with banding you control are blocking or being blocked by a creature, you divide that creature's combat damage, not its controller, among any of the creatures it's being blocked by or is blocking.)\n{3}: Attacking creatures banded with Urza's Engine gain trample until end of turn.",1,1,5,Uncommon,Juggernaut,"Artifact,Creature"
+367,Varchild's Crusader,4,R,{0}: Varchild's Crusader can't be blocked this turn except by Walls. Sacrifice Varchild's Crusader at the beginning of the next end step.,1,3,2,Common,"Human,Knight",Creature
+368,Varchild's War-Riders,2,R,"Cumulative upkeep—Have an opponent put a 1/1 red Survivor creature token onto the battlefield. (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)\nTrample; rampage 1 (Whenever this creature becomes blocked, it gets +1/+1 until end of turn for each creature blocking it beyond the first.)",1,3,4,Rare,"Human,Warrior",Creature
+369,Veteran's Voice,1,R,Enchant creature you control\nTap enchanted creature: Target creature other than the creature tapped this way gets +2/+1 until end of turn. Activate this ability only if enchanted creature is untapped.,1,,,Common,Aura,Enchantment
+370,Viscerid Armor,2,U,Enchant creature\nEnchanted creature gets +1/+1.\n{1}{U}: Return Viscerid Armor to its owner's hand.,1,,,Common,Aura,Enchantment
+371,Viscerid Drone,2,U,"{T}, Sacrifice a creature and a Swamp: Destroy target nonartifact creature. It can't be regenerated.\n{T}, Sacrifice a creature and a snow Swamp: Destroy target creature. It can't be regenerated.",1,1,2,Uncommon,"Homarid,Drone",Creature
+372,Wandering Mage,3,"W,U,B","{W}, Pay 1 life: Prevent the next 2 damage that would be dealt to target creature this turn.\n{U}: Prevent the next 1 damage that would be dealt to target Cleric or Wizard creature this turn.\n{B}, Put a -1/-1 counter on a creature you control: Prevent the next 2 damage that would be dealt to target player this turn.",1,0,3,Rare,"Human,Cleric,Wizard",Creature
+373,Whip Vine,3,G,Defender; reach (This creature can block creatures with flying.)\nYou may choose not to untap Whip Vine during your untap step.\n{T}: Tap target creature with flying blocked by Whip Vine. That creature doesn't untap during its controller's untap step for as long as Whip Vine remains tapped.,1,1,4,Common,"Plant,Wall",Creature
+374,Whirling Catapult,4,,"{2}, Exile the top two cards of your library: Whirling Catapult deals 1 damage to each creature with flying and each player.",1,,,Uncommon,,Artifact
+375,Wild Aesthir,3,W,"Flying, first strike\n{W}{W}: Wild Aesthir gets +2/+0 until end of turn. Activate this ability only once each turn.",1,1,1,Common,Bird,Creature
+376,Winter's Night,3,"W,R,G","Whenever a player taps a snow land for mana, that player adds one mana to his or her mana pool of any type that land produced. That land doesn't untap during its controller's next untap step.",1,,,Rare,,Enchantment
+377,Yavimaya Ancients,5,G,{G}: Yavimaya Ancients gets +1/-2 until end of turn.,1,2,7,Common,Treefolk,Creature
+378,Yavimaya Ants,4,G,"Trample, haste\nCumulative upkeep {G}{G} (At the beginning of your upkeep, put an age counter on this permanent, then sacrifice it unless you pay its upkeep cost for each age counter on it.)",1,5,1,Uncommon,Insect,Creature
+379,Aegis Angel,6,W,"Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhen Aegis Angel enters the battlefield, another target permanent gains indestructible for as long as you control Aegis Angel. (Effects that say ""destroy"" don't destroy it. A creature with indestructible can't be destroyed by damage.)",2,5,5,Rare,Angel,Creature
+380,Alabaster Mage,2,W,{1}{W}: Target creature you control gains lifelink until end of turn. (Damage dealt by the creature also causes its controller to gain that much life.),2,2,1,Uncommon,"Human,Wizard",Creature
+381,Angelic Destiny,4,W,"Enchant creature\nEnchanted creature gets +4/+4, has flying and first strike, and is an Angel in addition to its other types.\nWhen enchanted creature dies, return Angelic Destiny to its owner's hand.",2,,,Mythic Rare,Aura,Enchantment
+382,Arbalest Elite,4,W,"{2}{W}, {T}: Arbalest Elite deals 3 damage to target attacking or blocking creature. Arbalest Elite doesn't untap during your next untap step.",2,2,3,Uncommon,"Human,Archer",Creature
+383,Archon of Justice,5,W,"Flying\nWhen Archon of Justice dies, exile target permanent.",2,4,4,Rare,Archon,Creature
+384,Armored Warhorse,2,W,,2,2,3,Common,Horse,Creature
+385,Assault Griffin,4,W,Flying,2,3,2,Common,Griffin,Creature
+386,Auramancer,3,W,"When Auramancer enters the battlefield, you may return target enchantment card from your graveyard to your hand.",2,2,2,Common,"Human,Wizard",Creature
+387,Benalish Veteran,3,W,"Whenever Benalish Veteran attacks, it gets +1/+1 until end of turn.",2,2,2,Common,"Human,Soldier",Creature
+388,Celestial Purge,2,W,Exile target black or red permanent.,2,,,Uncommon,,Instant
+389,Day of Judgment,4,W,Destroy all creatures.,2,,,Rare,,Sorcery
+390,Demystify,1,W,Destroy target enchantment.,2,,,Common,,Instant
+391,Elite Vanguard,1,W,,2,2,1,Uncommon,"Human,Soldier",Creature
+392,Gideon Jura,5,W,"+2: During target opponent's next turn, creatures that player controls attack Gideon Jura if able.\n−2: Destroy target tapped creature.\n0: Until end of turn, Gideon Jura becomes a 6/6 Human Soldier creature that's still a planeswalker. Prevent all damage that would be dealt to him this turn.",2,,,Mythic Rare,Gideon,Planeswalker
+393,Gideon's Avenger,3,W,"Whenever a creature an opponent controls becomes tapped, put a +1/+1 counter on Gideon's Avenger.",2,2,2,Rare,"Human,Soldier",Creature
+394,Gideon's Lawkeeper,1,W,"{W}, {T}: Tap target creature.",2,1,1,Common,"Human,Soldier",Creature
+395,Grand Abolisher,2,W,"During your turn, your opponents can't cast spells or activate abilities of artifacts, creatures, or enchantments.",2,2,2,Rare,"Human,Cleric",Creature
+396,Griffin Rider,2,W,"As long as you control a Griffin creature, Griffin Rider gets +3/+3 and has flying.",2,1,1,Common,"Human,Knight",Creature
+397,Griffin Sentinel,3,W,Flying\nVigilance (Attacking doesn't cause this creature to tap.),2,1,3,Common,Griffin,Creature
+398,Guardians' Pledge,3,W,White creatures you control get +2/+2 until end of turn.,2,,,Common,,Instant
+399,Honor of the Pure,2,W,White creatures you control get +1/+1.,2,,,Rare,,Enchantment
+400,Lifelink,1,W,Enchant creature\nEnchanted creature has lifelink. (Damage dealt by the creature also causes its controller to gain that much life.),2,,,Common,Aura,Enchantment
+401,Mesa Enchantress,3,W,"Whenever you cast an enchantment spell, you may draw a card.",2,0,2,Rare,"Human,Druid",Creature
+402,Mighty Leap,2,W,Target creature gets +2/+2 and gains flying until end of turn.,2,,,Common,,Instant
+403,Peregrine Griffin,5,W,Flying\nFirst strike (This creature deals combat damage before creatures without first strike.),2,2,4,Common,Griffin,Creature
+404,Personal Sanctuary,3,W,"During your turn, prevent all damage that would be dealt to you.",2,,,Rare,,Enchantment
+405,Pride Guardian,1,W,"Defender\nWhenever Pride Guardian blocks, you gain 3 life.",2,0,3,Common,"Cat,Monk",Creature
+406,Roc Egg,3,W,"Defender (This creature can't attack.)\nWhen Roc Egg dies, put a 3/3 white Bird creature token with flying onto the battlefield.",2,0,3,Uncommon,Bird,Creature
+407,Siege Mastodon,5,W,,2,3,5,Common,Elephant,Creature
+408,Spirit Mantle,2,W,Enchant creature\nEnchanted creature gets +1/+1 and has protection from creatures.,2,,,Uncommon,Aura,Enchantment
+409,Stave Off,1,W,Target creature gains protection from the color of your choice until end of turn.,2,,,Common,,Instant
+410,Stonehorn Dignitary,4,W,"When Stonehorn Dignitary enters the battlefield, target opponent skips his or her next combat phase.",2,1,4,Common,"Rhino,Soldier",Creature
+411,Stormfront Pegasus,2,W,Flying,2,2,1,Common,Pegasus,Creature
+412,Sun Titan,6,W,"Vigilance\nWhenever Sun Titan enters the battlefield or attacks, you may return target permanent card with converted mana cost 3 or less from your graveyard to the battlefield.",2,6,6,Mythic Rare,Giant,Creature
+413,Timely Reinforcements,3,W,"If you have less life than an opponent, you gain 6 life. If you control fewer creatures than an opponent, put three 1/1 white Soldier creature tokens onto the battlefield.",2,,,Uncommon,,Sorcery
+414,Æther Adept,3,U,"When Æther Adept enters the battlefield, return target creature to its owner's hand.",2,2,2,Common,"Human,Wizard",Creature
+415,Alluring Siren,2,U,{T}: Target creature an opponent controls attacks you this turn if able.,2,1,1,Uncommon,Siren,Creature
+416,Amphin Cutthroat,4,U,,2,2,4,Common,"Salamander,Rogue",Creature
+417,Aven Fleetwing,4,U,Flying\nHexproof (This creature can't be the target of spells or abilities your opponents control.),2,2,2,Common,"Bird,Soldier",Creature
+418,Azure Mage,2,U,{3}{U}: Draw a card.,2,2,1,Uncommon,"Human,Wizard",Creature
+419,Belltower Sphinx,5,U,"Flying\nWhenever a source deals damage to Belltower Sphinx, that source's controller puts that many cards from the top of his or her library into his or her graveyard.",2,2,5,Uncommon,Sphinx,Creature
+420,Cancel,3,U,Counter target spell.,2,,,Common,,Instant
+421,Chasm Drake,5,U,"Flying\nWhenever Chasm Drake attacks, target creature you control gains flying until end of turn.",2,3,3,Common,Drake,Creature
+422,Coral Merfolk,2,U,,2,2,1,Common,Merfolk,Creature
+423,Djinn of Wishes,5,U,"Flying\nDjinn of Wishes enters the battlefield with three wish counters on it.\n{2}{U}{U}, Remove a wish counter from Djinn of Wishes: Reveal the top card of your library. You may play that card without paying its mana cost. If you don't, exile it.",2,4,4,Rare,Djinn,Creature
+424,Flashfreeze,2,U,Counter target red or green spell.,2,,,Uncommon,,Instant
+425,Flight,1,U,Enchant creature\nEnchanted creature has flying.,2,,,Common,Aura,Enchantment
+426,Frost Breath,3,U,Tap up to two target creatures. Those creatures don't untap during their controller's next untap step.,2,,,Common,,Instant
+427,Frost Titan,6,U,"Whenever Frost Titan becomes the target of a spell or ability an opponent controls, counter that spell or ability unless its controller pays {2}.\nWhenever Frost Titan enters the battlefield or attacks, tap target permanent. It doesn't untap during its controller's next untap step.",2,6,6,Mythic Rare,Giant,Creature
+428,Ice Cage,2,U,"Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated.\nWhen enchanted creature becomes the target of a spell or ability, destroy Ice Cage.",2,,,Common,Aura,Enchantment
+429,Jace's Archivist,3,U,"{U}, {T}: Each player discards his or her hand, then draws cards equal to the greatest number of cards a player discarded this way.",2,2,2,Rare,"Vedalken,Wizard",Creature
+430,Jace's Erasure,2,U,"Whenever you draw a card, you may have target player put the top card of his or her library into his or her graveyard.",2,,,Common,,Enchantment
+431,Levitation,4,U,Creatures you control have flying.,2,,,Uncommon,,Enchantment
+432,Lord of the Unreal,2,U,Illusion creatures you control get +1/+1 and have hexproof. (They can't be the targets of spells or abilities your opponents control.),2,2,2,Rare,"Human,Wizard",Creature
+433,Mana Leak,2,U,Counter target spell unless its controller pays {3}.,2,,,Common,,Instant
+434,Master Thief,4,U,"When Master Thief enters the battlefield, gain control of target artifact for as long as you control Master Thief.",2,2,2,Uncommon,"Human,Rogue",Creature
+435,Merfolk Looter,2,U,"{T}: Draw a card, then discard a card.",2,1,1,Common,"Merfolk,Rogue",Creature
+436,Merfolk Mesmerist,2,U,"{U}, {T}: Target player puts the top two cards of his or her library into his or her graveyard.",2,1,2,Common,"Merfolk,Wizard",Creature
+437,Mind Control,5,U,Enchant creature\nYou control enchanted creature.,2,,,Uncommon,Aura,Enchantment
+438,Mind Unbound,6,U,"At the beginning of your upkeep, put a lore counter on Mind Unbound, then draw a card for each lore counter on Mind Unbound.",2,,,Rare,,Enchantment
+439,Phantasmal Bear,1,U,"When Phantasmal Bear becomes the target of a spell or ability, sacrifice it.",2,2,2,Common,"Bear,Illusion",Creature
+440,Phantasmal Dragon,4,U,"Flying\nWhen Phantasmal Dragon becomes the target of a spell or ability, sacrifice it.",2,5,5,Uncommon,"Dragon,Illusion",Creature
+441,Phantasmal Image,2,U,"You may have Phantasmal Image enter the battlefield as a copy of any creature on the battlefield, except it's an Illusion in addition to its other types and it gains ""When this creature becomes the target of a spell or ability, sacrifice it.""",2,0,0,Rare,Illusion,Creature
+442,Ponder,1,U,"Look at the top three cards of your library, then put them back in any order. You may shuffle your library.\nDraw a card.",2,,,Common,,Sorcery
+443,Skywinder Drake,3,U,Flying\nSkywinder Drake can block only creatures with flying.,2,3,1,Common,Drake,Creature
+444,Time Reversal,5,U,"Each player shuffles his or her hand and graveyard into his or her library, then draws seven cards. Exile Time Reversal.",2,,,Mythic Rare,,Sorcery
+445,Turn to Frog,2,U,"Until end of turn, target creature loses all abilities and becomes a blue Frog with base power and toughness 1/1.",2,,,Uncommon,,Instant
+446,Visions of Beyond,1,U,"Draw a card. If a graveyard has twenty or more cards in it, draw three cards instead.",2,,,Rare,,Instant
+447,Blood Seeker,2,B,"Whenever a creature enters the battlefield under an opponent's control, you may have that player lose 1 life.",2,1,1,Common,"Vampire,Shaman",Creature
+448,Bloodlord of Vaasgoth,5,B,"Bloodthirst 3 (If an opponent was dealt damage this turn, this creature enters the battlefield with three +1/+1 counters on it.)\nFlying\nWhenever you cast a Vampire creature spell, it gains bloodthirst 3.",2,3,3,Mythic Rare,"Vampire,Warrior",Creature
+449,Bloodrage Vampire,3,B,"Bloodthirst 1 (If an opponent was dealt damage this turn, this creature enters the battlefield with a +1/+1 counter on it.)",2,3,1,Common,Vampire,Creature
+450,Brink of Disaster,4,B,"Enchant creature or land\nWhen enchanted permanent becomes tapped, destroy it.",2,,,Common,Aura,Enchantment
+451,Call to the Grave,5,B,"At the beginning of each player's upkeep, that player sacrifices a non-Zombie creature.\nAt the beginning of the end step, if no creatures are on the battlefield, sacrifice Call to the Grave.",2,,,Rare,,Enchantment
+452,Cemetery Reaper,3,B,"Other Zombie creatures you control get +1/+1.\n{2}{B}, {T}: Exile target creature card from a graveyard. Put a 2/2 black Zombie creature token onto the battlefield.",2,2,2,Rare,Zombie,Creature
+453,Child of Night,2,B,Lifelink (Damage dealt by this creature also causes you to gain that much life.),2,2,1,Common,Vampire,Creature
+454,Consume Spirit,2,B,Spend only black mana on X.\nConsume Spirit deals X damage to target creature or player and you gain X life.,2,,,Uncommon,,Sorcery
+455,Deathmark,1,B,Destroy target green or white creature.,2,,,Uncommon,,Sorcery
+456,Devouring Swarm,3,B,Flying\nSacrifice a creature: Devouring Swarm gets +1/+1 until end of turn.,2,2,1,Common,Insect,Creature
+457,Diabolic Tutor,4,B,Search your library for a card and put that card into your hand. Then shuffle your library.,2,,,Uncommon,,Sorcery
+458,Distress,2,B,Target player reveals his or her hand. You choose a nonland card from it. That player discards that card.,2,,,Common,,Sorcery
+459,Doom Blade,2,B,Destroy target nonblack creature.,2,,,Common,,Instant
+460,Drifting Shade,4,B,Flying\n{B}: Drifting Shade gets +1/+1 until end of turn.,2,1,1,Common,Shade,Creature
+461,Duskhunter Bat,2,B,"Bloodthirst 1 (If an opponent was dealt damage this turn, this creature enters the battlefield with a +1/+1 counter on it.)\nFlying",2,1,1,Common,Bat,Creature
+462,Grave Titan,6,B,"Deathtouch\nWhenever Grave Titan enters the battlefield or attacks, put two 2/2 black Zombie creature tokens onto the battlefield.",2,6,6,Mythic Rare,Giant,Creature
+463,Gravedigger,4,B,"When Gravedigger enters the battlefield, you may return target creature card from your graveyard to your hand.",2,2,2,Common,Zombie,Creature
+464,Hideous Visage,3,B,Creatures you control gain intimidate until end of turn. (Each of those creatures can't be blocked except by artifact creatures and/or creatures that share a color with it.),2,,,Common,,Sorcery
+465,Monomania,5,B,Target player chooses a card in his or her hand and discards the rest.,2,,,Rare,,Sorcery
+466,Onyx Mage,2,B,{1}{B}: Target creature you control gains deathtouch until end of turn. (Any amount of damage it deals to a creature is enough to destroy it.),2,2,1,Uncommon,"Human,Wizard",Creature
+467,Reassembling Skeleton,2,B,{1}{B}: Return Reassembling Skeleton from your graveyard to the battlefield tapped.,2,1,1,Uncommon,"Skeleton,Warrior",Creature
+468,Royal Assassin,3,B,{T}: Destroy target tapped creature.,2,1,1,Rare,"Human,Assassin",Creature
+469,Rune-Scarred Demon,7,B,"Flying\nWhen Rune-Scarred Demon enters the battlefield, search your library for a card, put it into your hand, then shuffle your library.",2,6,6,Rare,Demon,Creature
+470,Sengir Vampire,5,B,"Flying (This creature can't be blocked except by creatures with flying or reach.)\nWhenever a creature dealt damage by Sengir Vampire this turn dies, put a +1/+1 counter on Sengir Vampire.",2,4,4,Uncommon,Vampire,Creature
+471,Smallpox,2,B,"Each player loses 1 life, discards a card, sacrifices a creature, then sacrifices a land.",2,,,Uncommon,,Sorcery
+472,Sorin Markov,6,B,+2: Sorin Markov deals 2 damage to target creature or player and you gain 2 life.\n−3: Target opponent's life total becomes 10.\n−7: You control target player during that player's next turn.,2,,,Mythic Rare,Sorin,Planeswalker
+473,Sorin's Thirst,2,B,Sorin's Thirst deals 2 damage to target creature and you gain 2 life.,2,,,Common,,Instant
+474,Sorin's Vengeance,7,B,Sorin's Vengeance deals 10 damage to target player and you gain 10 life.,2,,,Rare,,Sorcery
+475,Sutured Ghoul,7,B,"Trample\nAs Sutured Ghoul enters the battlefield, exile any number of creature cards from your graveyard.\nSutured Ghoul's power is equal to the total power of the exiled cards and its toughness is equal to their total toughness.",2,*,*,Rare,Zombie,Creature
+476,Taste of Blood,1,B,Taste of Blood deals 1 damage to target player and you gain 1 life.,2,,,Common,,Sorcery
+477,Vampire Outcasts,4,B,"Bloodthirst 2 (If an opponent was dealt damage this turn, this creature enters the battlefield with two +1/+1 counters on it.)\nLifelink (Damage dealt by this creature also causes you to gain that much life.)",2,2,2,Uncommon,Vampire,Creature
+478,Vengeful Pharaoh,5,B,"Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.)\nWhenever combat damage is dealt to you or a planeswalker you control, if Vengeful Pharaoh is in your graveyard, destroy target attacking creature, then put Vengeful Pharaoh on top of your library.",2,5,4,Rare,Zombie,Creature
+479,Warpath Ghoul,3,B,,2,3,2,Common,Zombie,Creature
+480,Wring Flesh,1,B,Target creature gets -3/-1 until end of turn.,2,,,Common,,Instant
+481,Zombie Infestation,2,B,Discard two cards: Put a 2/2 black Zombie creature token onto the battlefield.,2,,,Uncommon,,Enchantment
+482,Act of Treason,3,R,Gain control of target creature until end of turn. Untap that creature. It gains haste until end of turn. (It can attack and {T} this turn.),2,,,Common,,Sorcery
+483,Blood Ogre,3,R,"Bloodthirst 1 (If an opponent was dealt damage this turn, this creature enters the battlefield with a +1/+1 counter on it.)\nFirst strike (This creature deals combat damage before creatures without first strike.)",2,2,2,Common,"Ogre,Warrior",Creature
+484,Bonebreaker Giant,5,R,,2,4,4,Common,Giant,Creature
+485,Chandra's Outrage,4,R,Chandra's Outrage deals 4 damage to target creature and 2 damage to that creature's controller.,2,,,Common,,Instant
+486,Chandra's Phoenix,3,R,"Flying\nHaste (This creature can attack and {T} as soon as it comes under your control.)\nWhenever an opponent is dealt damage by a red instant or sorcery spell you control or by a red planeswalker you control, return Chandra's Phoenix from your graveyard to your hand.",2,2,2,Rare,Phoenix,Creature
+487,Circle of Flame,2,R,"Whenever a creature without flying attacks you or a planeswalker you control, Circle of Flame deals 1 damage to that creature.",2,,,Uncommon,,Enchantment
+488,Combust,2,R,Combust can't be countered by spells or abilities.\nCombust deals 5 damage to target white or blue creature. The damage can't be prevented.,2,,,Uncommon,,Instant
+489,Crimson Mage,2,R,{R}: Target creature you control gains haste until end of turn. (It can attack and {T} this turn.),2,2,1,Uncommon,"Human,Shaman",Creature
+490,Fiery Hellhound,3,R,{R}: Fiery Hellhound gets +1/+0 until end of turn.,2,2,2,Common,"Elemental,Hound",Creature
+491,Fireball,1,R,"Fireball deals X damage divided evenly, rounded down, among any number of target creatures and/or players.\nFireball costs {1} more to cast for each target beyond the first.",2,,,Uncommon,,Sorcery
+492,Firebreathing,1,R,Enchant creature\n{R}: Enchanted creature gets +1/+0 until end of turn.,2,,,Common,Aura,Enchantment
+493,Flameblast Dragon,6,R,"Flying\nWhenever Flameblast Dragon attacks, you may pay {X}{R}. If you do, Flameblast Dragon deals X damage to target creature or player.",2,5,5,Rare,Dragon,Creature
+494,Fling,2,R,"As an additional cost to cast Fling, sacrifice a creature.\nFling deals damage equal to the sacrificed creature's power to target creature or player.",2,,,Common,,Instant
+495,Furyborn Hellkite,7,R,"Bloodthirst 6 (If an opponent was dealt damage this turn, this creature enters the battlefield with six +1/+1 counters on it.)\nFlying",2,6,6,Mythic Rare,Dragon,Creature
+496,Goblin Bangchuckers,4,R,"{T}: Flip a coin. If you win the flip, Goblin Bangchuckers deals 2 damage to target creature or player. If you lose the flip, Goblin Bangchuckers deals 2 damage to itself.",2,2,2,Uncommon,"Goblin,Warrior",Creature
+497,Goblin Chieftain,3,R,Haste (This creature can attack and {T} as soon as it comes under your control.)\nOther Goblin creatures you control get +1/+1 and have haste.,2,2,2,Rare,Goblin,Creature
+498,Goblin Fireslinger,1,R,{T}: Goblin Fireslinger deals 1 damage to target player.,2,1,1,Common,"Goblin,Warrior",Creature
+499,Goblin Grenade,1,R,"As an additional cost to cast Goblin Grenade, sacrifice a Goblin.\nGoblin Grenade deals 5 damage to target creature or player.",2,,,Uncommon,,Sorcery
+500,Goblin Piker,2,R,,2,2,1,Common,"Goblin,Warrior",Creature
+501,Goblin Tunneler,2,R,{T}: Target creature with power 2 or less can't be blocked this turn.,2,1,1,Common,"Goblin,Rogue",Creature
+502,Goblin War Paint,2,R,Enchant creature\nEnchanted creature gets +2/+2 and has haste.,2,,,Common,Aura,Enchantment
+503,Gorehorn Minotaurs,4,R,"Bloodthirst 2 (If an opponent was dealt damage this turn, this creature enters the battlefield with two +1/+1 counters on it.)",2,3,3,Common,"Minotaur,Warrior",Creature
+504,Grim Lavamancer,1,R,"{R}, {T}, Exile two cards from your graveyard: Grim Lavamancer deals 2 damage to target creature or player.",2,1,1,Rare,"Human,Wizard",Creature
+505,Incinerate,2,R,Incinerate deals 3 damage to target creature or player. A creature dealt damage this way can't be regenerated this turn.,2,,,Common,,Instant
+506,Inferno Titan,6,R,"{R}: Inferno Titan gets +1/+0 until end of turn.\nWhenever Inferno Titan enters the battlefield or attacks, it deals 3 damage divided as you choose among one, two, or three target creatures and/or players.",2,6,6,Mythic Rare,Giant,Creature
+507,Lava Axe,5,R,Lava Axe deals 5 damage to target player.,2,,,Common,,Sorcery
+508,Lightning Elemental,4,R,Haste (This creature can attack and {T} as soon as it comes under your control.),2,4,1,Common,Elemental,Creature
+509,Manabarbs,4,R,"Whenever a player taps a land for mana, Manabarbs deals 1 damage to that player.",2,,,Rare,,Enchantment
+510,Manic Vandal,3,R,"When Manic Vandal enters the battlefield, destroy target artifact.",2,2,2,Common,"Human,Warrior",Creature
+511,Scrambleverse,8,R,"For each nonland permanent, choose a player at random. Then each player gains control of each permanent for which he or she was chosen. Untap those permanents.",2,,,Rare,,Sorcery
+512,Shock,1,R,Shock deals 2 damage to target creature or player.,2,,,Common,,Instant
+513,Slaughter Cry,3,R,Target creature gets +3/+0 and gains first strike until end of turn. (It deals combat damage before creatures without first strike.),2,,,Common,,Instant
+514,Stormblood Berserker,2,R,"Bloodthirst 2 (If an opponent was dealt damage this turn, this creature enters the battlefield with two +1/+1 counters on it.)\nMenace (This creature can't be blocked except by two or more creatures.)",2,1,1,Uncommon,"Human,Berserker",Creature
+515,Tectonic Rift,4,R,Destroy target land. Creatures without flying can't block this turn.,2,,,Uncommon,,Sorcery
+516,Volcanic Dragon,6,R,Flying\nHaste (This creature can attack and {T} as soon as it comes under your control.),2,4,4,Uncommon,Dragon,Creature
+517,Wall of Torches,2,R,Defender (This creature can't attack.),2,4,1,Common,Wall,Creature
+518,Warstorm Surge,6,R,"Whenever a creature enters the battlefield under your control, it deals damage equal to its power to target creature or player.",2,,,Rare,,Enchantment
+519,Arachnus Spinner,6,G,"Reach (This creature can block creatures with flying.)\nTap an untapped Spider you control: Search your graveyard and/or library for a card named Arachnus Web and put it onto the battlefield attached to target creature. If you search your library this way, shuffle it.",2,5,7,Rare,Spider,Creature
+520,Arachnus Web,3,G,"Enchant creature\nEnchanted creature can't attack or block, and its activated abilities can't be activated.\nAt the beginning of the end step, if enchanted creature's power is 4 or greater, destroy Arachnus Web.",2,,,Common,Aura,Enchantment
+521,Autumn's Veil,1,G,"Spells you control can't be countered by blue or black spells this turn, and creatures you control can't be the targets of blue or black spells this turn.",2,,,Uncommon,,Instant
+522,Birds of Paradise,1,G,Flying\n{T}: Add one mana of any color to your mana pool.,2,0,1,Rare,Bird,Creature
+523,Brindle Boar,3,G,Sacrifice Brindle Boar: You gain 4 life.,2,2,2,Common,Boar,Creature
+524,Carnage Wurm,7,G,"Bloodthirst 3 (If an opponent was dealt damage this turn, this creature enters the battlefield with three +1/+1 counters on it.)\nTrample (This creature can deal excess combat damage to defending player or planeswalker while attacking.)",2,6,6,Uncommon,Wurm,Creature
+525,Cudgel Troll,4,G,"{G}: Regenerate Cudgel Troll. (The next time this creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)",2,4,3,Uncommon,Troll,Creature
+526,Doubling Chant,6,G,"For each creature you control, you may search your library for a creature card with the same name as that creature. Put those cards onto the battlefield, then shuffle your library.",2,,,Rare,,Sorcery
+527,Dungrove Elder,3,G,Hexproof (This creature can't be the target of spells or abilities your opponents control.)\nDungrove Elder's power and toughness are each equal to the number of Forests you control.,2,*,*,Rare,Treefolk,Creature
+528,Garruk's Companion,2,G,Trample (This creature can deal excess combat damage to defending player or planeswalker while attacking.),2,3,2,Common,Beast,Creature
+529,Garruk's Horde,7,G,Trample\nPlay with the top card of your library revealed.\nYou may cast the top card of your library if it's a creature card. (Do this only any time you could cast that creature card. You still pay the spell's costs.),2,7,7,Rare,Beast,Creature
+530,Giant Spider,4,G,Reach (This creature can block creatures with flying.),2,2,4,Common,Spider,Creature
+531,Gladecover Scout,1,G,Hexproof (This creature can't be the target of spells or abilities your opponents control.),2,1,1,Common,"Elf,Scout",Creature
+532,Greater Basilisk,5,G,Deathtouch (Any amount of damage this deals to a creature is enough to destroy it.),2,3,5,Common,Basilisk,Creature
+533,Hunter's Insight,3,G,"Choose target creature you control. Whenever that creature deals combat damage to a player or planeswalker this turn, draw that many cards.",2,,,Uncommon,,Instant
+534,Jade Mage,2,G,{2}{G}: Put a 1/1 green Saproling creature token onto the battlefield.,2,2,1,Uncommon,"Human,Shaman",Creature
+535,Llanowar Elves,1,G,{T}: Add {G} to your mana pool.,2,1,1,Common,"Elf,Druid",Creature
+536,Lure,3,G,Enchant creature\nAll creatures able to block enchanted creature do so.,2,,,Uncommon,Aura,Enchantment
+537,Lurking Crocodile,3,G,"Bloodthirst 1 (If an opponent was dealt damage this turn, this creature enters the battlefield with a +1/+1 counter on it.)\nIslandwalk (This creature can't be blocked as long as defending player controls an Island.)",2,2,2,Common,Crocodile,Creature
+538,Overrun,5,G,Creatures you control get +3/+3 and gain trample until end of turn.,2,,,Uncommon,,Sorcery
+539,Primeval Titan,6,G,"Trample\nWhenever Primeval Titan enters the battlefield or attacks, you may search your library for up to two land cards, put them onto the battlefield tapped, then shuffle your library.",2,6,6,Mythic Rare,Giant,Creature
+540,Rampant Growth,2,G,Search your library for a basic land card and put that card onto the battlefield tapped. Then shuffle your library.,2,,,Common,,Sorcery
+541,Reclaim,1,G,Put target card from your graveyard on top of your library.,2,,,Common,,Instant
+542,Rites of Flourishing,3,G,"At the beginning of each player's draw step, that player draws an additional card.\nEach player may play an additional land on each of his or her turns.",2,,,Rare,,Enchantment
+543,Runeclaw Bear,2,G,,2,2,2,Common,Bear,Creature
+544,Sacred Wolf,3,G,Hexproof (This creature can't be the target of spells or abilities your opponents control.),2,3,1,Common,Wolf,Creature
+545,Skinshifter,2,G,"{G}: Choose one —\n• Until end of turn, Skinshifter becomes a Rhino with base power and toughness 4/4 and gains trample. Activate this ability only once each turn.\n• Until end of turn, Skinshifter becomes a Bird with base power and toughness 2/2 and gains flying. Activate this ability only once each turn.\n• Until end of turn, Skinshifter becomes a Plant with base power and toughness 0/8. Activate this ability only once each turn.",2,1,1,Rare,"Human,Shaman",Creature
+546,Stampeding Rhino,5,G,Trample (This creature can deal excess combat damage to defending player or planeswalker while attacking.),2,4,4,Common,Rhino,Creature
+547,Stingerfling Spider,5,G,"Reach\nWhen Stingerfling Spider enters the battlefield, you may destroy target creature with flying.",2,2,5,Uncommon,Spider,Creature
+548,Trollhide,3,G,"Enchant creature\nEnchanted creature gets +2/+2 and has ""{1}{G}: Regenerate this creature."" (The next time the creature would be destroyed this turn, it isn't. Instead tap it, remove all damage from it, and remove it from combat.)",2,,,Common,Aura,Enchantment
+549,Adaptive Automaton,3,,"As Adaptive Automaton enters the battlefield, choose a creature type.\nAdaptive Automaton is the chosen type in addition to its other types.\nOther creatures you control of the chosen type get +1/+1.",2,2,2,Rare,Construct,"Artifact,Creature"
+550,Angel's Feather,2,,"Whenever a player casts a white spell, you may gain 1 life.",2,,,Uncommon,,Artifact
+551,Crown of Empires,2,,"{3}, {T}: Tap target creature. Gain control of that creature instead if you control artifacts named Scepter of Empires and Throne of Empires.",2,,,Uncommon,,Artifact
+552,Crumbling Colossus,5,,"Trample (This creature can deal excess combat damage to defending player or planeswalker while attacking.)\nWhen Crumbling Colossus attacks, sacrifice it at end of combat.",2,7,4,Uncommon,Golem,"Artifact,Creature"
+553,Demon's Horn,2,,"Whenever a player casts a black spell, you may gain 1 life.",2,,,Uncommon,,Artifact
+554,Dragon's Claw,2,,"Whenever a player casts a red spell, you may gain 1 life.",2,,,Uncommon,,Artifact
+555,Druidic Satchel,3,,"{2}, {T}: Reveal the top card of your library. If it's a creature card, put a 1/1 green Saproling creature token onto the battlefield. If it's a land card, put that card onto the battlefield under your control. If it's a noncreature, nonland card, you gain 2 life.",2,,,Rare,,Artifact
+556,Greatsword,3,,Equipped creature gets +3/+0.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.),2,,,Uncommon,Equipment,Artifact
+557,Kite Shield,,,Equipped creature gets +0/+3.\nEquip {3} ({3}: Attach to target creature you control. Equip only as a sorcery.),2,,,Uncommon,Equipment,Artifact
+558,Kraken's Eye,2,,"Whenever a player casts a blue spell, you may gain 1 life.",2,,,Uncommon,,Artifact
+559,Manalith,3,,{T}: Add one mana of any color to your mana pool.,2,,,Common,,Artifact
+560,Pentavus,7,,"Pentavus enters the battlefield with five +1/+1 counters on it.\n{1}, Remove a +1/+1 counter from Pentavus: Put a 1/1 colorless Pentavite artifact creature token with flying onto the battlefield.\n{1}, Sacrifice a Pentavite: Put a +1/+1 counter on Pentavus.",2,0,0,Rare,Construct,"Artifact,Creature"
+561,Quicksilver Amulet,4,,"{4}, {T}: You may put a creature card from your hand onto the battlefield.",2,,,Rare,,Artifact
+562,Rusted Sentinel,4,,Rusted Sentinel enters the battlefield tapped.,2,3,4,Uncommon,Golem,"Artifact,Creature"
+563,Scepter of Empires,3,,{T}: Scepter of Empires deals 1 damage to target player. It deals 3 damage to that player instead if you control artifacts named Crown of Empires and Throne of Empires.,2,,,Uncommon,,Artifact
+564,Solemn Simulacrum,4,,"When Solemn Simulacrum enters the battlefield, you may search your library for a basic land card, put that card onto the battlefield tapped, then shuffle your library.\nWhen Solemn Simulacrum dies, you may draw a card.",2,2,2,Rare,Golem,"Artifact,Creature"
+565,Sundial of the Infinite,2,,"{1}, {T}: End the turn. Activate this ability only during your turn. (Exile all spells and abilities on the stack. Discard down to your maximum hand size. Damage wears off, and ""this turn"" and ""until end of turn"" effects end.)",2,,,Rare,,Artifact
+566,Swiftfoot Boots,2,,Equipped creature has hexproof and haste.\nEquip {1},2,,,Uncommon,Equipment,Artifact
+567,Thran Golem,5,,"As long as Thran Golem is enchanted, it gets +2/+2 and has flying, first strike, and trample.",2,3,3,Uncommon,Golem,"Artifact,Creature"
+568,Throne of Empires,4,,"{1}, {T}: Put a 1/1 white Soldier creature token onto the battlefield. Put five of those tokens onto the battlefield instead if you control artifacts named Crown of Empires and Scepter of Empires.",2,,,Rare,,Artifact
+569,Worldslayer,5,,"Whenever equipped creature deals combat damage to a player, destroy all permanents other than Worldslayer.\nEquip {5} ({5}: Attach to target creature you control. Equip only as a sorcery.)",2,,,Rare,Equipment,Artifact
+570,Wurm's Tooth,2,,"Whenever a player casts a green spell, you may gain 1 life.",2,,,Uncommon,,Artifact
+571,Buried Ruin,,,"{T}: Add {C} to your mana pool.\n{2}, {T}, Sacrifice Buried Ruin: Return target artifact card from your graveyard to your hand.",2,,,Uncommon,,Land
