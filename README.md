@@ -1,7 +1,7 @@
 # HoardSorter
-A collection manager for the MTG card game.;
+A collection manager for the MTG card game.
 
-##*Setting up a local database for HoardSorter.*;
+##Setting up a local database for HoardSorter.
 The following scripts are located in the "Database Files" folder;
 
 Step1: Create a blank database in MSSL named "HoardSorter".;
