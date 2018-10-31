@@ -1,5 +1,69 @@
-bulk insert TABLENAME
-from 'FILEPATH'
+bulk insert CardDetails
+from 'FILEPATH\CardDetailsData.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert Color
+from 'FILEPATH\Colors.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert ColorIdent
+from 'FILEPATH\Colors_Intermediary.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert Rarity
+from 'FILEPATH\Rarities.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert RarityIdent
+from 'FILEPATH\Rarities_Intermediary.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert CardSet
+from 'FILEPATH\Sets.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert SetIdent
+from 'FILEPATH\Set_Intermediary.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert Type
+from 'FILEPATH\Types.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
+
+bulk insert TypeIdent
+from 'FILEPATH\Types_Intermediary.csv'
 with
 (
 rowterminator='\n',
