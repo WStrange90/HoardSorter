@@ -49,6 +49,8 @@
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -201,8 +203,77 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AspNetRole.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUser.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserClaim.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AspNetUserLogin.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardCollection.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardDetail.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CardSet.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Collection.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Color.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ColorIdent.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Deck.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeckCard.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DeckType.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoardSorterModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoardSorterModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoardSorterModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\HoardSorterModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>HoardSorterModel.edmx</DependentUpon>
+    </Compile>
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\Rarity.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\RarityIdent.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SetIdent.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Type.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TypeIdent.cs">
+      <DependentUpon>HoardSorterModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -215,10 +286,27 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Models\HoardSorterModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HoardSorterModel.edmx</DependentUpon>
+      <LastGenOutput>HoardSorterModel.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\HoardSorterModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>HoardSorterModel.edmx</DependentUpon>
+      <LastGenOutput>HoardSorterModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <EntityDeploy Include="Models\HoardSorterModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>HoardSorterModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\HoardSorterModel.edmx.diagram">
+      <DependentUpon>HoardSorterModel.edmx</DependentUpon>
     </Content>
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
@@ -281,6 +369,9 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
