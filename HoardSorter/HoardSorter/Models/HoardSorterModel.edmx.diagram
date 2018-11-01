@@ -4,7 +4,7 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="315e047ddf0b40fabd2e135d8f42dcd9" Name="Diagram1" ZoomLevel="27">
+      <Diagram DiagramId="315e047ddf0b40fabd2e135d8f42dcd9" Name="Diagram1" ZoomLevel="23">
         <EntityTypeShape EntityType="HoardSorterModel.AspNetRole" Width="1.5" PointX="24.375" PointY="15.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.AspNetUserClaim" Width="1.5" PointX="26.875" PointY="15.625" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.AspNetUserLogin" Width="1.5" PointX="28.625" PointY="12.375" IsExpanded="true" />
