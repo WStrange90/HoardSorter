@@ -199,7 +199,6 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\TradesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -270,7 +269,6 @@
     <Compile Include="Models\SetIdent.cs">
       <DependentUpon>HoardSorterModel.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Trades.cs" />
     <Compile Include="Models\Type.cs">
       <DependentUpon>HoardSorterModel.tt</DependentUpon>
     </Compile>
@@ -356,11 +354,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Trades\Create.cshtml" />
-    <Content Include="Views\Trades\Delete.cshtml" />
-    <Content Include="Views\Trades\Details.cshtml" />
-    <Content Include="Views\Trades\Edit.cshtml" />
-    <Content Include="Views\Trades\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

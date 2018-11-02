@@ -19,6 +19,6 @@ namespace HoardSorter.Models
         {
         }
 
-        public System.Data.Entity.DbSet<HoardSorter.Models.Trades> Trades { get; set; }
+        
     }
 }
