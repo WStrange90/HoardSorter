@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HoardSorter.Models.Trade>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Trade Home</h2>
+
+<p>
+    <br /><br />
+    @Html.ActionLink("My Trades", "Create") <br /><br />
+    @Html.ActionLink("My Wants", "Create") <br /><br />
+    @Html.ActionLink("Address Book", "Create") <br /><br />
+</p>
+<table class="table">
+    <tr>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>
