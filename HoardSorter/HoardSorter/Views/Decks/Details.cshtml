@@ -1,0 +1,42 @@
+﻿@model HoardSorter.Models.Deck
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Deck</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.DeckName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeckName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AspNetUsers.Email)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AspNetUsers.Email)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DeckType.DeckType1)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DeckType.DeckType1)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DeckID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

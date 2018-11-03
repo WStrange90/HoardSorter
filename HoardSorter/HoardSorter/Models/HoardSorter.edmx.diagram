@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="375ed9302fd842578337d7c727d3b3f1" Name="Diagram1">
+        <EntityTypeShape EntityType="HoardSorterModel.AspNetRoles" Width="1.5" PointX="1.5" PointY="18.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.AspNetUserClaims" Width="1.5" PointX="3.75" PointY="21.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.AspNetUserLogins" Width="1.5" PointX="3.75" PointY="24" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.AspNetUsers" Width="1.5" PointX="1.5" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.CardCollection" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.CardDetails" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.CardSet" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Collections" Width="1.5" PointX="0.75" PointY="15" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Color" Width="1.5" PointX="3.75" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.ColorIdent" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Deck" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.DeckCards" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.DeckType" Width="1.5" PointX="1.5" PointY="21" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Rarity" Width="1.5" PointX="3.75" PointY="18.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.RarityIdent" Width="1.5" PointX="6" PointY="14" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.SetIdent" Width="1.5" PointX="3" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Type" Width="1.5" PointX="0.75" PointY="24.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.TypeIdent" Width="1.5" PointX="3" PointY="15" IsExpanded="true" />
+        <AssociationConnector Association="HoardSorterModel.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_dbo_Collections_dbo_AspNetUsers_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_dbo_Deck_dbo_AspNetUsers_Id" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_CardCollection_CardDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_CardCollection_Collections" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.CardID" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_ColorIdent_CardDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_RarityIdent_CardDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_SetIdent_CardDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_TypeIdent_CardDetails" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_SetIdent_Set" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_ColorIdent_Color" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_Deck_DeckType" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_DeckCards_Deck" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_RarityIdent_Rarity" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.FK_TypeIdent_Type" ManuallyRouted="false" />
+        <AssociationConnector Association="HoardSorterModel.AspNetUserRoles" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

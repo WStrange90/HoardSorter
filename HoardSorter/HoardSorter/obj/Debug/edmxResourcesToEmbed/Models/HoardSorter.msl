@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="HoardSorterModelStoreContainer" CdmEntityContainer="HoardSorterEntities">
+    <EntitySetMapping Name="AspNetRoles">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetRoles">
+        <MappingFragment StoreEntitySet="AspNetRoles">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserClaims">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserClaims">
+        <MappingFragment StoreEntitySet="AspNetUserClaims">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ClaimType" ColumnName="ClaimType" />
+          <ScalarProperty Name="ClaimValue" ColumnName="ClaimValue" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUserLogins">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserLogins">
+        <MappingFragment StoreEntitySet="AspNetUserLogins">
+          <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
+          <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="AspNetUsers">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUsers">
+        <MappingFragment StoreEntitySet="AspNetUsers">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="EmailConfirmed" ColumnName="EmailConfirmed" />
+          <ScalarProperty Name="PasswordHash" ColumnName="PasswordHash" />
+          <ScalarProperty Name="SecurityStamp" ColumnName="SecurityStamp" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="PhoneNumberConfirmed" ColumnName="PhoneNumberConfirmed" />
+          <ScalarProperty Name="TwoFactorEnabled" ColumnName="TwoFactorEnabled" />
+          <ScalarProperty Name="LockoutEndDateUtc" ColumnName="LockoutEndDateUtc" />
+          <ScalarProperty Name="LockoutEnabled" ColumnName="LockoutEnabled" />
+          <ScalarProperty Name="AccessFailedCount" ColumnName="AccessFailedCount" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardCollection">
+      <EntityTypeMapping TypeName="HoardSorterModel.CardCollection">
+        <MappingFragment StoreEntitySet="CardCollection">
+          <ScalarProperty Name="CardCollectionID" ColumnName="CardCollectionID" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="ToTrade" ColumnName="ToTrade" />
+          <ScalarProperty Name="Wanted" ColumnName="Wanted" />
+          <ScalarProperty Name="OwnedQty" ColumnName="OwnedQty" />
+          <ScalarProperty Name="TradeQty" ColumnName="TradeQty" />
+          <ScalarProperty Name="WantQty" ColumnName="WantQty" />
+          <ScalarProperty Name="collectorID" ColumnName="collectorID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardDetails">
+      <EntityTypeMapping TypeName="HoardSorterModel.CardDetails">
+        <MappingFragment StoreEntitySet="CardDetails">
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CardName" ColumnName="CardName" />
+          <ScalarProperty Name="ConvertedManaCost" ColumnName="ConvertedManaCost" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="Power" ColumnName="Power" />
+          <ScalarProperty Name="Toughness" ColumnName="Toughness" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CardSet">
+      <EntityTypeMapping TypeName="HoardSorterModel.CardSet">
+        <MappingFragment StoreEntitySet="CardSet">
+          <ScalarProperty Name="SetID" ColumnName="SetID" />
+          <ScalarProperty Name="SetName" ColumnName="SetName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Collections">
+      <EntityTypeMapping TypeName="HoardSorterModel.Collections">
+        <MappingFragment StoreEntitySet="Collections">
+          <ScalarProperty Name="collectorID" ColumnName="collectorID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Color">
+      <EntityTypeMapping TypeName="HoardSorterModel.Color">
+        <MappingFragment StoreEntitySet="Color">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="Color1" ColumnName="Color" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ColorIdent">
+      <EntityTypeMapping TypeName="HoardSorterModel.ColorIdent">
+        <MappingFragment StoreEntitySet="ColorIdent">
+          <ScalarProperty Name="ColorID" ColumnName="ColorID" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="ColorIdentID" ColumnName="ColorIdentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Deck">
+      <EntityTypeMapping TypeName="HoardSorterModel.Deck">
+        <MappingFragment StoreEntitySet="Deck">
+          <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="DeckTypeID" ColumnName="DeckTypeID" />
+          <ScalarProperty Name="DeckName" ColumnName="DeckName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeckCards">
+      <EntityTypeMapping TypeName="HoardSorterModel.DeckCards">
+        <MappingFragment StoreEntitySet="DeckCards">
+          <ScalarProperty Name="DeckCardID" ColumnName="DeckCardID" />
+          <ScalarProperty Name="DeckID" ColumnName="DeckID" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="CardQty" ColumnName="CardQty" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DeckType">
+      <EntityTypeMapping TypeName="HoardSorterModel.DeckType">
+        <MappingFragment StoreEntitySet="DeckType">
+          <ScalarProperty Name="DeckTypeID" ColumnName="DeckTypeID" />
+          <ScalarProperty Name="DeckType1" ColumnName="DeckType" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Rarity">
+      <EntityTypeMapping TypeName="HoardSorterModel.Rarity">
+        <MappingFragment StoreEntitySet="Rarity">
+          <ScalarProperty Name="RarityID" ColumnName="RarityID" />
+          <ScalarProperty Name="RarityName" ColumnName="RarityName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RarityIdent">
+      <EntityTypeMapping TypeName="HoardSorterModel.RarityIdent">
+        <MappingFragment StoreEntitySet="RarityIdent">
+          <ScalarProperty Name="RarityID" ColumnName="RarityID" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="RarityIdentID" ColumnName="RarityIdentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SetIdent">
+      <EntityTypeMapping TypeName="HoardSorterModel.SetIdent">
+        <MappingFragment StoreEntitySet="SetIdent">
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="SetID" ColumnName="SetID" />
+          <ScalarProperty Name="SetIdentID" ColumnName="SetIdentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Type">
+      <EntityTypeMapping TypeName="HoardSorterModel.Type">
+        <MappingFragment StoreEntitySet="Type">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="TypeName" ColumnName="TypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeIdent">
+      <EntityTypeMapping TypeName="HoardSorterModel.TypeIdent">
+        <MappingFragment StoreEntitySet="TypeIdent">
+          <ScalarProperty Name="TypeID" ColumnName="TypeID" />
+          <ScalarProperty Name="CardID" ColumnName="CardID" />
+          <ScalarProperty Name="TypeIdentID" ColumnName="TypeIdentID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="AspNetUserRoles" TypeName="HoardSorterModel.AspNetUserRoles" StoreEntitySet="AspNetUserRoles">
+      <EndProperty Name="AspNetRoles">
+        <ScalarProperty Name="Id" ColumnName="RoleId" />
+      </EndProperty>
+      <EndProperty Name="AspNetUsers">
+        <ScalarProperty Name="Id" ColumnName="UserId" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping>
