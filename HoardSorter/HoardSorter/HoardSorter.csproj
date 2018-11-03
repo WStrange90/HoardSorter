@@ -201,7 +201,6 @@
     <Compile Include="Controllers\DecksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
-    <Compile Include="Controllers\TradesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -272,7 +271,6 @@
     <Compile Include="Models\SetIdent.cs">
       <DependentUpon>HoardSorter.tt</DependentUpon>
     </Compile>
-    <Compile Include="Models\Trade.cs" />
     <Compile Include="Models\Type.cs">
       <DependentUpon>HoardSorter.tt</DependentUpon>
     </Compile>
@@ -368,11 +366,6 @@
     <Content Include="Views\Collections\Details.cshtml" />
     <Content Include="Views\Collections\Edit.cshtml" />
     <Content Include="Views\Collections\Index.cshtml" />
-    <Content Include="Views\Trades\Create.cshtml" />
-    <Content Include="Views\Trades\Delete.cshtml" />
-    <Content Include="Views\Trades\Details.cshtml" />
-    <Content Include="Views\Trades\Edit.cshtml" />
-    <Content Include="Views\Trades\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
