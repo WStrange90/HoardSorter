@@ -2,7 +2,7 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="HoardSorterModelStoreContainer" CdmEntityContainer="HoardSorterEntities">
     <EntitySetMapping Name="AspNetRoles">
-      <EntityTypeMapping TypeName="HoardSorterModel.AspNetRole">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetRoles">
         <MappingFragment StoreEntitySet="AspNetRoles">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
@@ -10,7 +10,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUserClaims">
-      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserClaim">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserClaims">
         <MappingFragment StoreEntitySet="AspNetUserClaims">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="UserId" ColumnName="UserId" />
@@ -20,7 +20,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUserLogins">
-      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserLogin">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUserLogins">
         <MappingFragment StoreEntitySet="AspNetUserLogins">
           <ScalarProperty Name="LoginProvider" ColumnName="LoginProvider" />
           <ScalarProperty Name="ProviderKey" ColumnName="ProviderKey" />
@@ -29,7 +29,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="AspNetUsers">
-      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUser">
+      <EntityTypeMapping TypeName="HoardSorterModel.AspNetUsers">
         <MappingFragment StoreEntitySet="AspNetUsers">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Email" ColumnName="Email" />
@@ -46,7 +46,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="CardCollections">
+    <EntitySetMapping Name="CardCollection">
       <EntityTypeMapping TypeName="HoardSorterModel.CardCollection">
         <MappingFragment StoreEntitySet="CardCollection">
           <ScalarProperty Name="CardCollectionID" ColumnName="CardCollectionID" />
@@ -61,7 +61,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="CardDetails">
-      <EntityTypeMapping TypeName="HoardSorterModel.CardDetail">
+      <EntityTypeMapping TypeName="HoardSorterModel.CardDetails">
         <MappingFragment StoreEntitySet="CardDetails">
           <ScalarProperty Name="CardID" ColumnName="CardID" />
           <ScalarProperty Name="CardName" ColumnName="CardName" />
@@ -72,7 +72,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="CardSets">
+    <EntitySetMapping Name="CardSet">
       <EntityTypeMapping TypeName="HoardSorterModel.CardSet">
         <MappingFragment StoreEntitySet="CardSet">
           <ScalarProperty Name="SetID" ColumnName="SetID" />
@@ -81,14 +81,14 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="Collections">
-      <EntityTypeMapping TypeName="HoardSorterModel.Collection">
+      <EntityTypeMapping TypeName="HoardSorterModel.Collections">
         <MappingFragment StoreEntitySet="Collections">
           <ScalarProperty Name="collectorID" ColumnName="collectorID" />
           <ScalarProperty Name="UserID" ColumnName="UserID" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Colors">
+    <EntitySetMapping Name="Color">
       <EntityTypeMapping TypeName="HoardSorterModel.Color">
         <MappingFragment StoreEntitySet="Color">
           <ScalarProperty Name="ColorID" ColumnName="ColorID" />
@@ -96,7 +96,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="ColorIdents">
+    <EntitySetMapping Name="ColorIdent">
       <EntityTypeMapping TypeName="HoardSorterModel.ColorIdent">
         <MappingFragment StoreEntitySet="ColorIdent">
           <ScalarProperty Name="ColorID" ColumnName="ColorID" />
@@ -105,7 +105,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Decks">
+    <EntitySetMapping Name="Deck">
       <EntityTypeMapping TypeName="HoardSorterModel.Deck">
         <MappingFragment StoreEntitySet="Deck">
           <ScalarProperty Name="DeckID" ColumnName="DeckID" />
@@ -116,7 +116,7 @@
       </EntityTypeMapping>
     </EntitySetMapping>
     <EntitySetMapping Name="DeckCards">
-      <EntityTypeMapping TypeName="HoardSorterModel.DeckCard">
+      <EntityTypeMapping TypeName="HoardSorterModel.DeckCards">
         <MappingFragment StoreEntitySet="DeckCards">
           <ScalarProperty Name="DeckCardID" ColumnName="DeckCardID" />
           <ScalarProperty Name="DeckID" ColumnName="DeckID" />
@@ -125,7 +125,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DeckTypes">
+    <EntitySetMapping Name="DeckType">
       <EntityTypeMapping TypeName="HoardSorterModel.DeckType">
         <MappingFragment StoreEntitySet="DeckType">
           <ScalarProperty Name="DeckTypeID" ColumnName="DeckTypeID" />
@@ -133,7 +133,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Rarities">
+    <EntitySetMapping Name="Rarity">
       <EntityTypeMapping TypeName="HoardSorterModel.Rarity">
         <MappingFragment StoreEntitySet="Rarity">
           <ScalarProperty Name="RarityID" ColumnName="RarityID" />
@@ -141,7 +141,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="RarityIdents">
+    <EntitySetMapping Name="RarityIdent">
       <EntityTypeMapping TypeName="HoardSorterModel.RarityIdent">
         <MappingFragment StoreEntitySet="RarityIdent">
           <ScalarProperty Name="RarityID" ColumnName="RarityID" />
@@ -150,7 +150,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="SetIdents">
+    <EntitySetMapping Name="SetIdent">
       <EntityTypeMapping TypeName="HoardSorterModel.SetIdent">
         <MappingFragment StoreEntitySet="SetIdent">
           <ScalarProperty Name="CardID" ColumnName="CardID" />
@@ -159,7 +159,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Types">
+    <EntitySetMapping Name="Type">
       <EntityTypeMapping TypeName="HoardSorterModel.Type">
         <MappingFragment StoreEntitySet="Type">
           <ScalarProperty Name="TypeID" ColumnName="TypeID" />
@@ -167,7 +167,7 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="TypeIdents">
+    <EntitySetMapping Name="TypeIdent">
       <EntityTypeMapping TypeName="HoardSorterModel.TypeIdent">
         <MappingFragment StoreEntitySet="TypeIdent">
           <ScalarProperty Name="TypeID" ColumnName="TypeID" />

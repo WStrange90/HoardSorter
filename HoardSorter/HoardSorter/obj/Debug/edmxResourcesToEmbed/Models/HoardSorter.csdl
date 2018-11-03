@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="HoardSorterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-  <EntityType Name="AspNetRole">
+  <EntityType Name="AspNetRoles">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -8,7 +8,7 @@
     <Property Name="Name" Type="String" MaxLength="256" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="AspNetUsers" Relationship="Self.AspNetUserRoles" FromRole="AspNetRoles" ToRole="AspNetUsers" />
   </EntityType>
-  <EntityType Name="AspNetUserClaim">
+  <EntityType Name="AspNetUserClaims">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -16,9 +16,9 @@
     <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ClaimType" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="ClaimValue" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUserClaims" ToRole="AspNetUsers" />
   </EntityType>
-  <EntityType Name="AspNetUserLogin">
+  <EntityType Name="AspNetUserLogins">
     <Key>
       <PropertyRef Name="LoginProvider" />
       <PropertyRef Name="ProviderKey" />
@@ -27,9 +27,9 @@
     <Property Name="LoginProvider" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="ProviderKey" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="UserId" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUserLogins" ToRole="AspNetUsers" />
   </EntityType>
-  <EntityType Name="AspNetUser">
+  <EntityType Name="AspNetUsers">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -48,7 +48,7 @@
     <NavigationProperty Name="AspNetUserClaims" Relationship="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserClaims" />
     <NavigationProperty Name="AspNetUserLogins" Relationship="Self.FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId" FromRole="AspNetUsers" ToRole="AspNetUserLogins" />
     <NavigationProperty Name="Collections" Relationship="Self.FK_dbo_Collections_dbo_AspNetUsers_Id" FromRole="AspNetUsers" ToRole="Collections" />
-    <NavigationProperty Name="Decks" Relationship="Self.FK_dbo_Deck_dbo_AspNetUsers_Id" FromRole="AspNetUsers" ToRole="Deck" />
+    <NavigationProperty Name="Deck" Relationship="Self.FK_dbo_Deck_dbo_AspNetUsers_Id" FromRole="AspNetUsers" ToRole="Deck" />
     <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
   </EntityType>
   <EntityType Name="CardCollection">
@@ -63,10 +63,10 @@
     <Property Name="TradeQty" Type="Int32" />
     <Property Name="WantQty" Type="Int32" />
     <Property Name="collectorID" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.FK_CardCollection_CardDetails" FromRole="CardCollection" ToRole="CardDetails" />
-    <NavigationProperty Name="Collection" Relationship="Self.FK_CardCollection_Collections" FromRole="CardCollection" ToRole="Collections" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.FK_CardCollection_CardDetails" FromRole="CardCollection" ToRole="CardDetails" />
+    <NavigationProperty Name="Collections" Relationship="Self.FK_CardCollection_Collections" FromRole="CardCollection" ToRole="Collections" />
   </EntityType>
-  <EntityType Name="CardDetail">
+  <EntityType Name="CardDetails">
     <Key>
       <PropertyRef Name="CardID" />
     </Key>
@@ -76,12 +76,12 @@
     <Property Name="Text" Type="String" MaxLength="500" FixedLength="false" Unicode="false" />
     <Property Name="Power" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
     <Property Name="Toughness" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-    <NavigationProperty Name="CardCollections" Relationship="Self.FK_CardCollection_CardDetails" FromRole="CardDetails" ToRole="CardCollection" />
+    <NavigationProperty Name="CardCollection" Relationship="Self.FK_CardCollection_CardDetails" FromRole="CardDetails" ToRole="CardCollection" />
     <NavigationProperty Name="DeckCards" Relationship="Self.CardID" FromRole="CardDetails" ToRole="DeckCards" />
-    <NavigationProperty Name="ColorIdents" Relationship="Self.FK_ColorIdent_CardDetails" FromRole="CardDetails" ToRole="ColorIdent" />
-    <NavigationProperty Name="RarityIdents" Relationship="Self.FK_RarityIdent_CardDetails" FromRole="CardDetails" ToRole="RarityIdent" />
-    <NavigationProperty Name="SetIdents" Relationship="Self.FK_SetIdent_CardDetails" FromRole="CardDetails" ToRole="SetIdent" />
-    <NavigationProperty Name="TypeIdents" Relationship="Self.FK_TypeIdent_CardDetails" FromRole="CardDetails" ToRole="TypeIdent" />
+    <NavigationProperty Name="ColorIdent" Relationship="Self.FK_ColorIdent_CardDetails" FromRole="CardDetails" ToRole="ColorIdent" />
+    <NavigationProperty Name="RarityIdent" Relationship="Self.FK_RarityIdent_CardDetails" FromRole="CardDetails" ToRole="RarityIdent" />
+    <NavigationProperty Name="SetIdent" Relationship="Self.FK_SetIdent_CardDetails" FromRole="CardDetails" ToRole="SetIdent" />
+    <NavigationProperty Name="TypeIdent" Relationship="Self.FK_TypeIdent_CardDetails" FromRole="CardDetails" ToRole="TypeIdent" />
   </EntityType>
   <EntityType Name="CardSet">
     <Key>
@@ -89,16 +89,16 @@
     </Key>
     <Property Name="SetID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="SetName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="SetIdents" Relationship="Self.FK_SetIdent_Set" FromRole="CardSet" ToRole="SetIdent" />
+    <NavigationProperty Name="SetIdent" Relationship="Self.FK_SetIdent_Set" FromRole="CardSet" ToRole="SetIdent" />
   </EntityType>
-  <EntityType Name="Collection">
+  <EntityType Name="Collections">
     <Key>
       <PropertyRef Name="collectorID" />
     </Key>
     <Property Name="collectorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
-    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_Collections_dbo_AspNetUsers_Id" FromRole="Collections" ToRole="AspNetUsers" />
-    <NavigationProperty Name="CardCollections" Relationship="Self.FK_CardCollection_Collections" FromRole="Collections" ToRole="CardCollection" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_Collections_dbo_AspNetUsers_Id" FromRole="Collections" ToRole="AspNetUsers" />
+    <NavigationProperty Name="CardCollection" Relationship="Self.FK_CardCollection_Collections" FromRole="Collections" ToRole="CardCollection" />
   </EntityType>
   <EntityType Name="Color">
     <Key>
@@ -106,7 +106,7 @@
     </Key>
     <Property Name="ColorID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="Color1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="ColorIdents" Relationship="Self.FK_ColorIdent_Color" FromRole="Color" ToRole="ColorIdent" />
+    <NavigationProperty Name="ColorIdent" Relationship="Self.FK_ColorIdent_Color" FromRole="Color" ToRole="ColorIdent" />
   </EntityType>
   <EntityType Name="ColorIdent">
     <Key>
@@ -115,7 +115,7 @@
     <Property Name="ColorID" Type="Int32" Nullable="false" />
     <Property Name="CardID" Type="Int32" Nullable="false" />
     <Property Name="ColorIdentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.FK_ColorIdent_CardDetails" FromRole="ColorIdent" ToRole="CardDetails" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.FK_ColorIdent_CardDetails" FromRole="ColorIdent" ToRole="CardDetails" />
     <NavigationProperty Name="Color" Relationship="Self.FK_ColorIdent_Color" FromRole="ColorIdent" ToRole="Color" />
   </EntityType>
   <EntityType Name="Deck">
@@ -126,11 +126,11 @@
     <Property Name="UserID" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DeckTypeID" Type="Int32" Nullable="false" />
     <Property Name="DeckName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="AspNetUser" Relationship="Self.FK_dbo_Deck_dbo_AspNetUsers_Id" FromRole="Deck" ToRole="AspNetUsers" />
+    <NavigationProperty Name="AspNetUsers" Relationship="Self.FK_dbo_Deck_dbo_AspNetUsers_Id" FromRole="Deck" ToRole="AspNetUsers" />
     <NavigationProperty Name="DeckType" Relationship="Self.FK_Deck_DeckType" FromRole="Deck" ToRole="DeckType" />
     <NavigationProperty Name="DeckCards" Relationship="Self.FK_DeckCards_Deck" FromRole="Deck" ToRole="DeckCards" />
   </EntityType>
-  <EntityType Name="DeckCard">
+  <EntityType Name="DeckCards">
     <Key>
       <PropertyRef Name="DeckCardID" />
     </Key>
@@ -138,7 +138,7 @@
     <Property Name="DeckID" Type="Int32" Nullable="false" />
     <Property Name="CardID" Type="Int32" Nullable="false" />
     <Property Name="CardQty" Type="Int32" Nullable="false" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.CardID" FromRole="DeckCards" ToRole="CardDetails" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.CardID" FromRole="DeckCards" ToRole="CardDetails" />
     <NavigationProperty Name="Deck" Relationship="Self.FK_DeckCards_Deck" FromRole="DeckCards" ToRole="Deck" />
   </EntityType>
   <EntityType Name="DeckType">
@@ -147,7 +147,7 @@
     </Key>
     <Property Name="DeckTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="DeckType1" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="Decks" Relationship="Self.FK_Deck_DeckType" FromRole="DeckType" ToRole="Deck" />
+    <NavigationProperty Name="Deck" Relationship="Self.FK_Deck_DeckType" FromRole="DeckType" ToRole="Deck" />
   </EntityType>
   <EntityType Name="Rarity">
     <Key>
@@ -155,7 +155,7 @@
     </Key>
     <Property Name="RarityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="RarityName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="RarityIdents" Relationship="Self.FK_RarityIdent_Rarity" FromRole="Rarity" ToRole="RarityIdent" />
+    <NavigationProperty Name="RarityIdent" Relationship="Self.FK_RarityIdent_Rarity" FromRole="Rarity" ToRole="RarityIdent" />
   </EntityType>
   <EntityType Name="RarityIdent">
     <Key>
@@ -164,7 +164,7 @@
     <Property Name="RarityID" Type="Int32" Nullable="false" />
     <Property Name="CardID" Type="Int32" Nullable="false" />
     <Property Name="RarityIdentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.FK_RarityIdent_CardDetails" FromRole="RarityIdent" ToRole="CardDetails" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.FK_RarityIdent_CardDetails" FromRole="RarityIdent" ToRole="CardDetails" />
     <NavigationProperty Name="Rarity" Relationship="Self.FK_RarityIdent_Rarity" FromRole="RarityIdent" ToRole="Rarity" />
   </EntityType>
   <EntityType Name="SetIdent">
@@ -174,7 +174,7 @@
     <Property Name="CardID" Type="Int32" Nullable="false" />
     <Property Name="SetID" Type="Int32" Nullable="false" />
     <Property Name="SetIdentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.FK_SetIdent_CardDetails" FromRole="SetIdent" ToRole="CardDetails" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.FK_SetIdent_CardDetails" FromRole="SetIdent" ToRole="CardDetails" />
     <NavigationProperty Name="CardSet" Relationship="Self.FK_SetIdent_Set" FromRole="SetIdent" ToRole="CardSet" />
   </EntityType>
   <EntityType Name="Type">
@@ -183,7 +183,7 @@
     </Key>
     <Property Name="TypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
     <Property Name="TypeName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
-    <NavigationProperty Name="TypeIdents" Relationship="Self.FK_TypeIdent_Type" FromRole="Type" ToRole="TypeIdent" />
+    <NavigationProperty Name="TypeIdent" Relationship="Self.FK_TypeIdent_Type" FromRole="Type" ToRole="TypeIdent" />
   </EntityType>
   <EntityType Name="TypeIdent">
     <Key>
@@ -192,14 +192,14 @@
     <Property Name="TypeID" Type="Int32" Nullable="false" />
     <Property Name="CardID" Type="Int32" Nullable="false" />
     <Property Name="TypeIdentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <NavigationProperty Name="CardDetail" Relationship="Self.FK_TypeIdent_CardDetails" FromRole="TypeIdent" ToRole="CardDetails" />
+    <NavigationProperty Name="CardDetails" Relationship="Self.FK_TypeIdent_CardDetails" FromRole="TypeIdent" ToRole="CardDetails" />
     <NavigationProperty Name="Type" Relationship="Self.FK_TypeIdent_Type" FromRole="TypeIdent" ToRole="Type" />
   </EntityType>
   <Association Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
-    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaim" Multiplicity="*" />
+    <End Role="AspNetUserClaims" Type="Self.AspNetUserClaims" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="AspNetUsers">
         <PropertyRef Name="Id" />
@@ -210,10 +210,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_dbo_AspNetUserLogins_dbo_AspNetUsers_UserId">
-    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogin" Multiplicity="*" />
+    <End Role="AspNetUserLogins" Type="Self.AspNetUserLogins" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="AspNetUsers">
         <PropertyRef Name="Id" />
@@ -224,10 +224,10 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_dbo_Collections_dbo_AspNetUsers_Id">
-    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
-    <End Role="Collections" Type="Self.Collection" Multiplicity="*" />
+    <End Role="Collections" Type="Self.Collections" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="AspNetUsers">
         <PropertyRef Name="Id" />
@@ -238,7 +238,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_dbo_Deck_dbo_AspNetUsers_Id">
-    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1">
       <OnDelete Action="Cascade" />
     </End>
     <End Role="Deck" Type="Self.Deck" Multiplicity="*" />
@@ -252,7 +252,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CardCollection_CardDetails">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
     <End Role="CardCollection" Type="Self.CardCollection" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
@@ -264,7 +264,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_CardCollection_Collections">
-    <End Role="Collections" Type="Self.Collection" Multiplicity="1" />
+    <End Role="Collections" Type="Self.Collections" Multiplicity="1" />
     <End Role="CardCollection" Type="Self.CardCollection" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Collections">
@@ -276,8 +276,8 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="CardID">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
-    <End Role="DeckCards" Type="Self.DeckCard" Multiplicity="*" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
+    <End Role="DeckCards" Type="Self.DeckCards" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
         <PropertyRef Name="CardID" />
@@ -288,7 +288,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_ColorIdent_CardDetails">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
     <End Role="ColorIdent" Type="Self.ColorIdent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
@@ -300,7 +300,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_RarityIdent_CardDetails">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
     <End Role="RarityIdent" Type="Self.RarityIdent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
@@ -312,7 +312,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_SetIdent_CardDetails">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
     <End Role="SetIdent" Type="Self.SetIdent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
@@ -324,7 +324,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="FK_TypeIdent_CardDetails">
-    <End Role="CardDetails" Type="Self.CardDetail" Multiplicity="1" />
+    <End Role="CardDetails" Type="Self.CardDetails" Multiplicity="1" />
     <End Role="TypeIdent" Type="Self.TypeIdent" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="CardDetails">
@@ -373,7 +373,7 @@
   </Association>
   <Association Name="FK_DeckCards_Deck">
     <End Role="Deck" Type="Self.Deck" Multiplicity="1" />
-    <End Role="DeckCards" Type="Self.DeckCard" Multiplicity="*" />
+    <End Role="DeckCards" Type="Self.DeckCards" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Deck">
         <PropertyRef Name="DeckID" />
@@ -408,28 +408,28 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="AspNetUserRoles">
-    <End Role="AspNetRoles" Type="Self.AspNetRole" Multiplicity="*" />
-    <End Role="AspNetUsers" Type="Self.AspNetUser" Multiplicity="*" />
+    <End Role="AspNetRoles" Type="Self.AspNetRoles" Multiplicity="*" />
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="*" />
   </Association>
   <EntityContainer Name="HoardSorterEntities" annotation:LazyLoadingEnabled="true">
-    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRole" />
-    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaim" />
-    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogin" />
-    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUser" />
-    <EntitySet Name="CardCollections" EntityType="Self.CardCollection" />
-    <EntitySet Name="CardDetails" EntityType="Self.CardDetail" />
-    <EntitySet Name="CardSets" EntityType="Self.CardSet" />
-    <EntitySet Name="Collections" EntityType="Self.Collection" />
-    <EntitySet Name="Colors" EntityType="Self.Color" />
-    <EntitySet Name="ColorIdents" EntityType="Self.ColorIdent" />
-    <EntitySet Name="Decks" EntityType="Self.Deck" />
-    <EntitySet Name="DeckCards" EntityType="Self.DeckCard" />
-    <EntitySet Name="DeckTypes" EntityType="Self.DeckType" />
-    <EntitySet Name="Rarities" EntityType="Self.Rarity" />
-    <EntitySet Name="RarityIdents" EntityType="Self.RarityIdent" />
-    <EntitySet Name="SetIdents" EntityType="Self.SetIdent" />
-    <EntitySet Name="Types" EntityType="Self.Type" />
-    <EntitySet Name="TypeIdents" EntityType="Self.TypeIdent" />
+    <EntitySet Name="AspNetRoles" EntityType="Self.AspNetRoles" />
+    <EntitySet Name="AspNetUserClaims" EntityType="Self.AspNetUserClaims" />
+    <EntitySet Name="AspNetUserLogins" EntityType="Self.AspNetUserLogins" />
+    <EntitySet Name="AspNetUsers" EntityType="Self.AspNetUsers" />
+    <EntitySet Name="CardCollection" EntityType="Self.CardCollection" />
+    <EntitySet Name="CardDetails" EntityType="Self.CardDetails" />
+    <EntitySet Name="CardSet" EntityType="Self.CardSet" />
+    <EntitySet Name="Collections" EntityType="Self.Collections" />
+    <EntitySet Name="Color" EntityType="Self.Color" />
+    <EntitySet Name="ColorIdent" EntityType="Self.ColorIdent" />
+    <EntitySet Name="Deck" EntityType="Self.Deck" />
+    <EntitySet Name="DeckCards" EntityType="Self.DeckCards" />
+    <EntitySet Name="DeckType" EntityType="Self.DeckType" />
+    <EntitySet Name="Rarity" EntityType="Self.Rarity" />
+    <EntitySet Name="RarityIdent" EntityType="Self.RarityIdent" />
+    <EntitySet Name="SetIdent" EntityType="Self.SetIdent" />
+    <EntitySet Name="Type" EntityType="Self.Type" />
+    <EntitySet Name="TypeIdent" EntityType="Self.TypeIdent" />
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
       <End Role="AspNetUserClaims" EntitySet="AspNetUserClaims" />
@@ -444,15 +444,15 @@
     </AssociationSet>
     <AssociationSet Name="FK_dbo_Deck_dbo_AspNetUsers_Id" Association="Self.FK_dbo_Deck_dbo_AspNetUsers_Id">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />
-      <End Role="Deck" EntitySet="Decks" />
+      <End Role="Deck" EntitySet="Deck" />
     </AssociationSet>
     <AssociationSet Name="FK_CardCollection_CardDetails" Association="Self.FK_CardCollection_CardDetails">
       <End Role="CardDetails" EntitySet="CardDetails" />
-      <End Role="CardCollection" EntitySet="CardCollections" />
+      <End Role="CardCollection" EntitySet="CardCollection" />
     </AssociationSet>
     <AssociationSet Name="FK_CardCollection_Collections" Association="Self.FK_CardCollection_Collections">
       <End Role="Collections" EntitySet="Collections" />
-      <End Role="CardCollection" EntitySet="CardCollections" />
+      <End Role="CardCollection" EntitySet="CardCollection" />
     </AssociationSet>
     <AssociationSet Name="CardID" Association="Self.CardID">
       <End Role="CardDetails" EntitySet="CardDetails" />
@@ -460,43 +460,43 @@
     </AssociationSet>
     <AssociationSet Name="FK_ColorIdent_CardDetails" Association="Self.FK_ColorIdent_CardDetails">
       <End Role="CardDetails" EntitySet="CardDetails" />
-      <End Role="ColorIdent" EntitySet="ColorIdents" />
+      <End Role="ColorIdent" EntitySet="ColorIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_RarityIdent_CardDetails" Association="Self.FK_RarityIdent_CardDetails">
       <End Role="CardDetails" EntitySet="CardDetails" />
-      <End Role="RarityIdent" EntitySet="RarityIdents" />
+      <End Role="RarityIdent" EntitySet="RarityIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_SetIdent_CardDetails" Association="Self.FK_SetIdent_CardDetails">
       <End Role="CardDetails" EntitySet="CardDetails" />
-      <End Role="SetIdent" EntitySet="SetIdents" />
+      <End Role="SetIdent" EntitySet="SetIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_TypeIdent_CardDetails" Association="Self.FK_TypeIdent_CardDetails">
       <End Role="CardDetails" EntitySet="CardDetails" />
-      <End Role="TypeIdent" EntitySet="TypeIdents" />
+      <End Role="TypeIdent" EntitySet="TypeIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_SetIdent_Set" Association="Self.FK_SetIdent_Set">
-      <End Role="CardSet" EntitySet="CardSets" />
-      <End Role="SetIdent" EntitySet="SetIdents" />
+      <End Role="CardSet" EntitySet="CardSet" />
+      <End Role="SetIdent" EntitySet="SetIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_ColorIdent_Color" Association="Self.FK_ColorIdent_Color">
-      <End Role="Color" EntitySet="Colors" />
-      <End Role="ColorIdent" EntitySet="ColorIdents" />
+      <End Role="Color" EntitySet="Color" />
+      <End Role="ColorIdent" EntitySet="ColorIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_Deck_DeckType" Association="Self.FK_Deck_DeckType">
-      <End Role="DeckType" EntitySet="DeckTypes" />
-      <End Role="Deck" EntitySet="Decks" />
+      <End Role="DeckType" EntitySet="DeckType" />
+      <End Role="Deck" EntitySet="Deck" />
     </AssociationSet>
     <AssociationSet Name="FK_DeckCards_Deck" Association="Self.FK_DeckCards_Deck">
-      <End Role="Deck" EntitySet="Decks" />
+      <End Role="Deck" EntitySet="Deck" />
       <End Role="DeckCards" EntitySet="DeckCards" />
     </AssociationSet>
     <AssociationSet Name="FK_RarityIdent_Rarity" Association="Self.FK_RarityIdent_Rarity">
-      <End Role="Rarity" EntitySet="Rarities" />
-      <End Role="RarityIdent" EntitySet="RarityIdents" />
+      <End Role="Rarity" EntitySet="Rarity" />
+      <End Role="RarityIdent" EntitySet="RarityIdent" />
     </AssociationSet>
     <AssociationSet Name="FK_TypeIdent_Type" Association="Self.FK_TypeIdent_Type">
-      <End Role="Type" EntitySet="Types" />
-      <End Role="TypeIdent" EntitySet="TypeIdents" />
+      <End Role="Type" EntitySet="Type" />
+      <End Role="TypeIdent" EntitySet="TypeIdent" />
     </AssociationSet>
     <AssociationSet Name="AspNetUserRoles" Association="Self.AspNetUserRoles">
       <End Role="AspNetRoles" EntitySet="AspNetRoles" />

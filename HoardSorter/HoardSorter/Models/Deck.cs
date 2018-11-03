@@ -17,7 +17,7 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Deck()
         {
-            this.DeckCards = new HashSet<DeckCard>();
+            this.DeckCards = new HashSet<DeckCards>();
         }
     
         public int DeckID { get; set; }
@@ -25,9 +25,9 @@ namespace HoardSorter.Models
         public int DeckTypeID { get; set; }
         public string DeckName { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
+        public virtual AspNetUsers AspNetUsers { get; set; }
         public virtual DeckType DeckType { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<DeckCard> DeckCards { get; set; }
+        public virtual ICollection<DeckCards> DeckCards { get; set; }
     }
 }

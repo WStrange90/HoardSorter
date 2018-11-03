@@ -17,13 +17,13 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Rarity()
         {
-            this.RarityIdents = new HashSet<RarityIdent>();
+            this.RarityIdent = new HashSet<RarityIdent>();
         }
     
         public int RarityID { get; set; }
         public string RarityName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RarityIdent> RarityIdents { get; set; }
+        public virtual ICollection<RarityIdent> RarityIdent { get; set; }
     }
 }

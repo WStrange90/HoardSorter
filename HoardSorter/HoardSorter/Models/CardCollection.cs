@@ -23,7 +23,7 @@ namespace HoardSorter.Models
         public Nullable<int> WantQty { get; set; }
         public int collectorID { get; set; }
     
-        public virtual CardDetail CardDetail { get; set; }
-        public virtual Collection Collection { get; set; }
+        public virtual CardDetails CardDetails { get; set; }
+        public virtual Collections Collections { get; set; }
     }
 }

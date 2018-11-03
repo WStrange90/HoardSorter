@@ -17,13 +17,13 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Type()
         {
-            this.TypeIdents = new HashSet<TypeIdent>();
+            this.TypeIdent = new HashSet<TypeIdent>();
         }
     
         public int TypeID { get; set; }
         public string TypeName { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TypeIdent> TypeIdents { get; set; }
+        public virtual ICollection<TypeIdent> TypeIdent { get; set; }
     }
 }

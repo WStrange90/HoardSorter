@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoardSorter", "HoardSorter\HoardSorter.csproj", "{84E9E646-5C42-44C5-A343-44246790A39D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoardSorter", "HoardSorter\HoardSorter.csproj", "{18D6FA49-8443-494A-95F4-EC311801C527}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{84E9E646-5C42-44C5-A343-44246790A39D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{84E9E646-5C42-44C5-A343-44246790A39D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{84E9E646-5C42-44C5-A343-44246790A39D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{84E9E646-5C42-44C5-A343-44246790A39D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18D6FA49-8443-494A-95F4-EC311801C527}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18D6FA49-8443-494A-95F4-EC311801C527}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18D6FA49-8443-494A-95F4-EC311801C527}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18D6FA49-8443-494A-95F4-EC311801C527}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {E8F60D23-3615-47CD-B499-5393E420B0DB}
+		SolutionGuid = {1A37997B-6970-458B-89BA-52E6206F6728}
 	EndGlobalSection
 EndGlobal

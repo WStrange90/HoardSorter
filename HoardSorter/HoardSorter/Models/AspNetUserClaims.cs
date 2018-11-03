@@ -12,14 +12,13 @@ namespace HoardSorter.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class DeckCard
+    public partial class AspNetUserClaims
     {
-        public int DeckCardID { get; set; }
-        public int DeckID { get; set; }
-        public int CardID { get; set; }
-        public int CardQty { get; set; }
+        public int Id { get; set; }
+        public string UserId { get; set; }
+        public string ClaimType { get; set; }
+        public string ClaimValue { get; set; }
     
-        public virtual CardDetail CardDetail { get; set; }
-        public virtual Deck Deck { get; set; }
+        public virtual AspNetUsers AspNetUsers { get; set; }
     }
 }

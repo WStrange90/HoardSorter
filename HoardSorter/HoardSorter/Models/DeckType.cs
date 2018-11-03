@@ -17,13 +17,13 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public DeckType()
         {
-            this.Decks = new HashSet<Deck>();
+            this.Deck = new HashSet<Deck>();
         }
     
         public int DeckTypeID { get; set; }
         public string DeckType1 { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Deck> Decks { get; set; }
+        public virtual ICollection<Deck> Deck { get; set; }
     }
 }

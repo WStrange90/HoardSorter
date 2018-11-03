@@ -18,7 +18,7 @@ namespace HoardSorter.Models
         public int CardID { get; set; }
         public int RarityIdentID { get; set; }
     
-        public virtual CardDetail CardDetail { get; set; }
+        public virtual CardDetails CardDetails { get; set; }
         public virtual Rarity Rarity { get; set; }
     }
 }

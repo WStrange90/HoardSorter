@@ -12,19 +12,18 @@ namespace HoardSorter.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Collection
+    public partial class AspNetRoles
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Collection()
+        public AspNetRoles()
         {
-            this.CardCollections = new HashSet<CardCollection>();
+            this.AspNetUsers = new HashSet<AspNetUsers>();
         }
     
-        public int collectorID { get; set; }
-        public string UserID { get; set; }
+        public string Id { get; set; }
+        public string Name { get; set; }
     
-        public virtual AspNetUser AspNetUser { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CardCollection> CardCollections { get; set; }
+        public virtual ICollection<AspNetUsers> AspNetUsers { get; set; }
     }
 }

@@ -79,10 +79,6 @@ namespace HoardSorter.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
-
-        [Phone]
-        [Display(Name = "Phone Number (Optional)")]
-        public string Phone { get; set; }
     }
 
     public class ResetPasswordViewModel
