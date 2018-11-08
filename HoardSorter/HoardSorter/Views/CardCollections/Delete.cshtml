@@ -1,0 +1,80 @@
+﻿@model HoardSorter.Models.CardCollection
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>CardCollection</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ToTrade)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToTrade)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Wanted)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Wanted)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.OwnedQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.OwnedQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TradeQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TradeQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.WantQty)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.WantQty)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CardDetails.CardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CardDetails.CardName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Collections.UserID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Collections.UserID)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>
