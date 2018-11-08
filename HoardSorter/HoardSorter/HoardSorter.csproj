@@ -372,6 +372,7 @@
     <Content Include="Views\CardCollections\Details.cshtml" />
     <Content Include="Views\CardCollections\Edit.cshtml" />
     <Content Include="Views\CardCollections\Index.cshtml" />
+    <Content Include="Views\CardCollections\MyTrades.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

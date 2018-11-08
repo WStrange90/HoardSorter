@@ -21,6 +21,12 @@ namespace HoardSorter.Controllers
             return View(cardCollection.ToList());
         }
 
+        public ActionResult MyTrades()
+        {
+            var cardCollection = db.CardCollection.Include(c => c.CardDetails).Include(c => c.Collections);
+            return View(cardCollection.ToList());
+        }
+
         // GET: CardCollections/Details/5
         public ActionResult Details(int? id)
         {
