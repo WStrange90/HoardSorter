@@ -86,6 +86,22 @@ namespace HoardSorter.Controllers
             return View(cardCollection);
         }
 
+        public ActionResult EditTrades(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CardCollection cardCollection = db.CardCollection.Find(id);
+            if (cardCollection == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
         // POST: CardCollections/Edit/5
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -98,6 +114,24 @@ namespace HoardSorter.Controllers
                 db.Entry(cardCollection).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult EditTrades([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+
+            if (ModelState.IsValid)
+            {
+                db.Entry(cardCollection).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("MyTrades");
             }
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
