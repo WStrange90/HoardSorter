@@ -152,7 +152,7 @@ namespace HoardSorter.Controllers
             if (ModelState.IsValid)
             {
                 HoardSorterEntities db = new HoardSorterEntities();
-                var user = new ApplicationUser { UserName = model.Email, Email = model.Email };
+                var user = new ApplicationUser { UserName = model.Email, Email = model.Email, PhoneNumber = model.Phone };
                 var result = await UserManager.CreateAsync(user, model.Password);
                 if (result.Succeeded)
                 {
