@@ -477,4 +477,7 @@ C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.csproj.CopyComplete
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.dll
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.pdb
+<<<<<<< HEAD
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\bin\HoardSorter.dll.config
+=======
+>>>>>>> parent of 2ea00fd... Merge branch 'Working' of https://github.com/WStrange90/HoardSorter into Working
