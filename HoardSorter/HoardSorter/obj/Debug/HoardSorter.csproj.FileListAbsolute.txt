@@ -477,3 +477,4 @@ C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.csproj.CopyComplete
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.dll
 C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.pdb
+C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\bin\HoardSorter.dll.config
