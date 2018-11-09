@@ -104,6 +104,14 @@
     <Property Name="CardID" Type="int" Nullable="false" />
     <Property Name="ColorIdentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
+  <EntityType Name="Contacts">
+    <Key>
+      <PropertyRef Name="ContactID" />
+    </Key>
+    <Property Name="ContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="myID" Type="nvarchar" MaxLength="128" Nullable="false" />
+    <Property Name="yourID" Type="nvarchar" MaxLength="128" Nullable="false" />
+  </EntityType>
   <EntityType Name="Deck">
     <Key>
       <PropertyRef Name="DeckID" />
@@ -224,6 +232,30 @@
       </Principal>
       <Dependent Role="ColorIdent">
         <PropertyRef Name="ColorID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_AspNetUsers">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="Contacts" Type="Self.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="myID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Contacts_AspNetUsers1">
+    <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+    <End Role="Contacts" Type="Self.Contacts" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="AspNetUsers">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Contacts">
+        <PropertyRef Name="yourID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -419,6 +451,7 @@
     <EntitySet Name="Collections" EntityType="Self.Collections" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="ColorIdent" EntityType="Self.ColorIdent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Deck" EntityType="Self.Deck" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DeckCards" EntityType="Self.DeckCards" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="DeckType" EntityType="Self.DeckType" Schema="dbo" store:Type="Tables" />
@@ -446,6 +479,14 @@
     <AssociationSet Name="FK_ColorIdent_Color" Association="Self.FK_ColorIdent_Color">
       <End Role="Color" EntitySet="Color" />
       <End Role="ColorIdent" EntitySet="ColorIdent" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_AspNetUsers" Association="Self.FK_Contacts_AspNetUsers">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Contacts" EntitySet="Contacts" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Contacts_AspNetUsers1" Association="Self.FK_Contacts_AspNetUsers1">
+      <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+      <End Role="Contacts" EntitySet="Contacts" />
     </AssociationSet>
     <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
       <End Role="AspNetUsers" EntitySet="AspNetUsers" />

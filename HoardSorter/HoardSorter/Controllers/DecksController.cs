@@ -17,7 +17,8 @@ namespace HoardSorter.Controllers
         // GET: Decks
         public ActionResult Index()
         {
-            var deck = db.Deck.Include(d => d.AspNetUsers).Include(d => d.DeckType);
+            String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
+            var deck = db.Deck.Where(y => (y.UserID.ToString()).Equals(UserID));
             return View(deck.ToList());
         }
 
