@@ -39,7 +39,7 @@ namespace HoardSorter.Controllers
         // GET: Decks/Create
         public ActionResult Create()
         {
-            
+            ViewBag.UserID = new SelectList(db.AspNetUsers, "Id", "Email");
             ViewBag.DeckTypeID = new SelectList(db.DeckType, "DeckTypeID", "DeckType1");
             return View();
         }
@@ -51,7 +51,6 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "DeckID,UserID,DeckTypeID,DeckName")] Deck deck)
         {
-            deck.UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
             if (ModelState.IsValid)
             {
                 db.Deck.Add(deck);
