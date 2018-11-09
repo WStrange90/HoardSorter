@@ -11,8 +11,7 @@ namespace HoardSorter.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-
+    
     public partial class CardDetails
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -27,9 +26,7 @@ namespace HoardSorter.Models
         }
     
         public int CardID { get; set; }
-        [Display(Name = "Card Name")]
         public string CardName { get; set; }
-        [Display(Name = "Mana")]
         public Nullable<int> ConvertedManaCost { get; set; }
         public string Text { get; set; }
         public string Power { get; set; }
