@@ -22,6 +22,8 @@ namespace HoardSorter.Models
             this.Collections = new HashSet<Collections>();
             this.Deck = new HashSet<Deck>();
             this.AspNetRoles = new HashSet<AspNetRoles>();
+            this.Contacts = new HashSet<Contacts>();
+            this.Contacts1 = new HashSet<Contacts>();
         }
     
         public string Id { get; set; }
@@ -47,5 +49,9 @@ namespace HoardSorter.Models
         public virtual ICollection<Deck> Deck { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AspNetRoles> AspNetRoles { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Contacts> Contacts { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Contacts> Contacts1 { get; set; }
     }
 }

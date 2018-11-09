@@ -43,5 +43,6 @@ namespace HoardSorter.Models
         public virtual DbSet<SetIdent> SetIdent { get; set; }
         public virtual DbSet<Type> Type { get; set; }
         public virtual DbSet<TypeIdent> TypeIdent { get; set; }
+        public virtual DbSet<Contacts> Contacts { get; set; }
     }
 }

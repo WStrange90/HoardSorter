@@ -236,6 +236,9 @@
     <Compile Include="Models\ColorIdent.cs">
       <DependentUpon>HoardSorter.tt</DependentUpon>
     </Compile>
+    <Compile Include="Models\Contacts.cs">
+      <DependentUpon>HoardSorter.tt</DependentUpon>
+    </Compile>
     <Compile Include="Models\Deck.cs">
       <DependentUpon>HoardSorter.tt</DependentUpon>
     </Compile>

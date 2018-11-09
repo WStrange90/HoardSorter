@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-      <Schema Namespace="HoardSorterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+    <Schema Namespace="HoardSorterModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AspNetRoles">
           <Key>
             <PropertyRef Name="Id" />
@@ -108,6 +108,14 @@
           <Property Name="ColorID" Type="int" Nullable="false" />
           <Property Name="CardID" Type="int" Nullable="false" />
           <Property Name="ColorIdentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ContactID" />
+          </Key>
+          <Property Name="ContactID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="myID" Type="nvarchar" MaxLength="128" Nullable="false" />
+          <Property Name="yourID" Type="nvarchar" MaxLength="128" Nullable="false" />
         </EntityType>
         <EntityType Name="Deck">
           <Key>
@@ -229,6 +237,30 @@
             </Principal>
             <Dependent Role="ColorIdent">
               <PropertyRef Name="ColorID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_AspNetUsers">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="Contacts" Type="Self.Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="myID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_AspNetUsers1">
+          <End Role="AspNetUsers" Type="Self.AspNetUsers" Multiplicity="1" />
+          <End Role="Contacts" Type="Self.Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="yourID" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -424,6 +456,7 @@
           <EntitySet Name="Collections" EntityType="Self.Collections" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="ColorIdent" EntityType="Self.ColorIdent" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Contacts" EntityType="Self.Contacts" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Deck" EntityType="Self.Deck" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DeckCards" EntityType="Self.DeckCards" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="DeckType" EntityType="Self.DeckType" Schema="dbo" store:Type="Tables" />
@@ -451,6 +484,14 @@
           <AssociationSet Name="FK_ColorIdent_Color" Association="Self.FK_ColorIdent_Color">
             <End Role="Color" EntitySet="Color" />
             <End Role="ColorIdent" EntitySet="ColorIdent" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_AspNetUsers" Association="Self.FK_Contacts_AspNetUsers">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_AspNetUsers1" Association="Self.FK_Contacts_AspNetUsers1">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Contacts" EntitySet="Contacts" />
           </AssociationSet>
           <AssociationSet Name="FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId" Association="Self.FK_dbo_AspNetUserClaims_dbo_AspNetUsers_UserId">
             <End Role="AspNetUsers" EntitySet="AspNetUsers" />
@@ -509,8 +550,7 @@
             <End Role="TypeIdent" EntitySet="TypeIdent" />
           </AssociationSet>
         </EntityContainer>
-      </Schema>
-    </edmx:StorageModels>
+      </Schema></edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="HoardSorterModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
@@ -564,6 +604,8 @@
           <NavigationProperty Name="Collections" Relationship="Self.FK_dbo_Collections_dbo_AspNetUsers_Id" FromRole="AspNetUsers" ToRole="Collections" />
           <NavigationProperty Name="Deck" Relationship="Self.FK_dbo_Deck_dbo_AspNetUsers_Id" FromRole="AspNetUsers" ToRole="Deck" />
           <NavigationProperty Name="AspNetRoles" Relationship="Self.AspNetUserRoles" FromRole="AspNetUsers" ToRole="AspNetRoles" />
+          <NavigationProperty Name="Contacts" Relationship="HoardSorterModel.FK_Contacts_AspNetUsers" FromRole="AspNetUsers" ToRole="Contacts" />
+          <NavigationProperty Name="Contacts1" Relationship="HoardSorterModel.FK_Contacts_AspNetUsers1" FromRole="AspNetUsers" ToRole="Contacts" />
         </EntityType>
         <EntityType Name="CardCollection">
           <Key>
@@ -1016,7 +1058,50 @@
             <End Role="AspNetRoles" EntitySet="AspNetRoles" />
             <End Role="AspNetUsers" EntitySet="AspNetUsers" />
           </AssociationSet>
+          <EntitySet Name="Contacts" EntityType="HoardSorterModel.Contacts" />
+          <AssociationSet Name="FK_Contacts_AspNetUsers" Association="HoardSorterModel.FK_Contacts_AspNetUsers">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
+          <AssociationSet Name="FK_Contacts_AspNetUsers1" Association="HoardSorterModel.FK_Contacts_AspNetUsers1">
+            <End Role="AspNetUsers" EntitySet="AspNetUsers" />
+            <End Role="Contacts" EntitySet="Contacts" />
+          </AssociationSet>
         </EntityContainer>
+        <EntityType Name="Contacts">
+          <Key>
+            <PropertyRef Name="ContactID" />
+          </Key>
+          <Property Name="ContactID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="myID" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <Property Name="yourID" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="AspNetUsers" Relationship="HoardSorterModel.FK_Contacts_AspNetUsers" FromRole="Contacts" ToRole="AspNetUsers" />
+          <NavigationProperty Name="AspNetUsers1" Relationship="HoardSorterModel.FK_Contacts_AspNetUsers1" FromRole="Contacts" ToRole="AspNetUsers" />
+        </EntityType>
+        <Association Name="FK_Contacts_AspNetUsers">
+          <End Type="HoardSorterModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1" />
+          <End Type="HoardSorterModel.Contacts" Role="Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="myID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_Contacts_AspNetUsers1">
+          <End Type="HoardSorterModel.AspNetUsers" Role="AspNetUsers" Multiplicity="1" />
+          <End Type="HoardSorterModel.Contacts" Role="Contacts" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="AspNetUsers">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Contacts">
+              <PropertyRef Name="yourID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
@@ -1206,6 +1291,15 @@
               <ScalarProperty Name="Id" ColumnName="UserId" />
             </EndProperty>
           </AssociationSetMapping>
+          <EntitySetMapping Name="Contacts">
+            <EntityTypeMapping TypeName="HoardSorterModel.Contacts">
+              <MappingFragment StoreEntitySet="Contacts">
+                <ScalarProperty Name="yourID" ColumnName="yourID" />
+                <ScalarProperty Name="myID" ColumnName="myID" />
+                <ScalarProperty Name="ContactID" ColumnName="ContactID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
         </EntityContainerMapping>
       </Mapping>
     </edmx:Mappings>

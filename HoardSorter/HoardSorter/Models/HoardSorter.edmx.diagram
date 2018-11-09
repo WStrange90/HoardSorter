@@ -41,6 +41,9 @@
         <AssociationConnector Association="HoardSorterModel.FK_RarityIdent_Rarity" ManuallyRouted="false" />
         <AssociationConnector Association="HoardSorterModel.FK_TypeIdent_Type" ManuallyRouted="false" />
         <AssociationConnector Association="HoardSorterModel.AspNetUserRoles" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="HoardSorterModel.Contacts" Width="1.5" PointX="3.75" PointY="27.375" />
+        <AssociationConnector Association="HoardSorterModel.FK_Contacts_AspNetUsers" />
+        <AssociationConnector Association="HoardSorterModel.FK_Contacts_AspNetUsers1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
