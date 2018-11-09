@@ -89,7 +89,6 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DeckID,UserID,DeckTypeID,DeckName")] Deck deck)
         {
-            deck.UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
             if (ModelState.IsValid)
             {
                 db.Entry(deck).State = EntityState.Modified;
