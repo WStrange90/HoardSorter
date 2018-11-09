@@ -23,7 +23,10 @@ namespace HoardSorter.Controllers
 
         public ActionResult MyTrades()
         {
-            var cardCollection = db.CardCollection.Include(c => c.CardDetails).Include(c => c.Collections);
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+
+            var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
             return View(cardCollection.ToList());
         }
 
