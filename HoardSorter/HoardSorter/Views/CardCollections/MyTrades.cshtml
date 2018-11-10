@@ -15,9 +15,6 @@
             @Html.DisplayNameFor(model => model.CardDetails.CardName)
         </th>
         
-        <th>
-            @Html.DisplayNameFor(model => model.ToTrade)
-        </th>
         
         <th>
             @Html.DisplayNameFor(model => model.TradeQty)
@@ -28,31 +25,28 @@
 
         @foreach (var item in Model)
         {
-            <tr>
-                @if (item.ToTrade == true && item.OwnedQty >= item.TradeQty)
-                {
-                <td>
-                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
-                </td>
 
-                <td>
-                    @Html.DisplayFor(modelItem => item.ToTrade)
-                </td>
+            if (item.ToTrade == true && item.TradeQty > 0)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+                    </td>
 
                 
-                <td>
-                    @Html.DisplayFor(modelItem => item.TradeQty)
-                </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TradeQty)
+                    </td>
 
 
 
-                <td>
-                    @Html.ActionLink("Edit", "EditTrades", new { id = item.CardCollectionID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
-                </td>
-                }
-            </tr>
-        }
+                    <td>
+                        @Html.ActionLink("Edit", "EditTrades", new { id = item.CardCollectionID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+                    </td>
+                </tr>
+            }
+         }
 
     </table>
