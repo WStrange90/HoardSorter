@@ -12,57 +12,31 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ToTrade)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Wanted)
+            @Html.DisplayNameFor(model => model.CardDetails.CardName)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.OwnedQty)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.TradeQty)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.WantQty)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.CardDetails.CardName)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.Collections.UserID)
-        </th>
+
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.ToTrade)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Wanted)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.OwnedQty)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.TradeQty)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.WantQty)
-        </td>
-        <td>
+        @if (item.OwnedQty > 0)
+        {
+         <td>
             @Html.DisplayFor(modelItem => item.CardDetails.CardName)
-        </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.Collections.UserID)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.CardCollectionID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.CardCollectionID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.CardCollectionID })
-        </td>
+         </td>
+         <td>
+            @Html.DisplayFor(modelItem => item.OwnedQty)
+         </td>
+         <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.CardCollectionID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+         </td>
+        }
     </tr>
 }
 
