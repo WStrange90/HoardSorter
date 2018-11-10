@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HoardSorter.Models.CardCollection>
+
+@{
+    ViewBag.Title = "MyWants";
+}
+
+<h2>MyWants</h2>
+
+<p>
+    @Html.ActionLink("MyTrades", "MyTrades") <br /> <br />
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CardDetails.CardName)
+        </th>
+
+
+        <th>
+            @Html.DisplayNameFor(model => model.WantQty)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+
+        if (item.Wanted == true && item.WantQty > 0)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+                </td>
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.WantQty)
+                </td>
+
+
+
+                <td>
+                    @Html.ActionLink("Edit", "EditWants", new { id = item.CardCollectionID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+                </td>
+            </tr>
+        }
+    }
+
+</table>
