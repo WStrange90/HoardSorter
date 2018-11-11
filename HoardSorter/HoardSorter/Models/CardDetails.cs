@@ -84,14 +84,14 @@ namespace HoardSorter.Models
             }
         }
 
-        public virtual string Colors
+        public virtual List<Color> Colors
         {
             get
             {
-                string theColors;
+                List<Color> theColors;
                 using (var db = new HoardSorterEntities())
                 {
-                    theColors = db.ColorIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Color).FirstOrDefault().Color1;
+                    theColors = db.ColorIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Color).ToList();
                 }
                 return theColors;
             }
