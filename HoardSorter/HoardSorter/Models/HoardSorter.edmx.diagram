@@ -15,7 +15,7 @@
         <EntityTypeShape EntityType="HoardSorterModel.Collections" Width="1.5" PointX="10" PointY="14.375" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.Color" Width="1.5" PointX="3.75" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.ColorIdent" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
-        <EntityTypeShape EntityType="HoardSorterModel.Deck" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Deck" Width="1.5" PointX="11.125" PointY="3.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.DeckCards" Width="1.5" PointX="6" PointY="7.875" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.DeckType" Width="1.5" PointX="1.5" PointY="21" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.Rarity" Width="1.5" PointX="3.75" PointY="18.125" IsExpanded="true" />
@@ -41,7 +41,7 @@
         <AssociationConnector Association="HoardSorterModel.FK_RarityIdent_Rarity" ManuallyRouted="false" />
         <AssociationConnector Association="HoardSorterModel.FK_TypeIdent_Type" ManuallyRouted="false" />
         <AssociationConnector Association="HoardSorterModel.AspNetUserRoles" ManuallyRouted="false" />
-        <EntityTypeShape EntityType="HoardSorterModel.Contacts" Width="1.5" PointX="3.75" PointY="27.375" />
+        <EntityTypeShape EntityType="HoardSorterModel.Contacts" PointX="7.875" PointY="2.375" Width="1.5" />
         <AssociationConnector Association="HoardSorterModel.FK_Contacts_AspNetUsers" />
         <AssociationConnector Association="HoardSorterModel.FK_Contacts_AspNetUsers1" />
       </Diagram>
