@@ -19,6 +19,14 @@
         </dd>
 
         <dt>
+            @Html.DisplayNameFor(model => model.CardDetails.TypeIdent.Type.TypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CardDetails.Types)
+        </dd>
+
+        <dt>
             @Html.DisplayNameFor(model => model.CardDetails.Text)
         </dt>
 
@@ -43,11 +51,11 @@
         </dd>
 
         <dt>
-            @Html.DisplayNameFor(model => model.CardDetails.SetIdent)
+            @Html.DisplayNameFor(model => model.CardDetails.SetIdent.CardSet.SetName)
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CardDetails.SetIdent)
+            @Html.DisplayFor(model => model.CardDetails.Sets)
         </dd>
 
         <dt>

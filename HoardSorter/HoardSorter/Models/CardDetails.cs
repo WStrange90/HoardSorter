@@ -22,8 +22,6 @@ namespace HoardSorter.Models
             this.CardCollection = new HashSet<CardCollection>();
             this.DeckCards = new HashSet<DeckCards>();
             this.ColorIdent = new HashSet<ColorIdent>();
-            this.SetIdent = new HashSet<SetIdent>();
-            this.TypeIdent = new HashSet<TypeIdent>();
         }
 
         
@@ -46,9 +44,9 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual RarityIdent RarityIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<SetIdent> SetIdent { get; set; }
+        public virtual SetIdent SetIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<TypeIdent> TypeIdent { get; set; }
+        public virtual TypeIdent TypeIdent { get; set; }
 
         public virtual string Rarities
         {
@@ -60,6 +58,30 @@ namespace HoardSorter.Models
                     theRares = db.RarityIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Rarity).FirstOrDefault().RarityName;
                 }
                 return theRares;
+            }
+        }
+        public virtual string Types
+        {
+            get
+            {
+                string theTypes;
+                using (var db = new HoardSorterEntities())
+                {
+                   theTypes = db.TypeIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Type).FirstOrDefault().TypeName;
+                }
+                return theTypes;
+            }
+        }
+        public virtual string Sets
+        {
+            get
+            {
+                string theSets;
+                using (var db = new HoardSorterEntities())
+                {
+                    theSets = db.SetIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.CardSet).FirstOrDefault().SetName;
+                }
+                return theSets;
             }
         }
     }
