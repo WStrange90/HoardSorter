@@ -21,7 +21,6 @@ namespace HoardSorter.Models
         {
             this.CardCollection = new HashSet<CardCollection>();
             this.DeckCards = new HashSet<DeckCards>();
-            this.ColorIdent = new HashSet<ColorIdent>();
         }
 
         
@@ -40,7 +39,7 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DeckCards> DeckCards { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<ColorIdent> ColorIdent { get; set; }
+        public virtual ColorIdent ColorIdent{ get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual RarityIdent RarityIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
@@ -82,6 +81,19 @@ namespace HoardSorter.Models
                     theSets = db.SetIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.CardSet).FirstOrDefault().SetName;
                 }
                 return theSets;
+            }
+        }
+
+        public virtual string Colors
+        {
+            get
+            {
+                string theColors;
+                using (var db = new HoardSorterEntities())
+                {
+                    theColors = db.ColorIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Color).FirstOrDefault().Color1;
+                }
+                return theColors;
             }
         }
     }
