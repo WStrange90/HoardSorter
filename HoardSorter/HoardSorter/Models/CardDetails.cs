@@ -12,6 +12,7 @@ namespace HoardSorter.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
 
     public partial class CardDetails
     {
@@ -21,10 +22,11 @@ namespace HoardSorter.Models
             this.CardCollection = new HashSet<CardCollection>();
             this.DeckCards = new HashSet<DeckCards>();
             this.ColorIdent = new HashSet<ColorIdent>();
-            this.RarityIdent = new HashSet<RarityIdent>();
             this.SetIdent = new HashSet<SetIdent>();
             this.TypeIdent = new HashSet<TypeIdent>();
         }
+
+        
     
         public int CardID { get; set; }
         [Display(Name = "Card Name")]
@@ -42,10 +44,23 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ColorIdent> ColorIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<RarityIdent> RarityIdent { get; set; }
+        public virtual RarityIdent RarityIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<SetIdent> SetIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<TypeIdent> TypeIdent { get; set; }
+
+        public virtual string Rarities
+        {
+            get
+            {
+                string theRares;
+                using (var db = new HoardSorterEntities())
+                {
+                    theRares = db.RarityIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Rarity).FirstOrDefault().RarityName;
+                }
+                return theRares;
+            }
+        }
     }
 }
