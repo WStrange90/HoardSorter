@@ -74,6 +74,8 @@ namespace HoardSorter.Controllers
         {
             if (ModelState.IsValid)
             {
+                String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+                cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
                 db.CardCollection.Add(cardCollection);
                 db.SaveChanges();
                 return RedirectToAction("Index");
