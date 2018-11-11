@@ -11,9 +11,7 @@ namespace HoardSorter.Models
 {
     using System;
     using System.Collections.Generic;
-    using System.ComponentModel.DataAnnotations;
-    using System.Linq;
-
+    
     public partial class CardDetails
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
@@ -21,14 +19,14 @@ namespace HoardSorter.Models
         {
             this.CardCollection = new HashSet<CardCollection>();
             this.DeckCards = new HashSet<DeckCards>();
+            this.ColorIdent = new HashSet<ColorIdent>();
+            this.RarityIdent = new HashSet<RarityIdent>();
+            this.SetIdent = new HashSet<SetIdent>();
+            this.TypeIdent = new HashSet<TypeIdent>();
         }
-
-        
     
         public int CardID { get; set; }
-        [Display(Name = "Card Name")]
         public string CardName { get; set; }
-        [Display(Name = "Mana Cost")]
         public Nullable<int> ConvertedManaCost { get; set; }
         public string Text { get; set; }
         public string Power { get; set; }
@@ -39,12 +37,13 @@ namespace HoardSorter.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DeckCards> DeckCards { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ColorIdent ColorIdent{ get; set; }
+        public virtual ICollection<ColorIdent> ColorIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual RarityIdent RarityIdent { get; set; }
+        public virtual ICollection<RarityIdent> RarityIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual SetIdent SetIdent { get; set; }
+        public virtual ICollection<SetIdent> SetIdent { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+<<<<<<< HEAD
         public virtual TypeIdent TypeIdent { get; set; }
 
         public virtual string Rarities
@@ -96,5 +95,8 @@ namespace HoardSorter.Models
                 return theColors;
             }
         }
+=======
+        public virtual ICollection<TypeIdent> TypeIdent { get; set; }
+>>>>>>> baf1fab52fbeeb5040a50c3befa8704b1ddf6b52
     }
 }
