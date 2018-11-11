@@ -31,13 +31,7 @@
         </dt>
 
         <dd>
-            @foreach (var x in Model.CardDetails.Colors)
-            {
-                <tr>
-                @Html.DisplayFor(color => x.Color1)
-                </tr>
-            }
-
+            @Html.DisplayFor(model => model.CardDetails.Colors)
         </dd>
 
         <dt>
