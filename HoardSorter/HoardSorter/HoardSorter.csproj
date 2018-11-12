@@ -385,15 +385,11 @@
     <Content Include="Views\Contacts\Details.cshtml" />
     <Content Include="Views\Contacts\Edit.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
-<<<<<<< HEAD
     <Content Include="Views\DeckCards\Create.cshtml" />
     <Content Include="Views\DeckCards\Delete.cshtml" />
     <Content Include="Views\DeckCards\Details.cshtml" />
     <Content Include="Views\DeckCards\Edit.cshtml" />
     <Content Include="Views\DeckCards\Index.cshtml" />
-=======
-    <Content Include="Views\CardCollections\CreateTrade.cshtml" />
->>>>>>> a2227e9a440d1b0afe7f53ce826325ff12cb1f4a
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
