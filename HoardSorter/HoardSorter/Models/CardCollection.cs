@@ -11,15 +11,21 @@ namespace HoardSorter.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class CardCollection
     {
         public int CardCollectionID { get; set; }
         public int CardID { get; set; }
+        [Display(Name = "Trade")]
         public Nullable<bool> ToTrade { get; set; }
+        [Display(Name = "Want")]
         public Nullable<bool> Wanted { get; set; }
+        [Display(Name = "Owned Qty")]
         public Nullable<int> OwnedQty { get; set; }
+        [Display(Name = "Trade Qty")]
         public Nullable<int> TradeQty { get; set; }
+        [Display(Name = "Want Qty")]
         public Nullable<int> WantQty { get; set; }
         public int collectorID { get; set; }
     

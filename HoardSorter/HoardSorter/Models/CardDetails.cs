@@ -30,6 +30,7 @@ namespace HoardSorter.Models
         public string CardName { get; set; }
         [Display(Name = "Mana Cost")]
         public Nullable<int> ConvertedManaCost { get; set; }
+        [Display(Name = "Card Text")]
         public string Text { get; set; }
         public string Power { get; set; }
         public string Toughness { get; set; }
