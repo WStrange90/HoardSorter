@@ -32,9 +32,9 @@
             @Html.DisplayFor(modelItem => item.OwnedQty)
          </td>
          <td>
-            @Html.ActionLink("Edit", "Edit", new { id = item.CardCollectionID }) |
-            @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+             @Html.ActionLink("Card Details", "Details", new { id = item.CardCollectionID }) |
+             @Html.ActionLink("Edit", "Edit", new { id = item.CardCollectionID }) |
+             @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
          </td>
         }
     </tr>

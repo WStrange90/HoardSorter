@@ -4,7 +4,7 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Card Details</h2>
 
 <div>
     <h4>Personal Hoard</h4>
@@ -23,7 +23,12 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CardDetails.Types)
+            @foreach(var y in Model.CardDetails.Types)
+            {
+            <tr>
+                @Html.DisplayFor(model => y.TypeName)
+            </tr>
+            }
         </dd>
 
         <dt>
@@ -68,15 +73,12 @@
         </dt>
 
         <dd>
-            @Html.DisplayFor(model => model.CardDetails.Sets)
-        </dd>
-
-        <dt>
-            @Html.DisplayNameFor(model => model.OwnedQty)
-        </dt>
-
-        <dd>
-            @Html.DisplayFor(model => model.OwnedQty)
+            @foreach(var z in Model.CardDetails.Sets)
+            {
+            <tr>
+                @Html.DisplayFor(model => z.SetName)
+            </tr>
+            }
         </dd>
 
     </dl>

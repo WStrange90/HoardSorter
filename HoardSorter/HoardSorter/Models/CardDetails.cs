@@ -60,26 +60,26 @@ namespace HoardSorter.Models
                 return theRares;
             }
         }
-        public virtual string Types
+        public virtual List<Type>Types
         {
             get
             {
-                string theTypes;
+                List<Type> theTypes;
                 using (var db = new HoardSorterEntities())
                 {
-                    theTypes = db.TypeIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Type).FirstOrDefault().TypeName;
+                    theTypes = db.TypeIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Type).ToList();
                 }
                 return theTypes;
             }
         }
-        public virtual string Sets
+        public virtual List<CardSet> Sets
         {
             get
             {
-                string theSets;
+                List<CardSet> theSets;
                 using (var db = new HoardSorterEntities())
                 {
-                    theSets = db.SetIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.CardSet).FirstOrDefault().SetName;
+                    theSets = db.SetIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.CardSet).ToList();
                 }
                 return theSets;
             }
