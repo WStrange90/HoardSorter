@@ -86,6 +86,35 @@ namespace HoardSorter.Controllers
             return View(cardCollection);
         }
 
+        // GET: CardCollections/Create
+        public ActionResult CreateTrade()
+        {
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
+            return View();
+        }
+
+        // POST: CardCollections/Create
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
+        // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateTrade([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            if (ModelState.IsValid)
+            {
+                String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+                cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+                db.CardCollection.Add(cardCollection);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
         // GET: CardCollections/Edit/5
         public ActionResult Edit(int? id)
         {
