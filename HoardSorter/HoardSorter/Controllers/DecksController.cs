@@ -127,6 +127,22 @@ namespace HoardSorter.Controllers
             return RedirectToAction("Index");
         }
 
+        public ActionResult DeckContents(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            Deck deck = db.Deck.Find(id);
+            if (deck == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.UserID = new SelectList(db.AspNetUsers, "Id", "Email", deck.UserID);
+            ViewBag.DeckTypeID = new SelectList(db.DeckType, "DeckTypeID", "DeckType1", deck.DeckTypeID);
+            return View(deck);
+        }
+
         protected override void Dispose(bool disposing)
         {
             if (disposing)

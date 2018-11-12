@@ -17,7 +17,12 @@ namespace HoardSorter.Controllers
         // GET: DeckCards
         public ActionResult Index()
         {
-            var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
+         
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+
+
+            var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck.UserID == id);
+            //var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
             return View(deckCards.ToList());
         }
 
@@ -40,7 +45,7 @@ namespace HoardSorter.Controllers
         public ActionResult Create()
         {
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
-            ViewBag.DeckID = new SelectList(db.Deck, "DeckID", "UserID");
+            ViewBag.DeckID = new SelectList(db.Deck, "DeckID", "DeckName");
             return View();
         }
 

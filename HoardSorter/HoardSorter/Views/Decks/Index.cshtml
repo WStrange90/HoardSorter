@@ -14,9 +14,8 @@
         <th>
             @Html.DisplayNameFor(model => model.DeckName)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.AspNetUsers.Email)
-        </th>
+        
+        
         <th>
             @Html.DisplayNameFor(model => model.DeckType.DeckType1)
         </th>
@@ -28,16 +27,14 @@
         <td>
             @Html.DisplayFor(modelItem => item.DeckName)
         </td>
-        <td>
-            @Html.DisplayFor(modelItem => item.AspNetUsers.Email)
-        </td>
+       
         <td>
             @Html.DisplayFor(modelItem => item.DeckType.DeckType1)
         </td>
         <td>
-            @Html.ActionLink("Rename", "Edit", new { id = item.DeckID }) |
-            @Html.ActionLink("Rename", "Edit", new { id = item.DeckID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.DeckID })
+            @Html.ActionLink("Rename Deck", "Edit", new { id = item.DeckID }) |
+            @Html.ActionLink("Add / Remove Cards", "DeckContents", new { id = item.DeckID }) |
+            @Html.ActionLink("Delete Deck", "Delete", new { id = item.DeckID })
         </td>
     </tr>
 }

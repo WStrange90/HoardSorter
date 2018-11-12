@@ -390,6 +390,7 @@
     <Content Include="Views\DeckCards\Details.cshtml" />
     <Content Include="Views\DeckCards\Edit.cshtml" />
     <Content Include="Views\DeckCards\Index.cshtml" />
+    <Content Include="Views\Decks\DeckContents.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
