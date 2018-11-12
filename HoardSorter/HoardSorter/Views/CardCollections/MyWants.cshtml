@@ -33,7 +33,8 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+                    @Html.DisplayFor(modelItem => item.CardDetails.CardName) |
+                    @Html.ActionLink("Card Details", "Details", new { id = item.CardCollectionID }) 
                 </td>
 
 
@@ -45,7 +46,6 @@
 
                 <td>
                     @Html.ActionLink("Edit", "EditWants", new { id = item.CardCollectionID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.CardCollectionID }) |
                     @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
                 </td>
             </tr>
