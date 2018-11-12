@@ -35,8 +35,9 @@
             @Html.DisplayFor(modelItem => item.DeckType.DeckType1)
         </td>
         <td>
-            @Html.ActionLink("Rename", "Edit", new { id=item.DeckID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.DeckID })
+            @Html.ActionLink("Rename", "Edit", new { id = item.DeckID }) |
+            @Html.ActionLink("Rename", "Edit", new { id = item.DeckID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.DeckID })
         </td>
     </tr>
 }

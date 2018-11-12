@@ -1,0 +1,50 @@
+﻿@model HoardSorter.Models.DeckCards
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Details</title>
+</head>
+<body>
+    <div>
+        <h4>DeckCards</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.CardQty)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CardQty)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.CardName)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CardDetails.CardName)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Deck.UserID)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Deck.UserID)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.DeckCardID }) |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+</body>
+</html>

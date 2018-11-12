@@ -200,6 +200,7 @@
     <Compile Include="Controllers\CardCollectionsController.cs" />
     <Compile Include="Controllers\CollectionsController.cs" />
     <Compile Include="Controllers\ContactsController.cs" />
+    <Compile Include="Controllers\DeckCardsController.cs" />
     <Compile Include="Controllers\DecksController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -384,6 +385,11 @@
     <Content Include="Views\Contacts\Details.cshtml" />
     <Content Include="Views\Contacts\Edit.cshtml" />
     <Content Include="Views\Contacts\Index.cshtml" />
+    <Content Include="Views\DeckCards\Create.cshtml" />
+    <Content Include="Views\DeckCards\Delete.cshtml" />
+    <Content Include="Views\DeckCards\Details.cshtml" />
+    <Content Include="Views\DeckCards\Edit.cshtml" />
+    <Content Include="Views\DeckCards\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

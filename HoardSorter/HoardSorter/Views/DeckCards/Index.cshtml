@@ -1,0 +1,53 @@
+﻿@model IEnumerable<HoardSorter.Models.DeckCards>
+
+@{
+    ViewBag.Title = "DeckCardsIndex";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <p>
+        @Html.ActionLink("Create New", "Create")
+    </p>
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CardQty)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CardDetails.CardName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Deck.UserID)
+            </th>
+            <th></th>
+        </tr>
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Deck.UserID)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.DeckCardID }) |
+                @Html.ActionLink("Details", "Details", new { id=item.DeckCardID }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.DeckCardID })
+            </td>
+        </tr>
+    }
+    
+    </table>
+</body>
+</html>
