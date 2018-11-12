@@ -17,7 +17,9 @@ namespace HoardSorter.Controllers
         // GET: Contacts
         public ActionResult Index()
         {
-            var contacts = db.Contacts.Include(c => c.AspNetUsers).Include(c => c.AspNetUsers1);
+            String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
+            var contacts = db.Contacts.Where(y => (y.myID.ToString()).Equals(UserID));
+            //var contacts = db.Contacts.Include(c => c.AspNetUsers).Include(c => c.AspNetUsers1);
             return View(contacts.ToList());
         }
 
@@ -51,6 +53,9 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "ContactID,myID,yourID")] Contacts contacts)
         {
+            String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
+            contacts.myID = UserID;
+
             if (ModelState.IsValid)
             {
                 db.Contacts.Add(contacts);
