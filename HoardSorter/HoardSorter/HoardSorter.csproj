@@ -391,6 +391,7 @@
     <Content Include="Views\DeckCards\Edit.cshtml" />
     <Content Include="Views\DeckCards\Index.cshtml" />
     <Content Include="Views\Decks\DeckContents.cshtml" />
+    <Content Include="Views\CardCollections\CreateTrade.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
