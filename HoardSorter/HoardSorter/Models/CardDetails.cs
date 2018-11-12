@@ -67,7 +67,7 @@ namespace HoardSorter.Models
                 List<Type> theTypes;
                 using (var db = new HoardSorterEntities())
                 {
-                    theTypes = db.TypeIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Type).ToList();
+                    theTypes = db.TypeIdent.Where(ri => ri.CardID == CardID).Select(ri => ri.Type).OrderBy(s => s.TypeID).ToList();
                 }
                 return theTypes;
             }
