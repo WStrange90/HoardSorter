@@ -15,27 +15,37 @@
         <th>
             @Html.DisplayNameFor(model => model.OwnedQty)
         </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ToTrade)
+        </th>
 
         <th></th>
     </tr>
 
     @foreach (var item in Model)
     {
-        <tr>
-            @if (item.OwnedQty > 0)
-            {
-                <td>
-                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.OwnedQty)
-                </td>
-                <td>
-                    @Html.ActionLink("Add to Trades", "EditTrades", new { id = item.CardCollectionID })
-                </td>
-            }
-        </tr>
+    <tr>
+        @if (item.OwnedQty > 0)
+        {
+            <td>
+                @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.OwnedQty)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ToTrade)
+            </td>
+            <td>
+                @Html.ActionLink("Add to Trades", "EditTrades", new { id = item.CardCollectionID })
+            </td>
+        }
+    </tr>
     }
 
 </table>
+
+<div>
+    @Html.ActionLink("Back to List", "MyTrades")
+</div>
 

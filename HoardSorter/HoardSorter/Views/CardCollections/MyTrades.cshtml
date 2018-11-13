@@ -17,38 +17,37 @@
         <th>
             @Html.DisplayNameFor(model => model.CardDetails.CardName)
         </th>
-        
-        
+
+
         <th>
             @Html.DisplayNameFor(model => model.TradeQty)
         </th>
-      
+
         <th></th>
-        </tr>
+    </tr>
 
         @foreach (var item in Model)
         {
 
             if (item.ToTrade == true && item.TradeQty > 0)
             {
-                <tr>
-                    <td>
-                        @Html.DisplayFor(modelItem => item.CardDetails.CardName) |
-                        @Html.ActionLink("Card Details", "Details", new { id = item.CardCollectionID })
-                    </td>
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CardDetails.CardName) |
+            @Html.ActionLink("Card Details", "Details", new { id = item.CardCollectionID })
+        </td>
 
-                
-                    <td>
-                        @Html.DisplayFor(modelItem => item.TradeQty)
-                    </td>
-
+        <td>
+            @Html.DisplayFor(modelItem => item.TradeQty)
+        </td>
 
 
-                    <td>
-                        @Html.ActionLink("Edit", "EditTrades", new { id = item.CardCollectionID }) |
-                        @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
-                    </td>
-                </tr>
+
+        <td>
+            @Html.ActionLink("Edit", "EditTrades", new { id = item.CardCollectionID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+        </td>
+    </tr>
             }
          }
 
