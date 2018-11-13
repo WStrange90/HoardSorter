@@ -18,11 +18,11 @@ namespace HoardSorter.Controllers
         public ActionResult Index()
         {
          
-            //String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
 
 
-            //var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck.UserID == id);
-            var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
+            var deckCards = db.DeckCards.Where(y => (y.Deck.UserID).Equals(id));
+            //var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
             return View(deckCards.ToList());
         }
 

@@ -41,6 +41,7 @@
            DeckTypeID = item.DeckTypeID,
            DeckName = item.DeckName,
        }) |
+            @Html.ActionLink("View Deck", "Index", "DeckCards") |
             @Html.ActionLink("Delete Deck", "Delete", new { id = item.DeckID })
         </td>
     </tr>
