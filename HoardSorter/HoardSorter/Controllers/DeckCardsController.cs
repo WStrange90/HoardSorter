@@ -15,15 +15,18 @@ namespace HoardSorter.Controllers
         private HoardSorterEntities db = new HoardSorterEntities();
 
         // GET: DeckCards
-        public ActionResult Index()
+        public ActionResult Index(int? DeckIdent)
         {
          
             String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
 
 
             var deckCards = db.DeckCards.Where(y => (y.Deck.UserID).Equals(id));
+            var deckNameIdent = db.DeckCards.Where(y => y.DeckID == DeckIdent);
+
+
             //var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
-            return View(deckCards.ToList());
+            return View(deckNameIdent.ToList());
         }
 
         // GET: DeckCards/Details/5
