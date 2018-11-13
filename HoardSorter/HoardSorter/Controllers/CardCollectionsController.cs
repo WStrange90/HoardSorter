@@ -136,6 +136,7 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
         {
+            
             if (ModelState.IsValid)
             {
                 db.Entry(cardCollection).State = EntityState.Modified;
