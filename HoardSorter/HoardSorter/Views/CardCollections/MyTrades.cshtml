@@ -45,7 +45,8 @@
 
         <td>
             @Html.ActionLink("Edit", "EditTrades", new { id = item.CardCollectionID }) |
-            @Html.ActionLink("Delete", "Delete", new { id = item.CardCollectionID })
+            @Html.ActionLink("Complete Trade", "CompleteTrade", new { id = item.CardCollectionID }) |
+            @Html.ActionLink("Cancel Trade", "CancelTrade", new { id = item.CardCollectionID })
         </td>
     </tr>
             }
