@@ -127,20 +127,46 @@ namespace HoardSorter.Controllers
             return RedirectToAction("Index");
         }
 
-        public ActionResult DeckContents(int? id)
+
+        // GET: DeckCards/DeckContents
+        public ActionResult DeckContents(int DeckID, String UserID, int DeckTypeID, String DeckName)
         {
-            if (id == null)
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.DeckID = DeckID;
+            return View();
+        }
+
+        // POST: Deckcards/Deckcontents
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeckContents([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
+        {
+            
+            
+            if (ModelState.IsValid)
             {
-                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+                db.DeckCards.Add(deckCards);
+                db.SaveChanges();
+                return RedirectToAction("Index");
             }
-            Deck deck = db.Deck.Find(id);
-            if (deck == null)
-            {
-                return HttpNotFound();
-            }
-            ViewBag.UserID = new SelectList(db.AspNetUsers, "Id", "Email", deck.UserID);
-            ViewBag.DeckTypeID = new SelectList(db.DeckType, "DeckTypeID", "DeckType1", deck.DeckTypeID);
-            return View(deck);
+
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
+            ViewBag.DeckID = new SelectList(db.Deck, "DeckID", "UserID", deckCards.DeckID);
+            return View(deckCards);
+            /*
+             if (id == null)
+             {
+                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+             }
+             Deck deck = db.Deck.Find(id);
+             if (deck == null)
+             {
+                 return HttpNotFound();
+             }
+             ViewBag.UserID = new SelectList(db.AspNetUsers, "Id", "Email", deck.UserID);
+             ViewBag.DeckTypeID = new SelectList(db.DeckType, "DeckTypeID", "DeckType1", deck.DeckTypeID);
+             return View(deck);
+             */
         }
 
         protected override void Dispose(bool disposing)
