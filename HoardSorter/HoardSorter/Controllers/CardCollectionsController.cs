@@ -13,7 +13,7 @@ namespace HoardSorter.Controllers
     public class CardCollectionsController : Controller
     {
         private HoardSorterEntities db = new HoardSorterEntities();
-
+        public int test;
         // GET: CardCollections
         public ActionResult Index()
         {
@@ -61,10 +61,18 @@ namespace HoardSorter.Controllers
             return View();
         }
 
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Search(int CardID)
+        {
+            return RedirectToAction("SearchResults", new { id = CardID });
+
+        }
+
         public ActionResult SearchResults(int id)
         {
             var cardCollection = db.CardCollection.Where(c => c.CardID == id);
-            return View(cardCollection.ToList());
+            return View(cardCollection);
         }
 
 

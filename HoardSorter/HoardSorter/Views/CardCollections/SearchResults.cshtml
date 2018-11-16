@@ -23,14 +23,22 @@
 
     @foreach (var item in Model)
     {
-        <tr>
+    <tr>
+        @if (item.TradeQty > 0)
+        {
             <td>
                 @Html.DisplayFor(modelItem => item.Collections.AspNetUsers.Email)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.CardDetails.CardName)
             </td>
-        </tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TradeQty)
+            </td>
+        }
+
+
+    </tr>
     }
 
 </table>
