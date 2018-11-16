@@ -9,10 +9,10 @@
         <EntityTypeShape EntityType="HoardSorterModel.AspNetUserClaims" Width="1.5" PointX="3.75" PointY="21.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.AspNetUserLogins" Width="1.5" PointX="3.75" PointY="24" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.AspNetUsers" Width="1.5" PointX="1.5" PointY="1" IsExpanded="true" />
-        <EntityTypeShape EntityType="HoardSorterModel.CardCollection" Width="1.5" PointX="3" PointY="10.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.CardCollection" Width="1.5" PointX="11.5" PointY="9.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.CardDetails" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.CardSet" Width="1.5" PointX="0.75" PointY="7.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="HoardSorterModel.Collections" Width="1.5" PointX="10" PointY="14.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="HoardSorterModel.Collections" Width="1.5" PointX="8.125" PointY="8.5" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.Color" Width="1.5" PointX="3.75" PointY="4.125" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.ColorIdent" Width="1.5" PointX="6" PointY="11" IsExpanded="true" />
         <EntityTypeShape EntityType="HoardSorterModel.Deck" Width="1.5" PointX="11.125" PointY="3.125" IsExpanded="true" />
