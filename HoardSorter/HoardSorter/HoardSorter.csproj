@@ -393,6 +393,8 @@
     <Content Include="Views\Decks\DeckContents.cshtml" />
     <Content Include="Views\CardCollections\CreateTrade.cshtml" />
     <Content Include="Views\CardCollections\FriendView.cshtml" />
+    <Content Include="Views\CardCollections\Search.cshtml" />
+    <Content Include="Views\CardCollections\SearchResults.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

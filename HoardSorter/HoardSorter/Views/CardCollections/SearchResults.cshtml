@@ -1,0 +1,32 @@
+﻿@model IEnumerable<HoardSorter.Models.CardCollection>
+
+@{
+    ViewBag.Title = "Results";
+}
+
+<h2>Search Results</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CardDetails.CardName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TradeQty)
+        </th>
+
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+                </td>
+               
+            }
+        </tr>
+    }
+
+</table>
