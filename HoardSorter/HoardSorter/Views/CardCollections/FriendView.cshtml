@@ -1,0 +1,35 @@
+﻿﻿@model IEnumerable<HoardSorter.Models.CardCollection>
+@{
+    ViewBag.Title = "FriendsTrades";
+}
+<h2>Friend's Trades</h2>
+<h2>@Html.ViewBag.Friend's Trades</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CardDetails.CardName)
+        </th>
+
+        <th>
+            @Html.DisplayNameFor(model => model.TradeQty)
+        </th>
+        <th></th>
+    </tr>
+    @foreach (var item in Model)
+    {
+
+        if (item.ToTrade == true && item.TradeQty > 0)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CardDetails.CardName) |
+                    @Html.ActionLink("Card Details", "Details", new { id = item.CardCollectionID })
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TradeQty)
+                </td>
+            </tr>
+        }
+    }
+</table>
