@@ -7,8 +7,8 @@
 <h2>Address Book</h2>
 
 <p>
-    @Html.ActionLink("MyTrades", "MyTrades", "CardCollections") |
-    @Html.ActionLink("MyWants", "MyWants", "CardCollections") |
+    @Html.ActionLink("MyTrades", "MyTrades", "CardCollections")|
+    @Html.ActionLink("MyWants", "MyWants", "CardCollections")|
     @Html.ActionLink("Address Book", "Index") <br /> <br />
     @Html.ActionLink("Create New", "Create")
 </p>
@@ -29,14 +29,13 @@
         {
             <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.AspNetUsers1.Email) |
-                    @Html.ActionLink("View Friends Trades", "FriendView", "CardCollections", new { id = item.AspNetUsers1.Id }, null)
+                    @Html.DisplayFor(modelItem => item.AspNetUsers1.Email)
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.AspNetUsers1.PhoneNumber)
                 </td>
                 <td>
-                    @Html.ActionLink("Delete Contact", "Delete", new { id = item.ContactID })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ContactID })
                 </td>
             </tr>
         }

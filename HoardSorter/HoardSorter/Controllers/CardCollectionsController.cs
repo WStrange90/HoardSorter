@@ -43,18 +43,6 @@ namespace HoardSorter.Controllers
             return View(cardCollection.ToList());
         }
 
-        public ActionResult FriendView(String id)
-        {
-            var collectorID = db.Collections.Where(y => y.UserID == id.ToString()).FirstOrDefault().collectorID;
-
-            String email = (db.AspNetUsers.Where(x => x.Id == id).FirstOrDefault().Email);
-            ViewBag.Friend = email;
-
-            var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
-            return View(cardCollection.ToList());
-        }
-
-
         public ActionResult MyWants()
         {
             String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
