@@ -9,6 +9,9 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.Collections.AspNetUsers.Email)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.CardDetails.CardName)
         </th>
         <th>
@@ -21,11 +24,12 @@
     @foreach (var item in Model)
     {
         <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
-                </td>
-               
-            }
+            <td>
+                @Html.DisplayFor(modelItem => item.Collections.AspNetUsers.Email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CardDetails.CardName)
+            </td>
         </tr>
     }
 

@@ -61,9 +61,9 @@ namespace HoardSorter.Controllers
             return View();
         }
 
-        public ActionResult SearchResults(String id)
+        public ActionResult SearchResults(int id)
         {
-            var cardCollection = db.CardCollection.Where(c => c.CardDetails.CardName == id);
+            var cardCollection = db.CardCollection.Where(c => c.CardID == id);
             return View(cardCollection.ToList());
         }
 
