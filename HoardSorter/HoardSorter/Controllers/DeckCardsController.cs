@@ -59,11 +59,14 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
         {
+            
+
             if (ModelState.IsValid)
             {
+                
                 db.DeckCards.Add(deckCards);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Create");
             }
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
@@ -95,9 +98,21 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
         {
+           
+            Deck deck = db.Deck.Find(deckCards.DeckID);
+            CardDetails card = db.CardDetails.Find(deckCards.CardID);
+            //int type = db.TypeIdent.Where(x => x.CardID == deckCards.CardID).FirstOrDefault().TypeID;
+            //System.Diagnostics.Debug.WriteLine();
             if (ModelState.IsValid)
             {
                 db.Entry(deckCards).State = EntityState.Modified;
+                //Rules for if the deck is Standard
+                //if (deckCards.CardQty > 4 && deck.DeckTypeID == 1 && type != 7)
+                if (deckCards.CardQty > 4 && deck.DeckTypeID == 1)
+                {
+                    deckCards.CardQty = 4;
+                }
+                //end changes
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
