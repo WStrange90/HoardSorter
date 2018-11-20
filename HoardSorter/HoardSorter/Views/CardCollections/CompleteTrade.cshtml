@@ -1,0 +1,63 @@
+﻿@model HoardSorter.Models.CardCollection
+
+@{
+    ViewBag.Title = "CompleteTrade";
+}
+
+<h2>Complete Trade</h2>
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.CardCollectionID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.CardID, "CardID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("CardID", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.CardID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.ToTrade)
+                @Html.ValidationMessageFor(model => model.ToTrade, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.OwnedQty)
+                @Html.ValidationMessageFor(model => model.OwnedQty, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-10">
+                @Html.HiddenFor(model => model.TradeQty)
+                @Html.ValidationMessageFor(model => model.TradeQty, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                Warning: Completing a trade will remove the cards from your collection!
+                <input type="submit" value="Complete Trade" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "MyTrades")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

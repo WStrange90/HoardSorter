@@ -395,6 +395,7 @@
     <Content Include="Views\CardCollections\FriendView.cshtml" />
     <Content Include="Views\CardCollections\Search.cshtml" />
     <Content Include="Views\CardCollections\SearchResults.cshtml" />
+    <Content Include="Views\CardCollections\CompleteTrade.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
