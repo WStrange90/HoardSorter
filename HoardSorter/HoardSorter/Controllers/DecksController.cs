@@ -122,6 +122,13 @@ namespace HoardSorter.Controllers
         public ActionResult DeleteConfirmed(int id)
         {
             Deck deck = db.Deck.Find(id);
+
+            var cards = db.DeckCards.Where(y => y.DeckID == deck.DeckID);
+            foreach (DeckCards card in cards)
+            {
+                db.DeckCards.Remove(card);
+            }
+
             db.Deck.Remove(deck);
             db.SaveChanges();
             return RedirectToAction("Index");

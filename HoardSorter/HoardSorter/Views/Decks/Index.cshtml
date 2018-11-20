@@ -34,7 +34,7 @@
         <td>
             @Html.ActionLink("Rename Deck", "Edit", new { id = item.DeckID }) |
             @* @Html.ActionLink("Add / Remove Cards", "DeckContents", new { id = item.DeckID }) | *@
-            @Html.ActionLink("Add / Remove Cards", "DeckContents", new
+            @Html.ActionLink("Add Cards", "DeckContents", new
        {
            DeckID = item.DeckID,
            UserID = item.UserID,
