@@ -108,6 +108,13 @@ namespace HoardSorter.Controllers
             return View();
         }
 
+        public ActionResult CreateWant()
+        {
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
+            return View();
+        }
+
         // POST: CardCollections/Create
         // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
@@ -122,6 +129,24 @@ namespace HoardSorter.Controllers
                 db.CardCollection.Add(cardCollection);
                 db.SaveChanges();
                 return RedirectToAction("Index");
+            }
+
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateWant([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            if (ModelState.IsValid)
+            {
+                String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+                cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+                db.CardCollection.Add(cardCollection);
+                db.SaveChanges();
+                return RedirectToAction("MyWants");
             }
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
@@ -162,7 +187,55 @@ namespace HoardSorter.Controllers
             return View(cardCollection);
         }
 
+        public ActionResult EditWants(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CardCollection cardCollection = db.CardCollection.Find(id);
+            if (cardCollection == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
         public ActionResult CompleteTrade(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CardCollection cardCollection = db.CardCollection.Find(id);
+            if (cardCollection == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        public ActionResult CancelTrade(int? id)
+        {
+            if (id == null)
+            {
+                return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
+            }
+            CardCollection cardCollection = db.CardCollection.Find(id);
+            if (cardCollection == null)
+            {
+                return HttpNotFound();
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        public ActionResult DeleteWant(int? id)
         {
             if (id == null)
             {
@@ -218,6 +291,24 @@ namespace HoardSorter.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        public ActionResult EditWants([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+
+            if (ModelState.IsValid)
+            {
+                db.Entry(cardCollection).State = EntityState.Modified;
+                db.SaveChanges();
+                return RedirectToAction("MyWants");
+            }
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
         public ActionResult CompleteTrade([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
         {
             String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
@@ -235,6 +326,52 @@ namespace HoardSorter.Controllers
                 return RedirectToAction("MyTrades");
             }
             
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CancelTrade([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+
+
+            if (ModelState.IsValid)
+            {
+                db.Entry(cardCollection).State = EntityState.Modified;
+                cardCollection.TradeQty = 0;
+                cardCollection.ToTrade = false;
+
+                db.SaveChanges();
+                return RedirectToAction("MyTrades");
+            }
+
+            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
+            ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
+            return View(cardCollection);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult DeleteWant([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
+        {
+            String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
+            cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+
+
+            if (ModelState.IsValid)
+            {
+                db.Entry(cardCollection).State = EntityState.Modified;
+                cardCollection.WantQty = 0;
+                cardCollection.Wanted = false;
+
+                db.SaveChanges();
+                return RedirectToAction("MyWants");
+            }
+
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
             return View(cardCollection);

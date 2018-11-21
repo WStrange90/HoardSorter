@@ -396,6 +396,10 @@
     <Content Include="Views\CardCollections\Search.cshtml" />
     <Content Include="Views\CardCollections\SearchResults.cshtml" />
     <Content Include="Views\CardCollections\CompleteTrade.cshtml" />
+    <Content Include="Views\CardCollections\CancelTrade.cshtml" />
+    <Content Include="Views\CardCollections\CreateWant.cshtml" />
+    <Content Include="Views\CardCollections\EditWants.cshtml" />
+    <Content Include="Views\CardCollections\DeleteWant.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
