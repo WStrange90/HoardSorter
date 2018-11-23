@@ -150,16 +150,25 @@ namespace HoardSorter.Controllers
         {
             int deckid = deckCards.DeckID;
             deckCards.CardQty = 1;
+            List<DeckCards> deck = db.DeckCards.Where(x => x.DeckID == deckCards.DeckID).ToList();
+            bool duplicateCard = false;
+            foreach(var item in deck)
+            {
+                if (item.CardID == deckCards.CardID)
+                {
+                    duplicateCard = true;
+                }
+            }
             
-            if (ModelState.IsValid)
+            if (ModelState.IsValid && !duplicateCard)
             {
                 db.DeckCards.Add(deckCards);
                 db.SaveChanges();
                 return RedirectToAction("DeckContents", new {DeckID = deckid});
             }
-
+            ViewBag.Error = "Error: That card is already in the deck!";
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
-            ViewBag.DeckID = new SelectList(db.Deck, "DeckID", "UserID", deckCards.DeckID);
+            ViewBag.DeckID = deckCards.DeckID;
             return View(deckCards);
             /*
              if (id == null)

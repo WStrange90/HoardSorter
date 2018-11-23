@@ -113,12 +113,11 @@ namespace HoardSorter.Controllers
             {
                 db.Entry(deckCards).State = EntityState.Modified;
                 //Rules for if the deck is Standard
-                //if (deckCards.CardQty > 4 && deck.DeckTypeID == 1 && type != 7)
                 if (deckCards.CardQty > 4 && deck.DeckTypeID == 1 && notLand)
                 {
                     deckCards.CardQty = 4;
                 }
-                //end changes
+                
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
