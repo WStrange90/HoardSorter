@@ -136,7 +136,7 @@ namespace HoardSorter.Controllers
 
 
         // GET: DeckCards/DeckContents
-        public ActionResult DeckContents(int DeckID, String UserID, int DeckTypeID, String DeckName)
+        public ActionResult DeckContents(int DeckID)
         {
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
             ViewBag.DeckID = DeckID;
@@ -148,13 +148,14 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult DeckContents([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
         {
-            
+            int deckid = deckCards.DeckID;
+            deckCards.CardQty = 1;
             
             if (ModelState.IsValid)
             {
                 db.DeckCards.Add(deckCards);
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("DeckContents", new {DeckID = deckid});
             }
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
