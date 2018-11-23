@@ -4,10 +4,10 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>Your Decks</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Deck", "Create")
 </p>
 <table class="table">
     <tr>
@@ -33,12 +33,7 @@
         </td>
         <td>
             @Html.ActionLink("Rename Deck", "Edit", new { id = item.DeckID }) |
-            @* @Html.ActionLink("Add / Remove Cards", "DeckContents", new { id = item.DeckID }) | *@
-            @Html.ActionLink("Add A Card", "DeckContents", new
-       {
-           DeckID = item.DeckID,
-          
-       }) |
+            @Html.ActionLink("Add A Card", "DeckContents", new { DeckID = item.DeckID,}) |
             @Html.ActionLink("View Deck", "Index", "DeckCards", new { DeckIdent = item.DeckID }, null) |
             @Html.ActionLink("Delete Deck", "Delete", new { id = item.DeckID })
         </td>

@@ -138,6 +138,9 @@ namespace HoardSorter.Controllers
         // GET: DeckCards/DeckContents
         public ActionResult DeckContents(int DeckID)
         {
+            Deck deck = new Deck();
+            deck = db.Deck.Single(x => x.DeckID == DeckID);
+            ViewBag.DeckName = deck.DeckName;
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
             ViewBag.DeckID = DeckID;
             return View();

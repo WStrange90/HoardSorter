@@ -21,7 +21,7 @@
         @Html.AntiForgeryToken()
 
     <div class="form-horizontal">
-        <h4>DeckCards</h4>
+        <h4>Choose a card to add to your deck "@ViewBag.DeckName"</h4>
         <hr />
         @Html.ValidationSummary(true, "", new { @class = "text-danger" })
 
