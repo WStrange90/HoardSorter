@@ -27,5 +27,7 @@ namespace HoardSorter.Models
         public virtual CardCollection CardCollection { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ColorIdent ColorIdent { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TypeIdent> TypeIdent { get; set; }
     }
 }

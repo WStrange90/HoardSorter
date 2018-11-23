@@ -18,7 +18,8 @@ namespace HoardSorter.Models
         public HoardSorterContext() : base("name=HoardSorterContext")
         {
         }
-
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TypeIdent> TypeIdent { get; set; }
         //public System.Data.Entity.DbSet<HoardSorter.Models.Trade> Trades { get; set; }
     }
 }
