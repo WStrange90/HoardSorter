@@ -136,8 +136,9 @@ namespace HoardSorter.Controllers
 
 
         // GET: DeckCards/DeckContents
-        public ActionResult DeckContents(int DeckID)
+        public ActionResult DeckContents(int DeckID, string message)
         {
+            ViewBag.Message = message;
             Deck deck = new Deck();
             deck = db.Deck.Single(x => x.DeckID == DeckID);
             ViewBag.DeckName = deck.DeckName;
@@ -167,7 +168,8 @@ namespace HoardSorter.Controllers
             {
                 db.DeckCards.Add(deckCards);
                 db.SaveChanges();
-                return RedirectToAction("DeckContents", new {DeckID = deckid});
+                
+                return RedirectToAction("DeckContents", new {DeckID = deckid, message = "Card added successfully!"});
             }
             ViewBag.Error = "Error: That card is already in the deck!";
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
