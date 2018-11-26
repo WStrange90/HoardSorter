@@ -24,6 +24,12 @@ namespace HoardSorter.Controllers
             var deckCards = db.DeckCards.Where(y => (y.Deck.UserID).Equals(id));
             var deckNameIdent = db.DeckCards.Where(y => y.DeckID == DeckIdent);
 
+            var deck = db.Deck.Where(x => x.DeckID == DeckIdent).FirstOrDefault();
+            if (deck != null)
+            {
+                ViewBag.DeckName = deck.DeckName;
+            }
+
 
             //var deckCards = db.DeckCards.Include(d => d.CardDetails).Include(d => d.Deck);
             return View(deckNameIdent.ToList());
@@ -103,10 +109,16 @@ namespace HoardSorter.Controllers
             CardDetails card = db.CardDetails.Find(deckCards.CardID);
             //int type = db.TypeIdent.Where(x => x.CardID == deckCards.CardID).FirstOrDefault().TypeID;
 
+            var CardTypes = card.Types;
             bool notLand = true;
-            if (deckCards.CardID == 221 || deckCards.CardID == 222 || deckCards.CardID == 223 || deckCards.CardID == 224 || deckCards.CardID == 225 || deckCards.CardID == 226 || deckCards.CardID == 227 || deckCards.CardID == 228 || deckCards.CardID == 229 || deckCards.CardID == 230 || deckCards.CardID == 231 || deckCards.CardID == 232 || deckCards.CardID == 233 || deckCards.CardID == 234 || deckCards.CardID == 243 || deckCards.CardID == 283 || deckCards.CardID == 293 || deckCards.CardID == 297 || deckCards.CardID == 333 || deckCards.CardID == 335 || deckCards.CardID == 240 || deckCards.CardID == 360 || deckCards.CardID == 571)
+            //if (deckCards.CardID == 221 || deckCards.CardID == 222 || deckCards.CardID == 223 || deckCards.CardID == 224 || deckCards.CardID == 225 || deckCards.CardID == 226 || deckCards.CardID == 227 || deckCards.CardID == 228 || deckCards.CardID == 229 || deckCards.CardID == 230 || deckCards.CardID == 231 || deckCards.CardID == 232 || deckCards.CardID == 233 || deckCards.CardID == 234 || deckCards.CardID == 243 || deckCards.CardID == 283 || deckCards.CardID == 293 || deckCards.CardID == 297 || deckCards.CardID == 333 || deckCards.CardID == 335 || deckCards.CardID == 240 || deckCards.CardID == 360 || deckCards.CardID == 571)
+            foreach (var type in CardTypes)
             {
-                notLand = false;
+                if(type.TypeID == 7)
+                {
+                    notLand = false;
+                }
+                
             }
             //System.Diagnostics.Debug.WriteLine();
             if (ModelState.IsValid)
