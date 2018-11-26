@@ -59,7 +59,7 @@
     }
     
     <div>
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Back to List", "Index", new { DeckIdent = Model.Deck.DeckID })
     </div>
 </body>
 </html>

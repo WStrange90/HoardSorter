@@ -138,6 +138,7 @@ namespace HoardSorter.Controllers
         // GET: DeckCards/DeckContents
         public ActionResult DeckContents(int DeckID, string message)
         {
+
             ViewBag.Message = message;
             Deck deck = new Deck();
             deck = db.Deck.Single(x => x.DeckID == DeckID);

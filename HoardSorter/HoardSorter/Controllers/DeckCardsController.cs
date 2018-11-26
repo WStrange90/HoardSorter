@@ -162,7 +162,7 @@ namespace HoardSorter.Controllers
             DeckCards deckCards = db.DeckCards.Find(id);
             db.DeckCards.Remove(deckCards);
             db.SaveChanges();
-            return RedirectToAction("Index");
+            return RedirectToAction("Index", new { DeckIdent = deckCards.DeckID });
         }
 
         protected override void Dispose(bool disposing)
