@@ -1,7 +1,7 @@
 ﻿@model HoardSorter.Models.DeckCards
 
 @{
-    Layout = null;
+    ViewBag.Title = "Details";
 }
 
 <!DOCTYPE html>
@@ -19,27 +19,82 @@
             <dt>
                 @Html.DisplayNameFor(model => model.CardQty)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.CardQty)
             </dd>
-    
+
             <dt>
                 @Html.DisplayNameFor(model => model.CardDetails.CardName)
             </dt>
-    
+
             <dd>
                 @Html.DisplayFor(model => model.CardDetails.CardName)
             </dd>
-    
+
             <dt>
-                @Html.DisplayNameFor(model => model.Deck.UserID)
+                @Html.DisplayNameFor(model => model.CardDetails.TypeIdent.Type.TypeName)
             </dt>
-    
+
             <dd>
-                @Html.DisplayFor(model => model.Deck.UserID)
+                @foreach (var y in Model.CardDetails.Types)
+                {
+                    <tr>
+                        @Html.DisplayFor(model => y.TypeName)
+                    </tr>
+                }
             </dd>
-    
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.ColorIdent.Color.Color1)
+            </dt>
+
+            <dd>
+                @foreach (var x in Model.CardDetails.Colors)
+                {
+                    <tr>
+                        @Html.DisplayFor(model => x.Color1)
+                    </tr>
+                }
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.Text)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CardDetails.Text)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.ConvertedManaCost)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CardDetails.ConvertedManaCost)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.RarityIdent.Rarity.RarityName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.CardDetails.Rarities)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.CardDetails.SetIdent.CardSet.SetName)
+            </dt>
+
+            <dd>
+                @foreach (var z in Model.CardDetails.Sets)
+                {
+                    <tr>
+                        @Html.DisplayFor(model => z.SetName)
+                    </tr>
+                }
+            </dd>
+
         </dl>
     </div>
     <p>

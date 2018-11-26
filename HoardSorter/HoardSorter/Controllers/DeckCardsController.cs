@@ -104,14 +104,15 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Edit([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
         {
-           
+            
             Deck deck = db.Deck.Find(deckCards.DeckID);
+            int deckid = deck.DeckID;
             CardDetails card = db.CardDetails.Find(deckCards.CardID);
             //int type = db.TypeIdent.Where(x => x.CardID == deckCards.CardID).FirstOrDefault().TypeID;
 
             var CardTypes = card.Types;
             bool notLand = true;
-            //if (deckCards.CardID == 221 || deckCards.CardID == 222 || deckCards.CardID == 223 || deckCards.CardID == 224 || deckCards.CardID == 225 || deckCards.CardID == 226 || deckCards.CardID == 227 || deckCards.CardID == 228 || deckCards.CardID == 229 || deckCards.CardID == 230 || deckCards.CardID == 231 || deckCards.CardID == 232 || deckCards.CardID == 233 || deckCards.CardID == 234 || deckCards.CardID == 243 || deckCards.CardID == 283 || deckCards.CardID == 293 || deckCards.CardID == 297 || deckCards.CardID == 333 || deckCards.CardID == 335 || deckCards.CardID == 240 || deckCards.CardID == 360 || deckCards.CardID == 571)
+            
             foreach (var type in CardTypes)
             {
                 if(type.TypeID == 115)
@@ -131,7 +132,7 @@ namespace HoardSorter.Controllers
                 }
                 
                 db.SaveChanges();
-                return RedirectToAction("Index");
+                return RedirectToAction("Index", new { DeckIdent = deck.DeckID });
             }
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
             ViewBag.DeckID = new SelectList(db.Deck, "DeckID", "UserID", deckCards.DeckID);
