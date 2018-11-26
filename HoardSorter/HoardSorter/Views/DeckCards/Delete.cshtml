@@ -1,7 +1,7 @@
 ﻿@model HoardSorter.Models.DeckCards
 
 @{
-    Layout = null;
+    ViewBag.Title = "Delete";
 }
 
 <!DOCTYPE html>
@@ -48,7 +48,7 @@
     
             <div class="form-actions no-color">
                 <input type="submit" value="Delete" class="btn btn-default" /> |
-                @Html.ActionLink("Back to List", "Index")
+                @Html.ActionLink("Back to List", "Index", new { DeckIdent = Model.Deck.DeckID })
             </div>
         }
     </div>

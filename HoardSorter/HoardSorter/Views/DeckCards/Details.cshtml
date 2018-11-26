@@ -99,7 +99,7 @@
     </div>
     <p>
         @Html.ActionLink("Edit", "Edit", new { id = Model.DeckCardID }) |
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Back to List", "Index", new { DeckIdent = Model.Deck.DeckID })
     </p>
 </body>
 </html>
