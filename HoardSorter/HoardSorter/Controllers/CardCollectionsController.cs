@@ -15,12 +15,30 @@ namespace HoardSorter.Controllers
         private HoardSorterEntities db = new HoardSorterEntities();
         public int test;
         // GET: CardCollections
-        public ActionResult Index()
+        public ActionResult Index(string sortOrder)
         {
             String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
             var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
 
             var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
+
+            switch (sortOrder)
+            {
+                case "name_desc":
+                    cardCollection = cardCollection.OrderByDescending(s => s.CardDetails.CardName);
+                    break;
+                case "cost_desc":
+                    cardCollection = cardCollection.OrderByDescending(s => s.CardDetails.ConvertedManaCost);
+                    break;
+                case "cost_asc":
+                    cardCollection = cardCollection.OrderBy(s => s.CardDetails.ConvertedManaCost);
+                    break;
+                default:
+                    cardCollection = cardCollection.OrderBy(s => s.CardDetails.CardName);
+                    break;
+            }
+
+
             return View(cardCollection.ToList());
         }
 
