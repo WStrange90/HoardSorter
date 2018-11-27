@@ -23,37 +23,38 @@
             <th>
                 @Html.DisplayNameFor(model => model.CardDetails.CardName)
             </th>
-             <th>
+            <th>
                 @Html.DisplayNameFor(model => model.CardDetails.ConvertedManaCost)
             </th>
-       
+
             <th></th>
         </tr>
-    
-    @foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CardQty)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CardDetails.CardName)
-            </td>
 
-
-            @if (item.CardDetails.ConvertedManaCost > 1)
-            {
+        @foreach (var item in Model)
+        {
+            <tr>
                 <td>
-                    @Html.DisplayFor(modelItem => item.CardDetails.ConvertedManaCost)
+                    @Html.DisplayFor(modelItem => item.CardQty)
                 </td>
-            }
-            else
-            {
                 <td>
-                    -
+                    @Html.DisplayFor(modelItem => item.CardDetails.CardName)
                 </td>
-            }
 
-                
+
+                @if (item.CardDetails.ConvertedManaCost > 1)
+                {
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CardDetails.ConvertedManaCost)
+                    </td>
+                }
+                else
+                {
+                    <td>
+                        -
+                    </td>
+                }
+
+
 
 
 
@@ -63,8 +64,130 @@
                     @Html.ActionLink("Delete", "Delete", new { id = item.DeckCardID })
                 </td>
             </tr>
+        }
+
+    </table>
+    @{int count = 0;}
+    @{int zeroCost = 0;}
+    @{int oneCost = 0;}
+    @{int twoCost = 0;}
+    @{int threeCost = 0;}
+    @{int fourCost = 0;}
+    @{int fiveCost = 0;}
+    @{int sixCost = 0;}
+    @{int sevenCost = 0;}
+    @{int eightCost = 0;}
+    @{int ninePlusCost = 0;}
+    @foreach (var item in Model)
+    {
+        count = count + item.CardQty;
+        if (item.CardDetails.ConvertedManaCost == null || item.CardDetails.ConvertedManaCost == 0)
+        {
+            zeroCost = zeroCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 1)
+        {
+            oneCost = oneCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 2)
+        {
+            twoCost = twoCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 3)
+        {
+            threeCost = threeCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 4)
+        {
+            fourCost = fourCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 5)
+        {
+            fiveCost = fiveCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 6)
+        {
+            sixCost = sixCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 7)
+        {
+            sevenCost = sevenCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost == 8)
+        {
+            eightCost = eightCost + item.CardQty;
+        }
+        if (item.CardDetails.ConvertedManaCost >= 9)
+        {
+            ninePlusCost = ninePlusCost + item.CardQty;
+        }
+
     }
-    
+    @{int percentZero = (int)(((double)zeroCost / (double)count) * 100);}
+    @{int percentOne = (int)(((double)oneCost / (double)count) * 100);}
+    @{int percentTwo = (int)(((double)twoCost / (double)count) * 100);}
+    @{int percentThree = (int)(((double)threeCost / (double)count) * 100);}
+    @{int percentFour = (int)(((double)fourCost / (double)count) * 100);}
+    @{int percentFive = (int)(((double)fiveCost / (double)count) * 100);}
+    @{int percentSix = (int)(((double)sixCost / (double)count) * 100);}
+    @{int percentSeven = (int)(((double)sevenCost / (double)count) * 100);}
+    @{int percentEight = (int)(((double)eightCost / (double)count) * 100);}
+    @{int percentNine = (int)(((double)ninePlusCost / (double)count) * 100);}
+    @if (count >= 60)
+    {
+        <font size="13"; color="#1AFF00">Valid Deck</font>
+    }
+    else
+    {
+        <font size="13"; color="#DF1D1D">Invalid Deck Add More Cards (@count/60+)</font>
+    }
+    <br />Mana Curve
+    <table frame="box" ; rules="all" ; width="800">
+        <thead>
+            <tr>
+                <th>       </th>
+                <th> 0 Mana</th>
+                <th> 1 Mana</th>
+                <th> 2 Mana</th>
+                <th> 3 Mana</th>
+                <th> 4 Mana</th>
+                <th> 5 Mana</th>
+                <th> 6 Mana</th>
+                <th> 7 Mana</th>
+                <th> 8 Mana</th>
+                <th> 9+ Mana</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th> Quantity</th>
+                <td> @zeroCost </td>
+                <td> @oneCost </td>
+                <td> @twoCost </td>
+                <td> @threeCost </td>
+                <td> @fourCost </td>
+                <td> @fiveCost </td>
+                <td> @sixCost </td>
+                <td> @sevenCost </td>
+                <td> @eightCost </td>
+                <td> @ninePlusCost </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th> Percent</th>
+                <td> @percentZero%  </td>
+                <td> @percentOne%  </td>
+                <td> @percentTwo%  </td>
+                <td> @percentThree%  </td>
+                <td> @percentFour%  </td>
+                <td> @percentFive%  </td>
+                <td> @percentSix%  </td>
+                <td> @percentSeven%  </td>
+                <td> @percentEight%  </td>
+                <td> @ninePlusCost%  </td>
+            </tr>
+        </tfoot>
     </table>
 </body>
 </html>
