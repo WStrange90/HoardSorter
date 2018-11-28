@@ -24,6 +24,9 @@ namespace HoardSorter.Controllers
             ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
             ViewBag.CostSortParm = sortOrder == "cost_asc" ? "cost_desc" : "cost_asc";
             ViewBag.QtySortParm = sortOrder == "qty_asc" ? "qty_desc" : "qty_asc";
+            ViewBag.NameLabel = String.IsNullOrEmpty(sortOrder) ? "Name Z-A" : "Name A-Z";
+            ViewBag.CostLabel = sortOrder == "cost_asc" ? "Cost v" : "Cost ^";
+            ViewBag.QuantityLabel = sortOrder == "qty_asc" ? "Quantity v" : "Quantity ^";
             switch (sortOrder)
             {
                 case "name_desc":
