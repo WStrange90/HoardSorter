@@ -135,14 +135,14 @@ namespace HoardSorter.Controllers
         // GET: CardCollections/Create
         public ActionResult Create()
         {
-            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.CardID = new SelectList(db.CardDetails.OrderBy(s => s.CardName), "CardID", "CardName");
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
             return View();
         }
 
         public ActionResult CreateWant()
         {
-            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.CardID = new SelectList(db.CardDetails.OrderBy(s => s.CardName), "CardID", "CardName");
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
             return View();
         }
