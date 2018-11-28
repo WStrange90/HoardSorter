@@ -59,6 +59,7 @@ namespace HoardSorter.Controllers
             var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
 
             var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
+            cardCollection = cardCollection.OrderBy(s => s.CardDetails.CardName);
             return View(cardCollection.ToList());
         }
 
@@ -69,6 +70,7 @@ namespace HoardSorter.Controllers
             var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
 
             var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
+            cardCollection = cardCollection.OrderBy(s => s.CardDetails.CardName);
             return View(cardCollection.ToList());
         }
 
@@ -111,6 +113,7 @@ namespace HoardSorter.Controllers
             var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
 
             var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
+            cardCollection = cardCollection.OrderBy(s => s.CardDetails.CardName);
             return View(cardCollection.ToList());
         }
 
