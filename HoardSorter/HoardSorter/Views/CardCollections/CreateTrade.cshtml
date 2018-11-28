@@ -15,9 +15,6 @@
         <th>
             @Html.DisplayNameFor(model => model.OwnedQty)
         </th>
-        <th>
-            @Html.DisplayNameFor(model => model.ToTrade)
-        </th>
 
         <th></th>
     </tr>
@@ -34,9 +31,6 @@
                 @Html.DisplayFor(modelItem => item.OwnedQty)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.ToTrade)
-            </td>
-            <td>
                 @Html.ActionLink("Add to Trades", "EditTrades", new { id = item.CardCollectionID })
             </td>
         }
@@ -46,6 +40,6 @@
 </table>
 
 <div>
-    @Html.ActionLink("Back to List", "MyTrades")
+    @Html.ActionLink("Back to MyTrades", "MyTrades")
 </div>
 

@@ -4,7 +4,7 @@
     ViewBag.Title = "Address Book";
 }
 
-<h2>Create</h2>
+<h2>Add to Contacts</h2>
 
 
 <html>
@@ -19,7 +19,6 @@
         @Html.AntiForgeryToken()
         
         <div class="form-horizontal">
-            <h4>Contacts</h4>
             <hr />
             @Html.ValidationSummary(true, "", new { @class = "text-danger" })
             
@@ -41,7 +40,7 @@
     }
     
     <div>
-        @Html.ActionLink("Back to List", "Index")
+        @Html.ActionLink("Back to Address Book", "Index")
     </div>
 </body>
 </html>

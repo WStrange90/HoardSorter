@@ -2,8 +2,9 @@
 @{
     ViewBag.Title = "FriendsTrades";
 }
-<h2>Friend's Trades</h2>
+
 <h2>@Html.ViewBag.Friend's Trades</h2>
+<br />
 
 <table class="table">
     <tr>
@@ -33,3 +34,7 @@
         }
     }
 </table>
+
+<div>
+    @Html.ActionLink("Back to Address Book", "Index", "Contacts")
+</div>
