@@ -957,3 +957,4 @@ C:\Users\Somnus\Desktop\GitHub\HoardSorter\HoardSorter\HoardSorter\obj\Debug\Hoa
 C:\Users\Somnus\Desktop\GitHub\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.csproj.CopyComplete
 C:\Users\Somnus\Desktop\GitHub\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.dll
 C:\Users\Somnus\Desktop\GitHub\HoardSorter\HoardSorter\HoardSorter\obj\Debug\HoardSorter.pdb
+C:\Users\sandy\Desktop\HoardSorter\HoardSorter\HoardSorter\bin\HoardSorter.dll.config

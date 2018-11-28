@@ -21,7 +21,9 @@ namespace HoardSorter.Controllers
             var collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
 
             var cardCollection = db.CardCollection.Where(c => c.collectorID == collectorID);
-
+            ViewBag.NameSortParm = String.IsNullOrEmpty(sortOrder) ? "name_desc" : "";
+            ViewBag.CostSortParm = sortOrder == "cost_asc" ? "cost_desc" : "cost_asc";
+            ViewBag.QtySortParm = sortOrder == "qty_asc" ? "qty_desc" : "qty_asc";
             switch (sortOrder)
             {
                 case "name_desc":
@@ -32,6 +34,12 @@ namespace HoardSorter.Controllers
                     break;
                 case "cost_asc":
                     cardCollection = cardCollection.OrderBy(s => s.CardDetails.ConvertedManaCost);
+                    break;
+                case "qty_desc":
+                    cardCollection = cardCollection.OrderByDescending(s => s.OwnedQty);
+                    break;
+                case "qty_asc":
+                    cardCollection = cardCollection.OrderBy(s => s.OwnedQty);
                     break;
                 default:
                     cardCollection = cardCollection.OrderBy(s => s.CardDetails.CardName);

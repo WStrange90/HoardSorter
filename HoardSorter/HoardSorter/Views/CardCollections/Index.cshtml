@@ -9,10 +9,9 @@
 <p>
     @Html.ActionLink("Create New", "Create") |
 
-    @Html.ActionLink("Name Asc", "Index", new { sortOrder = "" }) |
-    @Html.ActionLink("Name Desc", "Index", new { sortOrder = "name_desc" }) |
-    @Html.ActionLink("Cost Asc", "Index", new { sortOrder = "cost_asc" }) |
-    @Html.ActionLink("Cost Desc", "Index", new { sortOrder = "cost_desc" })
+    @Html.ActionLink("Name", "Index", new { sortOrder = ViewBag.NameSortParm }) |
+    @Html.ActionLink("Cost", "Index", new { sortOrder = ViewBag.CostSortParm }) |
+    @Html.ActionLink("Quantity", "Index", new { sortOrder = ViewBag.QtySortParm })
 </p>
 <table class="table">
     <tr>
