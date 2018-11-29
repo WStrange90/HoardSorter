@@ -182,7 +182,6 @@ namespace HoardSorter.Controllers
                 db.SaveChanges();
                 return RedirectToAction("MyWants");
             }
-            ViewBag.Error = "Error: That card is already in the deck!";
 
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
