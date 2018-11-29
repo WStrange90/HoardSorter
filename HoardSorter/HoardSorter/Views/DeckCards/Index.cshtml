@@ -123,19 +123,19 @@
         }
 
     }
-    @{int percentZero = (int)(((double)zeroCost / (double)count) * 100);}
-    @{int percentOne = (int)(((double)oneCost / (double)count) * 100);}
-    @{int percentTwo = (int)(((double)twoCost / (double)count) * 100);}
-    @{int percentThree = (int)(((double)threeCost / (double)count) * 100);}
-    @{int percentFour = (int)(((double)fourCost / (double)count) * 100);}
-    @{int percentFive = (int)(((double)fiveCost / (double)count) * 100);}
-    @{int percentSix = (int)(((double)sixCost / (double)count) * 100);}
-    @{int percentSeven = (int)(((double)sevenCost / (double)count) * 100);}
-    @{int percentEight = (int)(((double)eightCost / (double)count) * 100);}
-    @{int percentNine = (int)(((double)ninePlusCost / (double)count) * 100);}
+    @{double percentZero = (((double)zeroCost / (double)count) * 100);}
+    @{double percentOne = (((double)oneCost / (double)count) * 100);}
+    @{double percentTwo = (((double)twoCost / (double)count) * 100);}
+    @{double percentThree = (((double)threeCost / (double)count) * 100);}
+    @{double percentFour = (((double)fourCost / (double)count) * 100);}
+    @{double percentFive = (((double)fiveCost / (double)count) * 100);}
+    @{double percentSix = (((double)sixCost / (double)count) * 100);}
+    @{double percentSeven = (((double)sevenCost / (double)count) * 100);}
+    @{double percentEight = (((double)eightCost / (double)count) * 100);}
+    @{double percentNine = (((double)ninePlusCost / (double)count) * 100);}
     @if (count >= 60)
     {
-        <font size="13"; color="#1AFF00">Valid Deck</font>
+    <font size="13" ; color="#3ACE1C">Valid Deck (@count/60+)</font>
     }
     else
     {
@@ -176,16 +176,16 @@
         <tfoot>
             <tr>
                 <th> Percent</th>
-                <td> @percentZero%  </td>
-                <td> @percentOne%  </td>
-                <td> @percentTwo%  </td>
-                <td> @percentThree%  </td>
-                <td> @percentFour%  </td>
-                <td> @percentFive%  </td>
-                <td> @percentSix%  </td>
-                <td> @percentSeven%  </td>
-                <td> @percentEight%  </td>
-                <td> @ninePlusCost%  </td>
+                <td> @percentZero.ToString("0.00")%  </td>
+                <td> @percentOne.ToString("0.00")%  </td>
+                <td> @percentTwo.ToString("0.00")%  </td>
+                <td> @percentThree.ToString("0.00")%  </td>
+                <td> @percentFour.ToString("0.00")%  </td>
+                <td> @percentFive.ToString("0.00")%  </td>
+                <td> @percentSix.ToString("0.00")%  </td>
+                <td> @percentSeven.ToString("0.00")%  </td>
+                <td> @percentEight.ToString("0.00")%  </td>
+                <td> @ninePlusCost.ToString("0.00")%  </td>
             </tr>
         </tfoot>
     </table>

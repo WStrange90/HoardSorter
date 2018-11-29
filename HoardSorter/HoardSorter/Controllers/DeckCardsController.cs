@@ -23,6 +23,7 @@ namespace HoardSorter.Controllers
 
             var deckCards = db.DeckCards.Where(y => (y.Deck.UserID).Equals(id));
             var deckNameIdent = db.DeckCards.Where(y => y.DeckID == DeckIdent);
+            deckNameIdent = deckNameIdent.OrderBy(s => s.CardDetails.CardName);
 
             var deck = db.Deck.Where(x => x.DeckID == DeckIdent).FirstOrDefault();
             if (deck != null)
