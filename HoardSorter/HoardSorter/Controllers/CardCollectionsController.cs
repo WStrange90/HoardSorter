@@ -173,6 +173,7 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult CreateWant([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
         {
+
             if (ModelState.IsValid)
             {
                 String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
@@ -181,6 +182,8 @@ namespace HoardSorter.Controllers
                 db.SaveChanges();
                 return RedirectToAction("MyWants");
             }
+            ViewBag.Error = "Error: That card is already in the deck!";
+
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
