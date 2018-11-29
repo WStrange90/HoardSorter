@@ -155,7 +155,17 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
         {
-            if (ModelState.IsValid)
+            Boolean duplicate = false;
+            var cards = cardCollection.DupCards;
+            foreach (var card in cards)
+            {
+                if (card == cardCollection.CardID)
+                {
+                    duplicate = true;
+                }
+            }
+
+            if (ModelState.IsValid && !duplicate)
             {
                 String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
                 cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
@@ -163,6 +173,8 @@ namespace HoardSorter.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+
+            ViewBag.Error = "Error: Duplicate card in collection!";
 
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", cardCollection.CardID);
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID", cardCollection.collectorID);
