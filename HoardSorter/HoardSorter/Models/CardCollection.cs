@@ -33,14 +33,15 @@ namespace HoardSorter.Models
         public virtual CardDetails CardDetails { get; set; }
         public virtual Collections Collections { get; set; }
 
-        public virtual List<int> DupCards
+        public virtual IEnumerable<int> DupCards
         {
             get
             {
-                List<int> thecards;
+                IEnumerable<int> thecards;
                 using (var db = new HoardSorterEntities())
                 {
-                    thecards = db.CardCollection.Where(ri => ri.CardID == CardID).Select(ri => ri.CardID).ToList();
+                    var thecards1 = db.CardCollection.Where(ri => ri.collectorID == collectorID).ToList();
+                    thecards = thecards1.Select(x => x.CardID);
                 }
                 return thecards;
             }
