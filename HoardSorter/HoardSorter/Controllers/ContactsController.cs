@@ -42,7 +42,7 @@ namespace HoardSorter.Controllers
         public ActionResult Create()
         {
             ViewBag.myID = new SelectList(db.AspNetUsers, "Id", "Email");
-            ViewBag.yourID = new SelectList(db.AspNetUsers, "Id", "Email");
+            ViewBag.yourID = new SelectList(db.AspNetUsers.OrderBy(s => s.Email), "Id", "Email");
             return View();
         }
 
