@@ -12,6 +12,7 @@ namespace HoardSorter.Models
     using System;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
+    using System.Linq;
 
     public partial class CardCollection
     {
@@ -31,5 +32,18 @@ namespace HoardSorter.Models
     
         public virtual CardDetails CardDetails { get; set; }
         public virtual Collections Collections { get; set; }
+
+        public virtual List<int> DupCards
+        {
+            get
+            {
+                List<int> thecards;
+                using (var db = new HoardSorterEntities())
+                {
+                    thecards = db.CardCollection.Where(ri => ri.CardID == CardID).Select(ri => ri.CardID).ToList();
+                }
+                return thecards;
+            }
+        }
     }
 }

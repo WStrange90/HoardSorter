@@ -11,7 +11,8 @@ namespace HoardSorter.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.Linq;
+
     public partial class Contacts
     {
         public int ContactID { get; set; }
@@ -20,5 +21,19 @@ namespace HoardSorter.Models
     
         public virtual AspNetUsers AspNetUsers { get; set; }
         public virtual AspNetUsers AspNetUsers1 { get; set; }
+
+        public virtual List<String> newContact
+        {
+            get
+            {
+                List<String> theContacts;
+                using (var db = new HoardSorterEntities())
+                {
+                    theContacts = db.Contacts.Where(ri => ri.myID == myID).Select(ri => ri.yourID).ToList();
+                }
+                return theContacts;
+            }
+        }
     }
+
 }

@@ -56,12 +56,23 @@ namespace HoardSorter.Controllers
             String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
             contacts.myID = UserID;
 
-            if (ModelState.IsValid)
+            Boolean duplicate = false;
+            var friends = contacts.newContact;
+            foreach(var contact in friends)
+            {
+                if(contact == contacts.yourID)
+                {
+                    duplicate = true;
+                }
+            }
+
+            if (ModelState.IsValid && !duplicate)
             {
                 db.Contacts.Add(contacts);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
+            ViewBag.Error = "Error: You already have that contact!";
 
             ViewBag.myID = new SelectList(db.AspNetUsers, "Id", "Email", contacts.myID);
             ViewBag.yourID = new SelectList(db.AspNetUsers, "Id", "Email", contacts.yourID);
