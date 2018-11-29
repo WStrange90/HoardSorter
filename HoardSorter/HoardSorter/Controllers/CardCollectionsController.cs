@@ -87,7 +87,7 @@ namespace HoardSorter.Controllers
 
         public ActionResult Search()
         {
-            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.CardID = new SelectList(db.CardDetails.OrderBy(s => s.CardName), "CardID", "CardName");
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
             return View();
         }
@@ -102,7 +102,8 @@ namespace HoardSorter.Controllers
 
         public ActionResult SearchResults(int id)
         {
-            var cardCollection = db.CardCollection.Where(c => c.CardID == id);
+            var cardCollection = db.CardCollection.Where(c => c.CardID == id).OrderBy(y => y.Collections.AspNetUsers.Email);
+
             return View(cardCollection);
         }
 

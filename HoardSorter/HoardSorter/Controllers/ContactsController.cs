@@ -18,7 +18,7 @@ namespace HoardSorter.Controllers
         public ActionResult Index()
         {
             String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
-            var contacts = db.Contacts.Where(y => (y.myID.ToString()).Equals(UserID));
+            var contacts = db.Contacts.Where(y => (y.myID.ToString()).Equals(UserID)).OrderBy(y => y.AspNetUsers1.Email);
             //var contacts = db.Contacts.Include(c => c.AspNetUsers).Include(c => c.AspNetUsers1);
             return View(contacts.ToList());
         }
