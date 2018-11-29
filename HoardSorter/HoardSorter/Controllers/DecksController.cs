@@ -19,6 +19,7 @@ namespace HoardSorter.Controllers
         {
             String UserID = db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id;
             var deck = db.Deck.Where(y => (y.UserID.ToString()).Equals(UserID));
+            deck = deck.OrderBy(x => x.DeckName);
             return View(deck.ToList());
         }
 
@@ -143,7 +144,7 @@ namespace HoardSorter.Controllers
             Deck deck = new Deck();
             deck = db.Deck.Single(x => x.DeckID == DeckID);
             ViewBag.DeckName = deck.DeckName;
-            ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName");
+            ViewBag.CardID = new SelectList(db.CardDetails.OrderBy(x => x.CardName), "CardID", "CardName");
             ViewBag.DeckID = DeckID;
             return View();
         }
@@ -154,7 +155,7 @@ namespace HoardSorter.Controllers
         public ActionResult DeckContents([Bind(Include = "DeckCardID,DeckID,CardID,CardQty")] DeckCards deckCards)
         {
             int deckid = deckCards.DeckID;
-            deckCards.CardQty = 1;
+            
             List<DeckCards> deck = db.DeckCards.Where(x => x.DeckID == deckCards.DeckID).ToList();
             bool duplicateCard = false;
             foreach(var item in deck)
@@ -176,20 +177,7 @@ namespace HoardSorter.Controllers
             ViewBag.CardID = new SelectList(db.CardDetails, "CardID", "CardName", deckCards.CardID);
             ViewBag.DeckID = deckCards.DeckID;
             return View(deckCards);
-            /*
-             if (id == null)
-             {
-                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-             }
-             Deck deck = db.Deck.Find(id);
-             if (deck == null)
-             {
-                 return HttpNotFound();
-             }
-             ViewBag.UserID = new SelectList(db.AspNetUsers, "Id", "Email", deck.UserID);
-             ViewBag.DeckTypeID = new SelectList(db.DeckType, "DeckTypeID", "DeckType1", deck.DeckTypeID);
-             return View(deck);
-             */
+           
         }
 
         protected override void Dispose(bool disposing)

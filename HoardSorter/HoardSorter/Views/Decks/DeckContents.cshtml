@@ -36,7 +36,14 @@
             </div>
         </div>
 
-
+        <div class="form-group">
+            @Html.LabelFor(model => model.CardQty, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                If you are adding a land you may change the quantity later by selecting "edit" from the "view deck" page
+                @Html.EditorFor(model => model.CardQty, new { htmlAttributes = new { @class = "form-control", @min = "0", @max = "4" } })
+                @Html.ValidationMessageFor(model => model.CardQty, "", new { @class = "text-danger" })
+            </div>
+        </div>
 
         <div class="form-group">
             <div class="col-md-offset-2 col-md-10">
