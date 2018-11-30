@@ -134,8 +134,9 @@ namespace HoardSorter.Controllers
         }
 
         // GET: CardCollections/Create
-        public ActionResult Create()
+        public ActionResult Create(String dupCard)
         {
+            ViewBag.dup = dupCard;
             ViewBag.CardID = new SelectList(db.CardDetails.OrderBy(s => s.CardName), "CardID", "CardName");
             ViewBag.collectorID = new SelectList(db.Collections, "collectorID", "UserID");
             return View();
@@ -155,12 +156,18 @@ namespace HoardSorter.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create([Bind(Include = "CardCollectionID,CardID,ToTrade,Wanted,OwnedQty,TradeQty,WantQty,collectorID")] CardCollection cardCollection)
         {
-            
+
 
             if (ModelState.IsValid)
             {
                 String id = (db.AspNetUsers.Where(x => x.Email == System.Web.HttpContext.Current.User.Identity.Name).FirstOrDefault().Id);
                 cardCollection.collectorID = db.Collections.Where(y => y.UserID == id).FirstOrDefault().collectorID;
+                var check = db.CardCollection.Where(y => y.collectorID == cardCollection.collectorID);
+                if (check.Any(x => x.collectorID == cardCollection.collectorID) && check.Any(x => x.CardID == cardCollection.CardID))
+                {
+                    String dupCards = "You already have this card in your collection";
+                    return RedirectToAction("Create", new { dupCard = dupCards });
+                }
                 db.CardCollection.Add(cardCollection);
                 db.SaveChanges();
                 return RedirectToAction("Index");
