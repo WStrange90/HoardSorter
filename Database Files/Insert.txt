@@ -69,3 +69,11 @@ with
 rowterminator='\n',
 fieldterminator=','
 )
+
+bulk insert DeckType
+from 'FILEPATH\DeckType.csv'
+with
+(
+rowterminator='\n',
+fieldterminator=','
+)
